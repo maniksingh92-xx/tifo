@@ -1,0 +1,1 @@
+import PlayerInfo from './PlayerInfo';

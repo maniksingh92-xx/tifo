@@ -1,0 +1,1000 @@
+Name,Club,League,Country,POS,RAT,PAC,SHO,PAS,DRI,DEF,PHY
+Lionel Messi,FC Barcelona,Liga BBVA,Argentina ,RW,94,92,88,86,95,24,62
+Cristiano Ronaldo,Real Madrid,Liga BBVA,Portugal,LW,93,92,93,80,90,33,78
+Luis Suárez,FC Barcelona,Liga BBVA,Uruguay,ST,90,82,88,79,88,42,79
+Arjen Robben,FC Bayern Munchen,Bundesliga,Netherlands,RM,90,92,86,82,92,32,64
+Manuel Neuer,FC Bayern Munchen,Bundesliga,Germany,GK,90,85,87,91,86,58,90
+Eden Hazard,Chelsea FC ,Barclays PL,Belgium,LM,89,90,82,84,92,32,64
+Zlatan Ibrahimovic,Paris Saint-Germain,,Sweden,ST,89,73,90,81,85,31,86
+Neymar,FC Barcelona,Liga BBVA,Brazil,LW,88,90,80,72,92,30,58
+Iniesta ,FC Barcelona,Liga BBVA,Spain,CM,88,75,72,87,90,59,63
+David Silva,Manchester City ,Barclays PL,Spain,CAM,88,73,74,89,89,32,58
+Thiago Silva,Paris Saint-Germain,,Brazil,CB,88,74,57,73,73,90,79
+Mesut Özil,Arsenal,Barclays PL,Germany,CAM,87,72,74,85,86,24,57
+Cesc Fàbregas,Chelsea FC,Barclays PL,Spain,CM,87,68,78,90,81,64,65
+Franck Ribéry,FC Bayern Munchen,Bundesliga,France,LM,87,87,77,84,91,25,61
+Robert Lewandowski,FC Bayern Munchen,Bundesliga,Poland ,ST,87,80,85,74,84,38,80
+Jérôme Boateng,FC Bayern Munchen,Bundesliga,Germany,CB,87,79,50,69,68,87,84
+Philipp Lahm,FC Bayern Munchen,Bundesliga,Germany,CDM,87,75,56,84,85,87,66
+Giorgio Chiellini,Juventus,Serie A,Italy,CB,87,77,47,56,58,90,84
+Sergio Agüero,Manchester City,Barclays PL,Argentina,ST,87,89,87,77,89,23,68
+Gareth Bale,Real Madrid,Liga BBVA,Wales,RM,87,94,83,83,84,63,80
+Sergio Ramos,Real Madrid,Liga BBVA,Spain,CB,87,79,60,71,66,87,81
+James-Rodríguez,Real Madrid,Liga BBVA,Colombia,CAM,87,78,86,84,85,40,72
+Luka Modric,Real Madrid,Liga BBVA,Croatia,CM,87,76,74,84,89,71,68
+Toni Kroos,Real Madrid,Liga BBVA,Germany,CM,87,56,81,88,82,66,69
+Alexis Sánchez,Arsenal,Barclays PL,Chili,LW,86,87,83,78,88,39,73
+Marco Reus,Borussia Dortmund,Bundesliga,Germany,LM,86,90,84,85,86,39,64
+Mats Hummels,Borussia Dortmund,Bundesliga,Spain,CB,86,64,58,74,70,88,77
+Carlos Tévez,CA Boca Juniors,,Argentina,ST,86,87,88,76,88,45,84
+Thibaut Courtois,Chelsea FC,Barclays PL,Belgium,GK,86,84,87,69,88,46,86
+Diego Costa,Chelsea FC,Barclays PL,Spain,ST,86,82,83,63,79,40,88
+Sergio Busquets,FC Barcelona,Liga BBVA,Spain,CDM,86,53,59,77,74,83,80
+Thomas Müller,FC Bayern Munchen,Bundesliga,Germany,CF,86,77,84,80,79,46,72
+Arturo Vidal,FC Bayern Munchen,Bundesliga,Chili,CM,86,77,79,80,81,83,83
+Paul Pogba,Juventus ,Serie A,France,CM,86,77,80,82,86,74,88
+Kevin De Bruyne,Manchester City,Barclays PL,Belgium,CAM,86,77,83,86,84,40,75
+De Gea,Manchester United,Barclays PL,Spain,GK,86,88,81,86,89,51,83
+Wayne Rooney,Manchester United,Barclays PL,England,ST,86,75,86,81,81,47,87
+Bastian Schweinsteiger,Manchester United,Barclays PL,Germany,CM,86,52,79,84,79,76,78
+Karim Benzema,Real Madrid,Liga BBVA,France,ST,86,83,84,75,81,22,74
+Petr ?ech,Arsenal,Barclays PL,Czech,GK,85,83,84,73,84,45,83
+Santi Cazorla,Arsenal,Barclays PL,Spain,CAM,85,73,78,85,87,56,64
+Diego Godín,Atletico Madrid,Liga BBVA,Uruguay,CB,85,70,48,63,62,87,78
+John Terry,Chelsea FC,Barclays PL,England,CB,85,34,47,57,52,87,81
+Piqué,FC Barcelona,Liga BBVA,Spain,CB,85,64,54,67,60,86,76
+David Alaba,FC Bayern Munchen,Bundesliga,Austria,LB,85,86,72,81,83,84,72
+Yaya Touré,Manchester City,Barclays PL,Ivory Coast,CM,85,76,83,81,79,70,86
+Vincent Kompany,Manchester City,Barclays PL,Belgium,CB,85,69,54,62,65,86,81
+Ángel Di María,Paris Saint-Germain,,Argentina,CAM,85,88,79,83,86,49,70
+Edinson Cavani,Paris Saint-Germain,,Uruguay,ST,85,76,83,71,81,42,80
+Naldo,VfL Wolfsburg,Bundesliga,Brazil,CB,85,73,69,64,63,88,76
+Miralem Pjanic,AS Roma,Serie A,Bosnia and Herzegovina,CM,84,72,75,85,84,63,66
+Jackson Martínez,Atletico Madrid,Liga BBVA,Colombia,ST,84,81,82,67,79,44,85
+Bernd Leno,Bundesliga,,Germany,GK,84,84,84,81,85,46,83
+Oscar,Chelsea FC,Barclays PL,Brazil,CAM,84,79,75,81,84,43,46
+Nemanja Mati?,Chelsea FC,Barclays PL,Serbia,CDM,84,67,70,77,75,82,88
+Jordi Alba,FC Barcelona,Liga BBVA,Spain,LB,84,92,69,74,81,80,76
+Dani Alves,FC Barcelona,Liga BBVA,Brazil,RB,84,86,70,76,83,78,69
+Ivan Rakiti?,FC Barcelona,Liga BBVA,Croatia,CM,84,68,82,86,82,56,67
+Mario Götze,FC Bayern Munchen,Bundesliga,Germany,CAM,84,72,73,81,89,32,62
+Medhi Benatia,FC Bayern Munchen,Bundesliga,Marocco,CB,84,65,44,54,61,86,83
+Javi Martinez,FC Bayern Munchen,Bundesliga,Spain,CB,84,52,61,71,65,84,79
+Xabi Alonso,FC Bayern Munchen,Bundesliga,Spain,CDM,84,33,69,88,77,76,70
+Casillas,FC Porto,,Spain,GK,84,87,79,67,88,65,79
+Robin van Persie,Fenerbahçe SK,,Holland,ST,84,67,86,81,81,33,67
+Wesley Sneijder,Galatasaray SK,,Holland,CAM,84,75,80,86,84,45,62
+Miranda,Inter Milan,Serie A,Brazil,CB,84,76,49,56,57,86,80
+Gianluigi Buffon,Juventus,Serie A,Italy,GK,84,85,79,71,83,49,89
+Claudio Marchisio,Juventus,Serie A,Italy,CM,84,81,74,82,83,77,78
+Andrea Barzagli,Juventus,Serie A,Italy,CB,84,75,36,55,59,88,77
+Coutinho,Liverpool,Barclays PL,Brazil,CAM,84,82,74,81,87,33,56
+Steven Gerrard,Los Angeles Galaxy,,England,CM,84,54,82,86,75,69,80
+Nicolás Otamendi,Manchester City,Barclays PL,Argentina,CB,84,75,56,56,54,86,82
+Juan Mata,Manchester United,Barclays PL,Spain,RM,84,71,75,84,87,27,55
+Gonzalo Higuaín,Napoli,Serie A,Argentina,ST,84,80,84,68,81,22,71
+Andrea Pirlo,New York City FC,,Italy,CM,84,41,71,93,81,54,58
+Alexandre Lacazette,Olympique Lyonnais,,France,ST,84,88,85,74,85,34,73
+Blaise Matuidi,Paris Saint-Germain,,France,CDM,84,75,67,77,75,83,81
+Javier Pastore,Paris Saint-Germain,,Argentina,CM,84,74,77,84,86,58,68
+Marco Verratti,Paris Saint-Germain,,Italy,CM,84,68,58,83,87,78,69
+Isco,Real Madrid,Liga BBVA,Spain,CAM,84,75,75,80,87,32,63
+Pepe,Real Madrid,Liga BBVA,Portugal,CB,84,73,50,58,59,86,83
+Hugo Lloris,Tottenham Hotspur FC,Barclays PL,France,GK,84,86,82,68,88,65,81
+Hulk,Zenit Saint Petersburg,,Brazil,RW,84,85,87,81,82,43,86
+Laurent Koscielny,Arsenal,Barclays PL,France,CB,83,78,40,62,65,84,75
+Per Mertesacker,Arsenal,Barclays PL,Germany,CB,83,31,41,57,48,88,75
+João Moutinho,AS Monaco,,Portugal,CAM,83,71,76,83,82,71,71
+Radja Nainggolan,AS Roma,Serie A,Belgium,CM,83,80,78,79,81,80,84
+Daniele De Rossi,AS Roma,Serie A,Italy,CDM,83,68,66,74,72,82,84
+Aymeric Laporte,Athletic Bilbao,Liga BBVA,France,CB,83,73,37,59,60,86,78
+Antoine Griezmann,Atletico Madrid,Liga BBVA,France,ST,83,85,81,77,84,29,68
+Koke,Atletico Madrid,Liga BBVA,Spain,CAM,83,74,72,85,81,53,73
+Karim Bellarabi,Bayer Leverkusen,Bundesliga,Germany,RM,83,90,76,76,86,33,64
+Sokratis,Borussia Dortmund,Bundesliga,Greece,CB,83,75,53,57,60,86,83
+Pedro,Chelsea FC,Barclays PL,Spain,LW,83,82,76,77,84,37,62
+Gary Cahill,Chelsea FC,Barclays PL,England,CB,83,73,58,52,62,86,76
+Falcao,Chelsea FC,Barclays PL,Colombia,ST,83,72,82,64,79,37,73
+Leighton Baines,Everton,Barclays PL,England,LB,83,75,75,81,77,82,74
+Claudio Bravo,FC Barcelona,Liga BBVA,Chile,GK,83,83,82,84,86,58,78
+Jérémy Mathieu,FC Barcelona,Liga BBVA,France,CB,83,76,64,66,55,84,82
+Arda Turan,FC Barcelona,Liga BBVA,Turkey,RM,83,75,74,82,87,63,73
+Javier Mascherano,FC Barcelona,Liga BBVA,Argentina,CB,83,68,59,70,69,85,80
+Thiago,FC Bayern Munchen,Bundesliga,Spain,CM,83,72,75,81,89,57,64
+Benedikt Höwedes,FC Schalke 04,Bundesliga,Germany,CB,83,65,47,63,65,84,78
+Samir Handanovic,Inter Milan,Serie A,Slovenia,GK,83,87,79,65,86,54,86
+Nemanja Vidic,Inter Milan,Serie A,Serbia,CB,83,52,33,48,50,85,80
+Mario Mandukic,Juventus,Serie A,Croatia,ST,83,77,82,62,76,38,86
+Leonardo Bonucci,Juventus,Serie A,Italy,CB,83,70,50,66,67,85,81
+Sami Khedira,Juventus,Serie A,Germany,CDM,83,62,70,73,70,83,86
+Antonio Candreva,Lazio,Serie A,Italy,RW,83,86,81,82,85,45,74
+Daniel Sturridge,Liverpool,Barclays PL,England,ST,83,89,83,69,81,25,70
+Joe Hart,Manchester City,Barclays PL,England,GK,83,85,78,76,86,59,80
+Samir Nasri,Manchester City,Barclays PL,France,LM,83,81,76,83,86,38,58
+Steve Mandanda,Marseille,,France,GK,83,85,78,79,84,53,81
+David Luiz,Paris Saint-Germain,,Brazil,CB,83,73,64,73,73,82,77
+Marcelo,Real Madrid,Liga BBVA,Brazil,LB,83,81,67,77,84,81,79
+Stéphane Ruffier,Saint-Etienne,,France,GK,83,83,81,77,86,55,83
+Nicolás Gaitán,SL Benfica,,Argentina,LM,83,83,74,83,86,40,57
+Christian Eriksen,Tottenham Hotspur FC,Barclays PL,Denmark,CAM,83,77,75,84,83,44,59
+Diego Alves,Valencia CF,Liga BBVA,Brazil,GK,83,88,76,76,88,55,77
+Ricardo Rodriguez,VfL Wolfsburg,Bundesliga,Switzerland,LB,83,75,67,82,78,84,76
+Luiz Gustavo,VfL Wolfsburg,Bundesliga,Brazil,CDM,83,70,60,70,71,84,82
+Ezequiel Garay,Zenit Saint Petersburg,,Argentina,CB,83,52,57,68,64,87,78
+Marek Hamsik,,,,CAM,83,74,77,81,82,58,70
+Carlos Bacca,AC Milan,Serie A,Colombia,ST,82,83,83,65,80,24,77
+Diego López,AC Milan,Serie A,Spain,GK,82,81,77,77,83,34,87
+Jasper Cillessen,Ajax,,Netherlands,GK,82,80,84,74,79,54,82
+Aaron Ramsey,Arsenal,Barclays PL,Wales,CM,82,69,78,79,80,68,76
+Olivier Giroud,Arsenal,Barclays PL,France,ST,82,67,82,69,71,38,83
+Jérémy Toulalan,AS Monaco,,France,CDM,82,50,50,76,71,79,81
+Kostas Manolas,AS Roma,Serie A,Greece,CB,82,81,19,42,60,85,82
+Leandro Castán,AS Roma,Serie A,Brazil,CB,82,72,33,47,57,85,80
+Aduriz,Athletic Bilbao,Liga BBVA,Spain,ST,82,71,83,63,72,47,81
+Filipe Luís,Atletico Madrid,Liga BBVA,Brazil,LB,82,82,62,76,76,81,77
+Yann Sommer,Bor. M'gladbach,Bundesliga,Switzerland,GK,82,84,82,85,86,48,76
+Pierre-Emerick Aubameyang,Borussia Dortmund,Bundesliga,Gabon,ST,82,95,81,75,79,36,71
+Shinji Kagawa,Borussia Dortmund,Bundesliga,Japan,CAM,82,80,67,75,87,34,49
+?lkay Gündo?an,Borussia Dortmund,Bundesliga,Germany,CM,82,75,71,82,85,63,72
+Nolito,Celta Vigo,Liga BBVA,Spain,LW,82,78,79,79,83,39,66
+Willian,Chelsea FC,Barclays PL,Brazil,RM,82,89,74,78,85,50,63
+Asmir Begovi?,Chelsea FC,Barclays PL,Bosnia and Herzegovina,GK,82,83,80,74,84,52,80
+Azpilicueta,Chelsea FC,Barclays PL,Spain,LB,82,80,56,74,74,84,76
+Roman Eremenko,CSKA Moskva,,Finland,CAM,82,77,77,83,80,54,73
+Marc-André ter Stegen,FC Barcelona,Liga BBVA,Germany,GK,82,83,81,82,85,38,78
+Klaas-Jan Huntelaar,FC Schalke 04,Bundesliga,Netherlands,ST,82,66,84,64,71,32,72
+Alex Teixeira,FC Shakhtar,,Brazil,CAM,82,88,76,76,86,67,65
+Nani,Fenerbahçe SK,,Portugal,LM,82,84,79,82,86,24,65
+Borja Valero,Fiorentina,Serie A,Spain,CM,82,71,72,85,81,65,67
+Fernando Muslera,Galatasaray SK,,Uruguay,GK,82,83,80,75,86,60,83
+Juan Cuadrado,Juventus,Serie A,Colombia,RM,82,93,77,75,87,54,71
+Alex Sandro,Juventus,Serie A,Brazil,LB,82,85,65,75,81,80,75
+Stephan Lichtsteiner,Juventus,Serie A,Switzerland,RB,82,83,60,72,75,80,79
+Lucas Biglia,Lazio,Serie A,Argentina,CDM,82,68,64,79,78,75,78
+Stefan de Vrij,Lazio,Serie A,Netherlands,CB,82,66,41,58,66,85,76
+Christian Benteke,Liverpool,Barclays PL,Belgium,ST,82,77,81,65,75,33,85
+Roberto Firmino,Liverpool,Barclays PL,Brazil,CAM,82,76,76,78,84,40,69
+Raheem Sterling,Manchester City,Barclays PL,England,LM,82,93,71,73,87,46,61
+Pablo Zabaleta,Manchester City,Barclays PL,Argentina,RB,82,73,56,70,75,85,83
+Victor Valdés,Manchester United,Barclays PL,Spain,GK,82,82,78,77,83,60,85
+Morgan Schneiderlin,Manchester United,Barclays PL,France,CDM,82,64,63,76,74,80,82
+Dries Mertens,Napoli,Serie A,Belgium,CAM,82,89,78,80,87,37,56
+Maxime Gonalons,Olympique Lyon,,France,CDM,82,67,62,72,70,83,83
+Lucas,Paris Saint-Germain,,Brazil,RW,82,93,73,75,87,44,62
+Salvatore Sirigu,Paris Saint-Germain,,Italy,GK,82,84,79,75,84,50,80
+Kevin Trapp,Paris Saint-Germain,,Germany,GK,82,83,79,79,85,45,80
+Raphaël Varane,Real Madrid,Liga BBVA,France,CB,82,79,45,60,63,84,76
+Carlos Vela,Real Sociedad,Liga BBVA,Mexico,RW,82,86,79,75,84,25,65
+Loïc Perrin,Saint-Etienne,,France,CB,82,72,65,69,67,85,80
+Yevgen Konoplyanka,Sevilla FC,Liga BBVA,Ukraine,LW,82,92,77,80,84,33,66
+Grzegorz Krychowiak,Sevilla FC,Liga BBVA,Portugal,CDM,82,71,57,72,62,82,87
+Júlio César,SL Benfica,,Brazil,GK,82,84,78,67,85,39,82
+Jonas,SL Benfica,,Brazil,ST,82,77,83,74,83,30,65
+Luisão,SL Benfica,,Brazil,CB,82,39,53,59,57,85,76
+Kamil Glik,Torino,Serie A,Poland,CB,82,62,24,43,53,85,82
+Jan Vertonghen,Tottenham Hotspur FC,Barclays PL,Belgium,CB,82,71,67,70,69,83,81
+Shkodran Mustafi,Valencia CF,Liga BBVA,Germany,CB,82,69,57,62,55,83,80
+Parejo,Valencia CF,Liga BBVA,Spain,CM,82,59,75,87,80,57,70
+Danny,Zenit Saint Petersburg,,Portugal,CAM,82,84,74,81,84,33,65
+Jérémy Ménez,AC Milan,Serie A,France,CF,81,86,77,71,85,32,60
+Nigel de Jong,AC Milan,Serie A,Netherlands,CDM,81,71,51,69,71,78,86
+Alex,AC Milan,Serie A,Brazil,CB,81,53,58,50,53,83,81
+Theo Walcott,Arsenal,Barclays PL,England,RM,81,96,77,74,81,33,63
+Jack Wilshere,Arsenal,Barclays PL,England,CM,81,76,69,81,84,62,73
+Mikel Arteta,Arsenal,Barclays PL,Spain,CM,81,43,73,82,78,73,65
+Danijel Subai?,AS Monaco,,Croatia,GK,81,82,78,79,83,51,81
+Aymen Abdennour,AS Monaco,,Tunisia,CB,81,67,58,63,64,82,84
+Edin Deko,AS Roma,Serie A,Bosnia and Herzegovina,ST,81,66,84,67,72,31,72
+Iturraspe,Athletic Bilbao,Liga BBVA,Spain,CDM,81,72,62,77,69,80,76
+Moyá,Atletico Madrid,Liga BBVA,Spain,GK,81,85,80,81,80,46,82
+Juanfran,Atletico Madrid,Liga BBVA,Spain,RB,81,84,59,73,77,77,78
+Jan Oblak,Atletico Madrid,Liga BBVA,Slovenia,GK,81,77,84,72,82,43,83
+Stefan Savi?,Atletico Madrid,Liga BBVA,Montenegro,CB,81,67,35,52,56,84,76
+Raúl García,Atletico Madrid,Liga BBVA,Spain,CAM,81,67,76,82,78,66,80
+Tiago,Atletico Madrid,Liga BBVA,Portugal,CM,81,63,69,78,74,68,77
+Ömer Toprak,Bayer Leverkusen,Bundesliga,Turkey,CB,81,75,39,62,66,84,74
+Lars Bender,Bayer Leverkusen,Bundesliga,Germany,CM,81,68,64,76,73,82,81
+Quaresma,Be?ikta? JK,,Portugal,RM,81,84,77,79,86,18,65
+Patrick Herrmann,Bor. M'gladbach,Bundesliga,Germany,RM,81,91,75,75,83,31,62
+Raffael,Bor. M'gladbach,Bundesliga,Brazil,CF,81,74,77,79,85,41,67
+Martin Stranzl,Bor. M'gladbach,Bundesliga,Austria,CB,81,53,41,54,50,86,77
+Granit Xhaka,Bor. M'gladbach,Bundesliga,Switzerland,CM,81,51,66,80,71,70,77
+Henrikh Mkhitaryan,Borussia Dortmund,Bundesliga,Armenia,RM,81,86,72,76,86,55,71
+?ukasz Piszczek,Borussia Dortmund,Bundesliga,Poland,RB,81,79,66,72,74,82,80
+Gonzalo Castro,Borussia Dortmund,Bundesliga,Germany,CM,81,74,69,82,81,75,69
+Nuri ?ahin,Borussia Dortmund,Bundesliga,Turkey,CM,81,54,68,84,81,69,61
+Loïc Rémy,Chelsea FC,Barclays PL,France,ST,81,90,80,68,74,34,71
+Igor Akinfeev,CSKA Moskva,,Russia,GK,81,83,75,79,85,51,78
+Séamus Coleman,Everton,Barclays PL,Republic of Ireland,RB,81,80,68,72,78,81,78
+Phil Jagielka,Everton,Barclays PL,England,CB,81,67,46,58,55,83,81
+Douglas Costa,FC Bayern Munchen,Bundesliga,Brazil,RM,81,90,75,78,86,50,63
+Dante,FC Bayern Munchen,Bundesliga,Brazil,CB,81,56,53,67,64,83,75
+Helton,FC Porto,,Brazil,GK,81,83,78,74,85,64,77
+Ralf Fährmann,FC Schalke 04,Bundesliga,Germany,GK,81,82,79,65,85,38,81
+Darijo Srna,FC Shakhtar,,Croatia,RB,81,77,75,85,75,78,77
+Simon Kjær,Fenerbahçe SK,,Denmark,CB,81,66,42,63,53,84,80
+Aurélien Chedjou,Galatasaray SK,,Cameroon,CB,81,74,60,64,67,82,84
+Mattia Perin,Genoa,Serie A,Italy,GK,81,80,78,71,90,57,78
+Stevan Joveti?,Inter Milan,Serie A,Montenegro,ST,81,77,81,78,83,36,69
+Gary Medel,Inter Milan,Serie A,Chile,CDM,81,76,51,69,70,79,89
+Hernanes,Inter Milan,Serie A,Brazil,CAM,81,70,77,83,83,46,68
+Roberto Pereyra,Juventus,Serie A,Argentina,CAM,81,85,71,81,85,74,75
+Morata,Juventus,Serie A,Spain,ST,81,84,81,66,82,23,73
+Martín Cáceres,Juventus,Serie A,Uruguay,CB,81,83,51,63,66,86,75
+Patrice Evra,Juventus,Serie A,France,LB,81,78,51,72,76,82,74
+Marco Parolo,Lazio,Serie A,Italy,CM,81,74,79,77,76,77,82
+Miroslav Klose,Lazio,Serie A,Germany,ST,81,70,77,63,73,28,63
+Nathaniel Clyne,Liverpool,Barclays PL,England,RB,81,86,61,71,78,79,76
+Mamadou Sakho,Liverpool,Barclays PL,France,CB,81,66,33,60,56,81,84
+Martin krtel,Liverpool,Barclays PL,Slovakia,CB,81,62,38,48,53,82,82
+Vincent Enyeama,LOSC Lille,,Nigeria,GK,81,78,80,77,90,50,78
+Camacho,Málaga CF,Liga BBVA,Spain,CDM,81,67,58,72,69,80,84
+Jesús Navas,Manchester City,Barclays PL,Spain,RM,81,89,70,76,83,28,50
+Wilfried Bony,Manchester City,Barclays PL,Ivory Coast,ST,81,72,83,59,74,39,85
+Martín Demichelis,Manchester City,Barclays PL,Argentina,CB,81,34,40,53,49,83,76
+Memphis Depay,Manchester United,Barclays PL,Netherlands,LW,81,90,78,73,85,29,75
+Matteo Darmian,Manchester United,Barclays PL,Italy,RB,81,79,51,69,73,82,78
+Ander Herrera,Manchester United,Barclays PL,Spain,CM,81,75,70,79,84,54,65
+Nicolas Nkoulou,Marseille,,Cameroon,CB,81,76,44,67,70,82,75
+Didier Drogba,Montreal Impact,,Ivory Coast,ST,81,63,83,74,75,36,78
+José Callejón,Napoli,Serie A,Spain,CAM,81,90,80,73,83,21,62
+Lorenzo Insigne,Napoli,Serie A,Italy,CAM,81,89,70,78,87,27,47
+Allan,Napoli,Serie A,Brazil,CDM,81,76,58,73,78,79,81
+Raúl Albiol,Napoli,Serie A,Spain,CB,81,61,41,57,59,84,76
+Mathieu Valbuena,Olympique Lyon,,France,CAM,81,86,73,80,83,31,49
+Anthony Lopes,Olympique Lyon,,Portugal,GK,81,85,76,72,87,60,77
+Kaká,Orlando City,,Brazil,CAM,81,68,78,81,80,30,60
+Marquinhos,Paris Saint-Germain,,Brazil,CB,81,73,38,67,69,84,76
+Thiago Motta,Paris Saint-Germain,,Italy,CDM,81,44,66,77,72,77,82
+Kiko Casilla,Real Madrid,Liga BBVA,Spain,GK,81,83,82,80,81,32,82
+Carvajal,Real Madrid,Liga BBVA,Spain,RB,81,81,40,71,79,81,82
+Danilo,Real Madrid,Liga BBVA,Brazil,RB,81,81,76,77,78,80,80
+Iñigo Martínez,Real Sociedad,Liga BBVA,Spain,CB,81,74,54,55,60,83,80
+Antonio Cassano,Sampdoria,Serie A,Italy,CF,81,53,78,87,85,18,59
+Benoît Trémoulinas,Sevilla FC,Liga BBVA,France,LB,81,85,64,79,78,77,74
+Vitolo,Sevilla FC,Liga BBVA,Spain,LM,81,80,73,80,82,27,72
+Iborra,Sevilla FC,Liga BBVA,Spain,CDM,81,53,68,74,69,81,83
+Clint Dempsey,Sounders FC,,United States,ST,81,73,80,74,82,42,75
+José Fonte,Southampton,Barclays PL,Portugal,CB,81,56,35,52,62,84,79
+Rui Patrício,Sporting CP,,Portugal,GK,81,84,80,83,80,50,79
+William Carvalho,Sporting CP,,Portugal,CDM,81,59,58,72,74,83,85
+Benoît Costil,Stade Rennais,,France,GK,81,82,80,78,85,49,82
+Bojan,Stoke City,Barclays PL,Spain,CAM,81,79,73,78,85,24,46
+André-Pierre Gignac,Tigres,,France,ST,81,70,83,71,74,36,78
+Sebastian Giovinco,Toronto FC,,Italy,CF,81,90,77,79,85,26,60
+Toby Alderweireld,Tottenham Hotspur FC,Barclays PL,Belgium,CB,81,63,59,67,63,83,79
+Sofiane Feghouli,Valencia CF,Liga BBVA,Algeria,RW,81,89,73,76,85,32,63
+Negredo,Valencia CF,Liga BBVA,Spain,ST,81,70,81,68,75,39,83
+Diego Benaglio,VfL Wolfsburg,Bundesliga,Switzerland,GK,81,84,78,64,81,42,80
+Ivan Perii?,VfL Wolfsburg,Bundesliga,Croatia,LM,81,80,80,79,79,42,74
+Max Kruse,VfL Wolfsburg,Bundesliga,Germany,CF,81,75,80,78,82,40,73
+Sergio Asenjo,Villarreal CF,Liga BBVA,Spain,GK,81,84,81,80,83,59,81
+Mateo Musacchio,Villarreal CF,Liga BBVA,Argentina,CB,81,68,51,65,57,84,79
+Víctor Ruíz,Villarreal CF,Liga BBVA,Spain,CB,81,67,42,65,62,82,79
+Bruno,Villarreal CF,Liga BBVA,Spain,CM,81,57,67,77,74,76,75
+Dimitri Payet,West Ham United,Barclays PL,France,CAM,81,77,76,82,81,44,68
+Axel Witsel,Zenit Saint Petersburg,,Belgium,CM,81,71,74,77,82,74,80
+Marcos Rojo,,,,CB,81,72,60,66,66,81,82
+Kevin Volland,1899 Hoffenheim,Bundesliga,Germany,RM,80,81,80,77,81,39,82
+Mario Balotelli,AC Milan,Serie A,Italy,ST,80,77,80,68,79,30,78
+Riccardo Montolivo,AC Milan,Serie A,Italy,CM,80,58,72,83,76,65,70
+Kieran Gibbs,Arsenal,Barclays PL,England,LB,80,81,57,72,77,80,72
+Nacho Monreal,Arsenal,Barclays PL,Spain,LB,80,77,53,72,75,81,72
+Mathieu Debuchy,Arsenal,Barclays PL,France,RB,80,75,65,73,74,80,78
+Tomá Rosický,Arsenal,Barclays PL,Czech Republic,CAM,80,72,70,81,83,43,64
+Stephan El Shaarawy,AS Monaco,,Italy,LW,80,86,75,71,84,31,60
+Gervinho,AS Roma,Serie A,Ivory Coast,LW,80,92,69,70,81,28,64
+Mohamed Salah,AS Roma,Serie A,Egypt,RW,80,91,72,71,85,45,65
+Maicon,AS Roma,Serie A,Brazil,RB,80,78,72,77,78,78,78
+Kevin Strootman,AS Roma,Serie A,Netherlands,CM,80,67,72,79,76,75,81
+Francesco Totti,AS Roma,Serie A,Italy,CF,80,38,84,87,81,21,68
+De Marcos,Athletic Bilbao,Liga BBVA,Spain,RB,80,89,62,73,78,74,80
+Muniaín,Athletic Bilbao,Liga BBVA,Spain,LW,80,85,71,73,84,44,53
+Gabi,Athletic Bilbao,Liga BBVA,Spain,CM,80,67,72,80,75,72,72
+Beñat,Athletic Bilbao,Liga BBVA,Spain,CM,80,66,76,84,75,66,73
+Mikel San José,Athletic Bilbao,Liga BBVA,Spain,CB,80,58,64,67,65,80,77
+Stefan Kießling,Bayer Leverkusen,Bundesliga,Germany,ST,80,66,82,70,67,44,81
+Gökhan Töre,Besiktas JK,,Turkey,RM,80,87,72,79,85,38,76
+Tony Jantschke,Bor. M'gladbach,Bundesliga,Germany,CB,80,66,41,65,68,84,76
+Cédric Carrasso,Bordeaux,,France,GK,80,78,79,81,82,38,79
+Roman Bürki,Borussia Dortmund,Bundesliga,Switzerland,GK,80,82,79,74,84,49,79
+Jakub B?aszczykowski,Borussia Dortmund,Bundesliga,Poland,RM,80,82,72,78,81,58,72
+Neven Suboti?,Borussia Dortmund,Bundesliga,Serbia,CB,80,71,49,54,48,83,78
+Sven Bender,Borussia Dortmund,Bundesliga,Germany,CDM,80,65,55,65,63,84,82
+Daniel Agger,Brøndby IF,,Denmark,CB,80,71,64,67,60,81,74
+Balázs Dzsudzsák,Bursaspor,,Hungary,LM,80,81,81,78,80,27,68
+Roberto,CD Lugo,,Spain,GK,80,83,71,73,86,45,79
+Ramires,Chelsea FC,Barclays PL,Brazil,CDM,80,88,69,76,81,78,73
+Branislav Ivanovi?,Chelsea FC,Barclays PL,Serbia,RB,80,65,61,64,61,87,84
+Zoran Toi?,CSKA Moskva,,Serbia,RM,80,89,77,76,85,22,54
+Bibras Natcho,CSKA Moskva,,Israel,CM,80,69,72,82,79,70,72
+Igor Denisov,Dinamo Moskva,,Russia,CDM,80,76,67,75,76,80,75
+Kevin Mirallas,Everton,Barclays PL,Belgium,LM,80,88,77,77,83,47,63
+Romelu Lukaku,Everton,Barclays PL,Belgium,ST,80,82,80,66,73,33,82
+Tim Howard,Everton,Barclays PL,United States,GK,80,82,76,77,82,50,81
+James McCarthy,Everton,Barclays PL,Republic of Ireland,CDM,80,72,67,76,76,78,81
+Marc Bartra,FC Barcelona,Liga BBVA,Spain,CB,80,72,46,62,67,84,69
+Thomas Vermaelen,FC Barcelona,Liga BBVA,Belgium,CB,80,70,64,70,65,81,76
+Holger Badstuber,FC Bayern Munchen,Bundesliga,Germany,CB,80,57,51,72,54,81,73
+Yacine Brahimi,FC Porto,,Algeria,LW,80,81,71,75,88,40,58
+Maximiliano Pereira,FC Porto,,Uruguay,RB,80,76,69,74,78,81,79
+Bruno Martins Indi,FC Porto,,Netherlands,CB,80,68,48,60,62,81,83
+Maicon,FC Porto,,Brazil,CB,80,66,53,66,58,81,83
+Julian Draxler,FC Schalke 04,Bundesliga,Germany,LM,80,77,78,79,84,34,62
+Joel Matip,FC Schalke 04,Bundesliga,Cameroon,CB,80,72,46,68,66,82,76
+Taison,FC Shakhtar,,Brazil,CAM,80,90,77,74,85,47,63
+Volkan Demirel,Fenerbahçe SK,,Turkey,GK,80,82,80,80,83,37,78
+Giuseppe Rossi,Fiorentina,Serie A,Italy,ST,80,82,83,74,84,22,52
+Gonzalo Rodríguez,Fiorentina,Serie A,Argentina,CB,80,68,44,60,65,83,75
+Selcuk-inan,Galatasaray SK,,Turkey,CM,80,68,76,82,80,69,68
+Guaita,Getafe CF,Liga BBVA,Spain,GK,80,81,78,73,86,51,77
+Ron-Robert Zieler,Hannover 96,Bundesliga,Germany,GK,80,78,80,66,82,46,81
+Rodrigo Palacio,Inter Milan,Serie A,Argentina,ST,80,85,78,76,84,38,71
+Fredy Guarín,Inter Milan,Serie A,Colombia,CM,80,79,80,79,82,70,88
+Robbie Keane,LA Galaxy,,Republic of Ireland,ST,80,70,83,75,83,31,68
+Federico Marchetti,Lazio,Serie A,Italy,GK,80,82,76,66,87,55,78
+Filip Djordjevic,Lazio,Serie A,Serbia,ST,80,75,79,58,71,37,84
+Maurício,Lazio,Serie A,Brazil,CB,80,71,52,56,58,82,80
+Stefano Mauri,Lazio,Serie A,Italy,CAM,80,68,77,80,78,68,73
+Gökhan Inler,Leicester City,Barclays PL,Switzerland,CDM,80,67,71,78,74,76,78
+Adam Lallana,Liverpool,Barclays PL,England,CAM,80,72,71,79,83,47,67
+James Milner,Liverpool,Barclays PL,England,CM,80,68,76,83,77,69,76
+Mbark Boussoufa,Lokomotiv,,Marocco,CAM,80,80,72,82,84,42,55
+Vedran ?orluka,Lokomotiv,,Croatia,CB,80,51,47,67,66,82,82
+Marko Baa,LOSC Lille,,Montenegro,CB,80,58,56,58,56,81,80
+Guillermo Ochoa,Málaga CF,Liga BBVA,Mexico,GK,80,83,67,77,87,47,79
+Gaël Clichy,Manchester City,Barclays PL,France,LB,80,84,43,65,74,80,68
+Eliaquim Mangala,Manchester City,Barclays PL,France,CB,80,77,41,56,61,79,85
+Fernandinho,Manchester City,Barclays PL,Brazil,CM,80,77,74,78,80,74,77
+Javier Hernández,Manchester United,Barclays PL,Mexico,ST,80,86,80,64,76,31,63
+Ashley Young,Manchester United,Barclays PL,England,LM,80,85,74,78,82,35,56
+Phil Jones,Manchester United,Barclays PL,England,CB,80,66,56,65,61,82,80
+Daley Blind,Manchester United,Barclays PL,Netherlands,CDM,80,62,55,74,75,75,78
+Michael Carrick,Manchester United,Barclays PL,England,CM,80,54,68,80,72,75,68
+Lassana Diarra,Marseille,,France,CDM,80,77,52,72,75,80,69
+José Reina,Napoli,Serie A,Spain,GK,80,81,78,83,81,50,80
+Georginio Wijnaldum,Newcastle Utd,Barclays PL,Netherlands,CAM,80,82,75,73,84,56,70
+Iraola,NY City FC,,Spain,RB,80,78,64,77,78,80,81
+David Villa,NY City FC,,Spain,ST,80,72,83,72,82,32,64
+Serge Aurier,Paris Saint-Germain,,Ivory Coast,RB,80,85,66,73,77,78,81
+Ezequiel Lavezzi,Paris Saint-Germain,,Argentina,LW,80,82,73,74,82,33,73
+Layvin Kurzawa,Paris Saint-Germain,,France,LB,80,79,69,76,77,79,75
+Andrés Guardado,PSV,,Mexico,CM,80,83,67,77,83,66,67
+Tito,Rayo Vallecano,Liga BBVA,Spain,RB,80,78,46,68,72,79,66
+Trashorras,Rayo Vallecano,Liga BBVA,Spain,CDM,80,40,70,86,74,72,70
+Fábio Coentrão,Real Madrid,Liga BBVA,Portugal,LB,80,78,66,73,79,78,72
+Arbeloa,Real Madrid,Liga BBVA,Spain,RB,80,73,61,72,62,82,78
+Domenico Berardi,Sassuolo,Serie A,Italy,RW,80,87,79,75,83,30,70
+Coke,Sevilla FC,Liga BBVA,,RB,80,77,63,70,74,79,74
+Éver Banega,Sevilla FC,Liga BBVA,Argentina,CAM,80,67,70,83,82,65,69
+Daniel Carriço,Sevilla FC,Liga BBVA,Portugal,CB,80,65,53,68,65,81,81
+Llorente,Sevilla FC,Liga BBVA,,ST,80,60,77,60,69,28,76
+Eduardo Salvio,SL Benfica,,Argentina,RM,80,89,75,73,84,44,69
+Jardel,SL Benfica,,Brazil,CB,80,63,44,51,54,83,82
+Andreas Samaris,SL Benfica,,Greece,CDM,80,62,68,76,74,78,82
+Quincy Promes,Spartak Moskva,,Netherlands,RW,80,88,80,72,82,28,67
+Roman Shirokov,Spartak Moskva,,Russia,CM,80,58,78,82,75,71,72
+André Carrillo,Sporting CP,,Peru,RM,80,91,77,74,82,30,70
+Adrien Silva,Sporting CP,,Portugal,CM,80,60,76,82,79,68,69
+Xherdan Shaqiri,Stoke City,Barclays PL,Switzerland,RM,80,87,77,77,85,57,74
+Ryan Shawcross,Stoke City,Barclays PL,England,CB,80,60,44,52,50,82,84
+Ashley Williams,Swansea City,Barclays PL,Wales,CB,80,68,43,55,62,81,82
+Michael Bradley,Torino FC,,United States,CM,80,69,69,79,78,72,83
+Nikola Maksimovi?,Torino FC,,Serbia,CB,80,66,28,47,55,84,79
+Michel Vorm,Tottenham Hotspur FC,Barclays PL,Netherlands,GK,80,83,75,77,84,57,79
+Moussa Dembélé,Tottenham Hotspur FC,Barclays PL,Belgium,CM,80,77,72,75,82,69,82
+Onur K?vrak,Trabzonspor,,Turkey,GK,80,81,78,79,86,67,78
+Gayà,Valencia CF,Liga BBVA,Spain,LB,80,87,61,76,77,78,69
+Pablo Piatti,Valencia CF,Liga BBVA,Argentina,LW,80,87,71,75,82,42,59
+Paco Alcácer,Valencia CF,Liga BBVA,Spain,ST,80,78,81,62,76,30,71
+Javi Fuego,Valencia CF,Liga BBVA,,CDM,80,67,60,71,67,79,81
+André Gomes,Valencia CF,Liga BBVA,Portugal,CM,80,63,69,76,81,69,80
+Aderlan Santos,Valencia CF,Liga BBVA,Brazil,CB,80,55,53,48,59,84,79
+André Schürrle,VfL Wolfsburg,Bundesliga,Germany,LM,80,89,80,75,82,35,67
+Vieirinha,VfL Wolfsburg,Bundesliga,Portugal,RM,80,80,74,76,86,64,66
+Mikel Gonzalez,Villarreal CF,Liga BBVA,Spain,CB,80,68,45,61,52,81,82
+Salomón Rondón,West Brom,Barclays PL,Venezuela,ST,80,80,78,56,74,31,80
+Oleg Shatov,Zenit Saint Petersburg,,Russia,LW,80,87,74,76,82,52,67
+Igor Smolnikov,Zenit Saint Petersburg,,Russia,RB,80,87,63,77,75,78,72
+Domenico Criscito,Zenit Saint Petersburg,,Italy,LB,80,82,63,73,75,79,77
+Javi García,Zenit Saint Petersburg,,,CDM,80,63,67,75,68,80,86
+Timo Horn,1.FC Köln,Bundesliga,Germany,GK,79,77,78,79,80,45,82
+Luiz Adriano,AC Milan,Serie A,Brazil,ST,79,78,82,59,77,30,69
+Davy Klaassen,Ajax,,Netherlands,CAM,79,73,77,73,75,65,78
+Alex Oxlade-Chamberlain,Arsenal,Barclays PL,England,RM,79,89,72,73,84,42,70
+Danny Welbeck,Arsenal,Barclays PL,England,ST,79,85,76,72,80,34,78
+Bernardo Silva,AS Monaco,,Portugal,RM,79,79,68,77,82,45,60
+Wojciech Szczesny,AS Roma,Serie A,Portugal,GK,79,84,77,71,85,50,74
+Adem Ljaji?,AS Roma,Serie A,Spain,LW,79,80,78,77,82,32,61
+Iago Falqué,AS Roma,Serie A,Spain,RW,79,80,72,74,85,33,56
+Balenziaga,Athletic Bilbao,Liga BBVA,Spain,LB,79,80,48,72,75,79,78
+Luciano Vietto,Atletico Madrid,Liga BBVA,Argentina,ST,79,79,79,72,85,36,64
+Óliver Torres,Atletico Madrid,Liga BBVA,Spain,CAM,79,74,60,77,84,42,46
+Christoph Kramer,Bayer Leverkusen,Bundesliga,Germany,CDM,79,67,45,70,73,78,77
+Kyriakos Papadopoulos,Bayer Leverkusen,Bundesliga,Greece,CB,79,65,45,52,50,78,84
+Rhodolfo,Besiktas JK,,Brazil,CB,79,53,53,57,57,82,82
+Lars Stindl,Bor. M'gladbach,Bundesliga,Germany,CAM,79,70,79,77,77,64,72
+Wahbi Khazri,Bordeaux,,Tunisia,CAM,79,74,78,79,79,43,67
+Lamine Sané,Bordeaux,,Cameroon,CB,79,70,44,63,66,80,78
+Max Gradel,Bournemouth,Barclays PL,Ivory Coast,LW,79,88,74,71,82,44,60
+Fabián Orellana,Celta Vigo,Liga BBVA,Chile,RW,79,82,72,73,85,31,53
+Augusto Fernández,Celta Vigo,Liga BBVA,Argentina,CM,79,71,71,77,79,57,67
+Yohan Cabaye,Crystal Palace,Barclays PL,France,CDM,79,67,76,82,78,72,73
+Seydou Doumbia,CSKA Moskva,,Ivory Coast,ST,79,91,79,68,79,39,71
+Mário Fernandes,CSKA Moskva,,Brazil,RB,79,81,59,71,70,81,77
+Alan Dzagoev,CSKA Moskva,,Russia,LM,79,74,75,78,79,46,69
+Ross Barkley,Everton,Barclays PL,England,CAM,79,78,72,75,81,56,74
+Aleix Vidal,FC Barcelona,Liga BBVA,Spain,RM,79,91,68,71,82,38,77
+Rafinha,FC Barcelona,Liga BBVA,Brazil,CM,79,76,73,76,85,63,67
+Bernat,FC Bayern Munchen,Bundesliga,Spain,LB,79,81,60,76,82,78,67
+Sebastian Rode,FC Bayern Munchen,Bundesliga,Germany,CDM,79,76,62,72,74,79,78
+Joãozinho,FC Krasnodar,,Brazil,LM,79,92,77,78,80,61,52
+Cristian Tello,FC Porto,,Spain,RW,79,92,72,73,82,24,62
+Vincent Aboubakar,FC Porto,,Cameroon,ST,79,85,80,68,75,26,81
+Danilo Pereira,FC Porto,,Portugal,CDM,79,67,59,66,73,79,86
+Franco Di Santo,FC Schalke 04,Bundesliga,Argentina,ST,79,76,80,66,76,33,76
+Matija Nastasi?,FC Schalke 04,Bundesliga,Serbia,CB,79,70,31,55,51,82,74
+Johannes Geis,FC Schalke 04,Bundesliga,Germany,CDM,79,59,67,83,73,76,78
+Marlos,FC Shakhtar,,Brazil,CAM,79,83,75,73,86,48,63
+Davide Astori,Fiorentina,Serie A,Italy,CB,79,68,36,45,51,82,78
+Diego Perotti,Genoa,Serie A,Argentina,LW,79,82,70,77,84,32,60
+Pedro León,Getafe CF,Liga BBVA,Spain,RM,79,75,74,86,81,41,58
+Federico Mancuello,Independiente,,Argentina,CM,79,76,74,80,78,60,76
+Montoya,Inter Milan,Serie A,Spain,RB,79,86,50,72,76,76,76
+Juan Jesus,Inter Milan,Serie A,Brazil,CB,79,80,33,51,58,80,84
+Mauro Icardi,Inter Milan,Serie A,Argentina,ST,79,79,79,59,74,26,72
+Neto,Juventus,Serie A,Brazil,GK,79,84,75,73,85,53,77
+Kwadwo Asamoah,Juventus,Serie A,Cameroon,LM,79,82,76,76,83,72,79
+Felipe Anderson,Lazio,Serie A,Brazil,LW,79,92,75,74,85,32,56
+Alberto Moreno,Liverpool,Barclays PL,Spain,LWB,79,87,67,70,79,72,70
+Jordan Henderson,Liverpool,Barclays PL,England,CM,79,74,70,81,75,70,79
+Dejan Lovren,Liverpool,Barclays PL,Croatia,CB,79,56,40,60,63,80,79
+Lucas Leiva,Liverpool,Barclays PL,Brazil,CDM,79,56,40,70,71,79,76
+Aleksandar Kolarov,Manchester City,Barclays PL,Serbia,LB,79,68,69,78,76,81,79
+Fernando,Manchester City,Barclays PL,Brazil,CDM,79,67,61,68,68,81,82
+Chris Smalling,Manchester United,Barclays PL,England,CB,79,76,26,55,61,83,76
+Rémy Cabella,Marseille,,France,CAM,79,82,73,77,85,56,56
+Claudio Beauvue,Olympique Lyon,,France,ST,79,89,78,70,80,44,61
+Nabil Fékir,Olympique Lyon,,France,ST,79,83,78,78,87,31,75
+Samuel Umtiti,Olympique Lyon,,France,CB,79,74,62,67,70,80,79
+Franco Vázquez,Palermo,,Italy,CF,79,69,76,78,82,42,70
+Héctor Moreno,PSV,,Mexico,CB,79,67,43,62,62,81,76
+Luuk de Jong,PSV,,Netherlands,ST,79,63,77,70,74,42,72
+Felipe Caicedo,RCD Espanyol,Liga BBVA,Ecuador,ST,79,75,78,63,76,47,84
+Keylor Navas,Real Madrid,Liga BBVA,Costa Rica,GK,79,82,74,69,83,61,77
+Gonzalo Castro,Real Sociedad,Liga BBVA,Uruguay,LW,79,81,74,73,82,37,59
+Rubén Pardo,Real Sociedad,Liga BBVA,Spain,CM,79,73,63,81,80,58,60
+Canales,Real Sociedad,Liga BBVA,Spain,CAM,79,72,74,80,80,26,63
+Carlos Martínez,Real Sociedad,Liga BBVA,Spain,RB,79,71,52,71,68,80,78
+Illarramendi,Real Sociedad,Liga BBVA,Spain,CM,79,66,62,79,77,74,70
+Granero,Real Sociedad,Liga BBVA,Spain,CM,79,66,71,84,77,64,69
+Romain Hamouma,Saint-Etienne,,France,RM,79,83,80,79,81,45,66
+Eder,Sampdoria,Serie A,Italy,LW,79,85,78,73,81,25,61
+Kévin Gameiro,Sevilla FC,Liga BBVA,France,ST,79,80,79,75,78,35,68
+Ciro Immobile,Sevilla FC,Liga BBVA,,ST,79,74,81,61,76,35,74
+Steven N'Zonzi,Sevilla FC,Liga BBVA,France,CDM,79,69,57,73,76,77,83
+Pizzi,SL Benfica,,Portugal,CAM,79,82,72,79,81,58,66
+Adel Taarabt,SL Benfica,,Marocco,CAM,79,74,73,78,84,32,62
+Duan Tadi?,Southampton,Barclays PL,Serbia,LM,79,74,69,80,83,37,66
+Serdar Tasci,Spartak Moskva,,Germany,CB,79,66,41,64,66,81,72
+Jefferson,Sporting CP,,Brazil,LB,79,82,71,76,77,76,79
+Teófilo Gutiérrez,Sporting CP,,Colombia,ST,79,74,80,71,80,26,76
+Paulo Oliveira,Sporting CP,,Portugal,CB,79,72,35,52,60,83,75
+Bryan Ruíz,Sporting CP,,Costa Rica,LM,79,69,73,79,84,53,57
+Aïssa Mandi,Stade Reims,,Algeria,RB,79,71,46,74,68,82,72
+Paul-Georges Ntep,Stade Rennais,,France,LM,79,91,77,74,83,26,73
+Jeremain Lens,Sunderland,Barclays PL,Netherlands,LW,79,84,76,76,82,32,70
+André Ayew,Swansea City,Barclays PL,Cameroon,LM,79,78,73,75,81,63,76
+Bruno Peres,Torino FC,,Brazil,RWB,79,92,68,71,79,73,76
+Kyle Walker,Tottenham Hotspur FC,Barclays PL,England,RB,79,90,63,72,73,77,80
+Erik Lamela,Tottenham Hotspur FC,Barclays PL,Argentina,RM,79,80,77,78,84,32,57
+Nacer Chadli,Tottenham Hotspur FC,Barclays PL,Belgium,LM,79,79,76,76,79,45,78
+Rodrigo,Valencia CF,Liga BBVA,Spain,ST,79,84,78,70,80,33,71
+Enzo Pérez,Valencia CF,Liga BBVA,Argentina,CM,79,77,72,75,79,76,82
+Emiliano Insua,VfB Stuttgart,Bundesliga,Argentina,LB,79,78,73,72,74,81,79
+Bas Dost,VfL Wolfsburg,Bundesliga,Netherlands,ST,79,60,82,51,52,40,74
+Mario Gaspar,Villarreal CF,Liga BBVA,Spain,RB,79,80,58,70,71,80,78
+Leo Baptistao,Villarreal CF,Liga BBVA,Brazil,ST,79,77,76,69,83,26,61
+Manu Trigueros,Villarreal CF,Liga BBVA,Spain,CM,79,69,69,79,76,67,66
+Zlatko Junuzovi?,Werder Bremen,Bundesliga,Austria,CM,79,77,73,83,80,70,74
+Angelo Ogbonna,West Ham United,Barclays PL,Ivory Coast,CB,79,73,40,48,57,83,80
+Cristian Ansaldi,Zenit Saint Petersburg,,Argentina,LB,79,84,59,72,73,77,73
+Artem Dzyuba,Zenit Saint Petersburg,,Russia,ST,79,72,78,70,67,30,85
+Obafemi Martins,,,,ST,79,91,77,67,79,33,72
+Giovani dos Santos,,,,ST,79,86,81,69,87,29,53
+Burak Y?lmaz,,,,ST,79,86,80,69,73,34,80
+Rubén Castro,,,,ST,79,83,79,64,83,22,62
+Tim Krul,,,,GK,79,81,78,73,84,50,75
+Antonio Valencia,,,,RM,79,81,68,77,80,62,75
+Brad Guzan,,,,GK,79,81,76,66,82,50,78
+Andrea Consigli,,,,GK,79,81,77,72,84,48,79
+Ben Foster,,,,GK,79,81,78,73,84,50,77
+Alexandr Samedov,,,,RM,79,81,72,80,78,50,71
+Andriy Pyatov,,,,GK,79,81,72,83,83,44,80
+René Adler,,,,GK,79,80,77,73,82,46,79
+Roman Weidenfeller,,,,GK,79,79,81,53,77,20,79
+Rémy Riou,,,,GK,79,78,81,81,80,58,80
+Stefan Radu,,,,LB,79,78,56,59,67,84,78
+Hatem Ben Arfa,,,,RM,79,78,79,78,86,35,71
+Antonio Di Natale,,,,ST,79,78,82,81,84,26,57
+Fernando Torres,,,,ST,79,78,78,70,78,28,70
+Morgan De Sanctis,,,,GK,79,78,78,57,82,34,83
+Duan Basta,,,,RB,79,77,68,71,76,80,78
+Jermain Defoe,,,,ST,79,77,85,61,79,25,66
+Micah Richards,,,,CB,79,76,51,61,66,78,85
+Adriano,,,,LB,79,76,71,77,82,77,72
+Joaquín,,,,RM,79,76,72,82,82,38,61
+Christophe Jallet,,,,RB,79,74,66,77,73,78,77
+Diego,,,,CAM,79,74,72,76,82,34,61
+Samuel Eto'o,,,,ST,79,74,80,71,80,36,71
+Fabio Quagliarella,,,,ST,79,73,85,71,77,24,68
+Felipe Melo,,,,CDM,79,73,71,74,74,79,84
+Maxwell,,,,LB,79,73,68,79,79,79,74
+Cheick Tioté,,,,CDM,79,72,57,67,72,79,88
+Bacary Sagna,,,,RB,79,72,53,66,74,82,77
+Emmanuel Adebayor,,,,ST,79,72,78,68,76,31,77
+Iraizoz,,,,GK,79,71,82,80,76,32,84
+Philippe Mexès,,,,CB,79,71,52,55,62,80,79
+Alexandre Song,,,,CDM,79,70,58,69,70,77,83
+Soldado,,,,ST,79,70,79,69,77,42,73
+Kevin Kurányi,,,,ST,79,70,78,66,68,35,81
+Mehmet Topal,,,,CDM,79,69,66,66,69,81,83
+Diego Milito,,,,ST,79,68,77,70,78,26,65
+Bruno Alves,,,,CB,79,68,70,68,69,80,84
+Daniel Baier,,,,CDM,79,68,59,78,77,75,71
+Younès Kaboul,,,,CB,79,67,44,58,56,79,81
+Seydou Keita,,,,CDM,79,67,65,71,70,77,76
+Nicolás Pareja,,,,CB,79,66,60,67,63,80,77
+Fabricio Coloccini,,,,CB,79,66,53,64,62,79,76
+Rasmus Elm,,,,CDM,79,65,72,83,71,73,76
+Mario Suárez,,,,CM,79,63,68,77,73,77,81
+Rio Mavuba,,,,CDM,79,63,52,72,72,77,76
+Andrea Raggi,,,,CB,79,61,53,65,64,81,76
+Agirretxe,,,,ST,79,60,76,60,78,45,75
+Alberto Aquilani,,,,CM,79,57,74,83,78,62,69
+Emir Spahi?,,,,CB,79,56,40,56,46,82,74
+Gabriel Paletta,,,,CB,79,54,34,43,44,83,79
+Alexander Meier,,,,ST,79,54,83,77,71,52,75
+Joleon Lescott,,,,CB,79,53,51,58,59,81,80
+Vasiliy Berezutskiy,,,,CB,79,52,39,61,47,82,81
+Gurpegi,,,,CB,79,51,55,65,56,78,80
+Andreas Granqvist,,,,CB,79,48,61,58,54,82,78
+Amaya,,,,CB,79,44,27,52,45,82,82
+Gareth Barry,,,,CDM,79,42,65,80,66,80,78
+Frank Lampard,,,,CM,79,34,82,82,75,62,71
+Scott Dann,Crystal Palace,Barclays PL,England,CB,78,52,37,54,50,81,78
+Jonathan Biabiany,Inter Milan,Serie A,France,RW,78,94,66,70,82,28,66
+Rafa,,,,LM,78,92,66,72,83,34,46
+Víctor Ibarbo,,,,RW,78,92,71,69,82,37,78
+Lassane Bangoura,,,,RM,78,92,68,68,84,26,66
+Ignazio Abate,,,,RB,78,92,52,68,76,75,80
+Sadio Mané,,,,CF,78,91,73,70,81,35,64
+Deulofeu,,,,RM,78,91,69,67,87,24,59
+Mame Diouf,,,,ST,78,90,77,56,68,42,77
+Ibrahima Traoré,,,,RM,78,88,68,74,84,36,48
+Nordin Amrabat,,,,ST,78,88,77,73,84,38,74
+Paulo Dybala,,,,ST,78,87,80,74,87,24,56
+Bernard,,,,CAM,78,87,71,75,83,38,44
+Jesé,,,,LM,78,87,74,73,84,24,55
+Felipe Pardo,,,,RW,78,86,76,69,79,26,78
+Sofiane Boufal,,,,CAM,78,86,70,74,85,36,49
+Abdul Rahman Baba,,,,LB,78,86,50,67,76,75,74
+Yannick Ferreira Carrasco,,,,LM,78,86,74,74,84,21,60
+Eduardo Vargas,,,,RM,78,86,76,71,82,32,63
+Alexandr Kokorin,,,,ST,78,85,78,73,76,45,64
+Anthony Mounier,,,,LW,78,85,72,78,78,38,69
+Moussa Sow,,,,LM,78,85,80,71,79,39,76
+Ikechukwu Uche,,,,ST,78,85,80,59,81,31,74
+Senad Luli?,,,,CM,78,84,72,76,79,71,81
+Adrián Ramos,,,,ST,78,84,75,65,76,37,72
+Caner Erkin,,,,LB,78,84,72,78,80,75,76
+Denis Cheryshev,,,,LM,78,83,72,77,78,56,73
+Jetro Willems,,,,LB,78,83,62,76,79,75,78
+Daniel Caligiuri,,,,LM,78,83,72,74,82,30,67
+David Ospina,,,,GK,78,83,71,78,84,34,77
+Varela,,,,LW,78,83,79,72,80,42,66
+Alan Kasaev,,,,LM,78,83,72,73,79,32,63
+Fred,,,,CM,78,82,69,74,82,71,64
+Michy Batshuayi,,,,ST,78,82,78,58,79,27,71
+Wissam Ben Yedder,,,,ST,78,82,78,77,83,34,64
+Manolo Gabbiadini,,,,CAM,78,82,82,72,79,27,75
+Beto,,,,GK,78,82,75,77,81,47,77
+Guilherme,,,,GK,78,82,72,71,83,58,75
+Simon Mignolet,,,,GK,78,82,75,65,84,55,73
+Kenneth Vermeer,,,,GK,78,82,70,70,84,60,78
+Yuriy Lodygin,,,,GK,78,81,77,77,84,49,74
+Mateo Kova?i?,,,,CM,78,81,66,81,85,48,64
+Faouzi Ghoulam,,,,LB,78,81,63,71,73,76,77
+Oliver Baumann,,,,GK,78,81,76,54,83,47,76
+Iago Aspas,,,,ST,78,81,78,71,84,29,60
+Gregory van der Wiel,,,,RB,78,81,64,71,76,76,74
+Moussa Sissoko,,,,CAM,78,81,74,76,79,72,85
+Gerónimo Rulli,,,,GK,78,80,75,70,82,54,76
+Loris Karius,,,,GK,78,80,74,74,84,48,77
+Mathew Ryan,,,,GK,78,80,74,82,84,62,75
+Giacomo Bonaventura,,,,CM,78,80,76,78,81,63,73
+Ivelin Popov,,,,CAM,78,80,75,78,75,48,71
+Emiliano Viviano,,,,GK,78,80,77,68,83,30,77
+Willy Caballero,,,,GK,78,80,72,69,82,49,81
+Moi Gómez,,,,LM,78,79,73,78,81,42,66
+Jeroen Zoet,,,,GK,78,79,76,78,83,57,76
+Orestis Karnezis,,,,GK,78,79,75,71,83,44,79
+Siqueira,,,,LB,78,79,66,75,80,74,77
+Nilson,,,,GK,78,79,75,72,78,42,76
+Itumeleng Khune,,,,GK,78,79,76,86,80,55,78
+Fabian Schär,,,,CB,78,78,69,72,65,77,81
+Cédric,,,,RB,78,78,68,72,76,76,73
+Charles Aránguiz,,,,CM,78,78,72,82,76,56,66
+Adrián,,,,GK,78,78,76,71,85,46,76
+Mattia Destro,,,,ST,78,78,78,61,73,24,68
+Eric Maxim Choupo-Moting,,,,ST,78,78,77,71,82,36,73
+Dame N'Doye,,,,ST,78,78,78,61,74,19,81
+Ryan Bertrand,,,,LB,78,78,46,69,75,78,74
+Nabil Ghilas,,,,ST,78,77,76,68,77,36,82
+Daniele Baselli,,,,CM,78,77,64,80,79,65,71
+Thorgan Hazard,,,,LM,78,77,74,77,82,33,63
+Simone Zaza,,,,ST,78,77,79,59,76,28,73
+Hugo Mallo,,,,RB,78,77,40,71,73,77,73
+Susaeta,,,,RW,78,77,74,81,79,29,65
+Marko Arnautovi?,,,,LM,78,77,72,77,80,50,76
+De la Bella,,,,LB,78,77,53,71,76,76,74
+Roman Shishkin,,,,RB,78,77,61,73,72,78,67
+?ukasz Fabia?ski,,,,GK,78,77,80,73,84,50,78
+Yuriy Zhirkov,,,,LM,78,77,69,79,77,70,73
+João Mário,,,,CM,78,76,71,77,79,68,71
+Juan Fernando Quintero,,,,CAM,78,76,72,80,84,28,44
+Denis Suarez,,,,CAM,78,76,64,77,81,44,57
+Shinji Okazaki,,,,ST,78,76,77,66,78,43,73
+Yann M'Vila,,,,CDM,78,76,60,73,73,74,78
+Anthony Modeste,,,,ST,78,76,77,65,72,32,77
+Mapou Yanga-M'Biwa,,,,CB,78,76,35,54,64,79,80
+Kevin-Prince Boateng,,,,CM,78,76,77,77,80,69,81
+José Sosa,,,,CAM,78,76,72,82,79,61,72
+Maximilian Meyer,,,,CAM,78,75,62,76,84,35,52
+Nicolás Lodeiro,,,,CAM,78,75,67,79,82,37,62
+Miguel Rosa,,,,LM,78,75,75,77,80,42,67
+Fredy Montero,,,,ST,78,75,80,77,84,39,64
+Valentin Stocker,,,,CAM,78,75,71,76,79,43,67
+Fabinho,,,,RB,78,74,58,72,75,78,78
+Hakan Çalhano?lu,,,,CAM,78,74,78,81,78,41,57
+Gastón Ramírez,,,,CAM,78,74,75,77,81,41,62
+Kalidou Koulibaly,,,,CB,78,74,26,39,43,79,86
+Papiss Demba Cissé,,,,ST,78,74,80,68,74,25,67
+Rafinha,,,,RB,78,74,46,73,76,77,67
+Federico Higuaín,,,,CAM,78,74,73,77,78,47,63
+Harry Kane,,,,ST,78,73,78,70,75,41,79
+André André,,,,CM,78,73,71,76,75,69,71
+Mehmet Ekici,,,,CAM,78,73,76,81,78,31,71
+Marcus Berg,,,,ST,78,73,79,64,75,29,69
+Winston Reid,,,,CB,78,73,53,50,50,80,79
+Adam Johnson,,,,RM,78,73,75,77,83,39,65
+Lior Refaelov,,,,RW,78,73,76,74,81,25,51
+Mario Gomez,,,,ST,78,73,76,58,70,27,78
+Islam Slimani,,,,ST,78,72,76,60,69,38,86
+Josip Ili?i?,,,,CF,78,72,77,79,79,36,65
+Papy Mison Djilobodji,,,,CB,78,72,48,54,52,78,81
+Yaroslav Rakitskyi,,,,CB,78,72,63,75,72,80,78
+Cristian Zapata,,,,CB,78,72,32,50,50,83,79
+Reyes,,,,RM,78,72,72,80,83,28,56
+Bernardo,,,,CB,78,71,44,64,54,79,76
+Andy Carroll,,,,ST,78,71,79,62,68,50,85
+Pablo Daniel Osvaldo,,,,ST,78,71,78,64,80,28,75
+Jesús Gámez,,,,LB,78,71,51,64,66,81,85
+Gabriel,,,,CB,78,70,54,65,64,82,76
+Sergi Roberto,,,,CM,78,70,66,79,76,66,75
+Josuha Guilavogui,,,,CDM,78,70,62,66,68,80,79
+Mexer,,,,CB,78,70,48,59,63,80,77
+Francis Coquelin,,,,CDM,78,70,54,70,76,75,78
+Jonny Evans,,,,CB,78,70,32,57,52,80,75
+José María Giménez,,,,CB,78,69,45,48,48,82,80
+Samuel,,,,RM,78,69,65,79,80,21,58
+Dirk Kuyt,,,,RW,78,69,79,74,74,68,80
+Thomas Heurtaux,,,,CB,78,68,43,48,57,82,74
+Adil Rami,,,,CB,78,68,45,45,56,81,81
+Diego Valeri,,,,CAM,78,68,76,78,76,36,63
+Michael Krohn-Dehli,,,,CM,78,68,68,80,77,54,67
+Kolo Touré,,,,CB,78,68,61,61,55,79,80
+Ewerton,,,,CB,78,67,35,57,63,80,75
+Tomás Pina,,,,CM,78,67,62,74,76,67,76
+Stefan Reinartz,,,,CDM,78,67,58,64,50,82,86
+Gylfi Sigurðsson,,,,CAM,78,67,80,80,75,52,67
+Luca Cigarini,,,,CM,78,67,66,83,78,60,66
+Jonathan dos Santos,,,,RM,78,67,69,83,80,57,61
+Daniele Rugani,,,,CB,78,66,40,50,58,82,75
+Geoffrey Kondogbia,,,,CDM,78,66,60,72,75,76,83
+Jordy Clasie,,,,CDM,78,66,51,80,76,66,75
+Álvaro Domínguez,,,,CB,78,66,34,64,59,80,79
+Youssouf Mulumbu,,,,CDM,78,66,63,68,72,77,80
+Xabi Prieto,,,,RW,78,66,75,82,78,32,61
+Mikel Rico,,,,CM,78,66,66,74,70,73,78
+Germán Denis,,,,ST,78,66,80,60,69,28,73
+Danilo,,,,CDM,78,65,60,68,75,77,80
+José Cañas,,,,CDM,78,65,44,70,60,75,73
+Bruno Ecuélé Manga,,,,CB,78,65,30,56,44,80,76
+José María Basanta,,,,CB,78,64,51,54,57,82,73
+Oleksandr Kucher,,,,CB,78,64,51,56,53,83,77
+Eugen Polanski,,,,CDM,78,63,71,73,68,78,80
+Fernandão,,,,ST,78,62,77,51,72,30,83
+Mosquera,,,,CDM,78,62,59,74,67,79,70
+Konstantinos Mitroglou,,,,ST,78,61,79,65,76,28,74
+Christian Gentner,,,,CM,78,60,76,74,71,75,80
+Lee Dong Gook,,,,ST,78,60,82,74,70,25,71
+Clément Grenier,,,,CAM,78,59,73,83,80,56,68
+Weligton,,,,CB,78,59,38,53,54,83,70
+Marouane Fellaini,,,,CM,78,59,72,74,72,75,89
+Niklas Süle,,,,CB,78,58,39,48,43,81,79
+Baena,,,,CDM,78,58,55,70,66,76,80
+Lorik Cana,,,,CB,78,58,49,60,56,77,82
+Hilton,,,,CB,78,57,54,68,67,81,74
+Scott Parker,,,,CDM,78,57,66,71,74,79,77
+Claudio Yacob,,,,CDM,78,56,59,66,69,79,75
+Federico Fernández,,,,CB,78,55,28,51,50,80,76
+Esteban Cambiasso,,,,CM,78,55,73,76,73,77,74
+Emiliano Moretti,,,,CB,78,55,32,51,53,81,74
+Andrea Ranocchia,,,,CB,78,53,32,58,63,80,76
+Danilo,,,,CB,78,53,39,44,48,84,71
+Kim Källström,,,,CM,78,53,75,82,73,64,76
+Óscar Cardozo,,,,ST,78,52,83,67,68,24,74
+Moustapha Sall,,,,CB,78,52,57,58,50,80,86
+Pontus Wernbloom,,,,CDM,78,52,68,67,67,78,85
+Jonas Olsson,,,,CB,78,52,56,65,52,78,76
+Robert Huth,,,,CB,78,44,54,49,40,80,85
+Nicolas Lombaerts,,,,CB,78,41,49,67,59,80,79
+Rafael van der Vaart,,,,CM,78,40,76,81,79,53,65
+Ricardo Carvalho,,,,CB,78,40,47,60,56,80,66
+Federico Fazio,,,,CB,78,32,42,55,53,80,81
+Christopher Samba,,,,CB,78,30,48,44,45,82,82
+Wilfried Zaha,Crystal Palace,Barclays PL,England,RW,77,87,69,66,83,30,68
+Luciano Narsingh,,,,RW,77,93,64,69,79,24,58
+Juan Manuel Iturbe,,,,RW,77,92,70,67,84,25,54
+Thievy Bifouma,,,,ST,77,91,76,55,78,28,72
+Nacho,,,,LB,77,90,57,63,72,74,73
+Lazar Markovi?,,,,RM,77,90,67,71,83,37,55
+Sidney Sam,,,,RM,77,90,77,74,80,33,64
+Filip Kosti?,,,,LM,77,89,72,73,79,39,72
+Jefferson Montero,,,,LW,77,89,71,71,81,29,64
+Juan Camilo Zúñiga,,,,LB,77,89,65,70,81,72,74
+Aaron Lennon,,,,RM,77,89,64,71,84,33,62
+Leonel Vangioni,,,,LB,77,88,66,70,73,74,73
+Marco Matias,,,,LW,77,88,77,67,77,32,61
+Aatif Chahechouhe,,,,CAM,77,87,78,71,79,33,58
+Morales,,,,LM,77,86,71,72,82,51,61
+Wendell,,,,LB,77,86,46,72,78,74,72
+Heung Min Son,,,,LM,77,86,81,70,80,25,59
+Montañés,,,,LM,77,86,67,72,83,38,68
+Leonardo,,,,LM,77,86,75,74,78,23,72
+André Hahn,,,,RM,77,85,78,72,73,52,83
+Anthony Martial,,,,ST,77,85,74,58,80,24,63
+Alessandro Florenzi,,,,RB,77,85,79,76,81,71,72
+Maxime Lestienne,,,,LW,77,85,73,74,80,32,64
+Alessio Cerci,,,,CF,77,85,74,77,82,33,72
+Kevin Kampl,,,,RM,77,84,62,72,84,48,61
+Volkan ?en,,,,RM,77,84,70,75,82,37,69
+Jose Holebas,,,,LB,77,84,70,68,74,76,81
+Mariano,,,,RB,77,83,62,74,76,73,73
+Stefan Aigner,,,,RM,77,83,71,73,77,42,66
+Jay Rodriguez,,,,LM,77,83,77,69,77,32,69
+Jony,,,,LM,77,82,76,74,78,57,68
+Chancel Mbemba,,,,CB,77,82,56,54,69,78,79
+Luke Shaw,,,,LB,77,82,40,69,77,77,73
+Jesús Corona,,,,RW,77,82,68,70,86,46,52
+Lorenzo De Silvestri,,,,RB,77,82,57,66,71,76,80
+Danny Rose,,,,LB,77,82,59,70,75,75,74
+Manuel Fernandes,,,,CDM,77,82,75,82,83,71,74
+Issa Cissokho,,,,RB,77,82,57,68,72,74,76
+Anders Lindegaard,,,,GK,77,82,76,74,78,47,75
+Fábio Sturgeon,,,,RM,77,81,69,72,80,38,67
+Diogo Figueiras,,,,RB,77,81,57,67,76,76,72
+Jores Okore,,,,CB,77,81,41,50,60,76,83
+Hernán Pérez,,,,RM,77,81,74,71,79,28,73
+Allan-Roméo Nyom,,,,RB,77,81,47,63,64,78,84
+Sven Ulreich,,,,GK,77,81,76,60,82,44,75
+José Enrique,,,,LB,77,81,53,72,74,76,81
+Alfredo Talavera,,,,GK,77,81,72,71,82,55,76
+Gökhan Gönül,,,,RB,77,81,63,71,78,75,71
+Maarten Stekelenburg,,,,GK,77,81,75,82,79,35,76
+Samu Castillejo,,,,LM,77,80,57,77,81,28,45
+Matheus,,,,GK,77,80,67,70,82,44,81
+Agustín Marchesín,,,,GK,77,80,76,75,80,27,75
+Aras Özbiliz,,,,RW,77,80,78,75,79,30,55
+Osvaldo Alonso,,,,CDM,77,80,62,68,73,76,81
+Rafael,,,,RB,77,80,56,69,78,76,77
+Mauricio Isla,,,,RB,77,80,59,74,77,76,64
+Óscar Trejo,,,,CAM,77,80,73,77,81,63,71
+Ari,,,,ST,77,80,77,74,76,35,79
+Geoffrey Jourdren,,,,GK,77,80,75,69,81,47,78
+Antonio Mirante,,,,GK,77,80,79,66,81,44,75
+Julián Speroni,,,,GK,77,80,72,71,82,42,74
+Christian Abbiati,,,,GK,77,80,72,66,80,42,82
+Viktor Fischer,,,,LW,77,79,73,72,81,35,65
+Stefano Sturaro,,,,CM,77,79,69,76,76,75,81
+Josip Drmi?,,,,ST,77,79,78,67,79,37,68
+Olcay ?ahan,,,,LM,77,79,76,71,78,60,70
+Martin Harnik,,,,RM,77,79,75,73,74,41,78
+Alessandro Matri,,,,ST,77,79,75,58,72,30,70
+Luca Antonelli,,,,LB,77,79,60,70,75,76,77
+Stefano Sorrentino,,,,GK,77,79,75,63,79,33,81
+Lucas Ocampos,,,,RW,77,78,72,75,78,51,65
+Pablo Hernández,,,,CM,77,78,73,73,78,53,71
+Jaume Costa,,,,LB,77,78,51,69,72,76,72
+Marcel Schmelzer,,,,LB,77,78,51,69,68,78,78
+Fabian Delph,,,,CM,77,78,69,74,82,68,74
+Fabricio,,,,GK,77,78,79,75,79,52,69
+Jonathan De Guzmán,,,,CAM,77,78,75,78,80,52,65
+Ignacio Piatti,,,,CAM,77,78,74,75,80,45,66
+Baiano,,,,RB,77,78,61,63,74,78,72
+Daniel Wass,,,,RM,77,78,74,77,77,68,72
+Stéphane Sessègnon,,,,CAM,77,78,72,75,82,50,74
+Vladimir Gabulov,,,,GK,77,78,74,78,81,61,76
+Mariano Barbosa,,,,GK,77,78,75,79,82,62,73
+Marcelo Barovero,,,,GK,77,78,74,69,79,35,79
+Maximiliano Rodríguez,,,,LW,77,78,78,75,79,36,71
+Jonas Hector,,,,LB,77,77,59,71,76,77,74
+Jorginho,,,,CDM,77,77,65,80,79,69,67
+Giannelli Imbula,,,,CM,77,77,61,71,76,74,78
+Tolgay Ali Arslan,,,,CM,77,77,71,79,81,65,71
+Admir Mehmedi,,,,CF,77,77,75,71,82,39,72
+Alberto Paloschi,,,,ST,77,77,72,56,73,22,80
+Matías Fernández,,,,CM,77,77,72,81,84,52,63
+Ibrahim Afellay,,,,LW,77,77,74,77,80,41,56
+Salomon Kalou,,,,ST,77,77,76,67,84,27,66
+Vyacheslav Malafeev,,,,GK,77,77,76,74,80,56,77
+Glen Johnson,,,,RB,77,77,65,71,75,75,75
+Roberto Hilbert,,,,RB,77,77,55,73,75,76,74
+Diego Rolán,,,,ST,77,76,75,72,79,31,64
+João Pereira,,,,RB,77,76,58,70,76,75,71
+Ibai Gómez,,,,LW,77,76,78,73,81,51,69
+Cenk Tosun,,,,ST,77,76,77,66,74,30,74
+Keisuke Honda,,,,RW,77,76,74,81,79,52,69
+Andrea Poli,,,,CM,77,76,67,76,77,67,75
+Anderson Talisca,,,,CAM,77,75,80,77,75,53,67
+Alexandru Maxim,,,,CAM,77,75,70,79,80,27,53
+Giancarlo González,,,,CB,77,75,45,52,59,80,72
+Vlad Chiriche?,,,,CB,77,75,66,60,67,78,74
+Rúben Ferreira,,,,LB,77,75,46,74,72,74,72
+Marcelo,,,,CB,77,75,28,49,53,80,73
+Dennis Praet,,,,CAM,77,75,67,78,76,53,66
+Sebastian Jung,,,,RB,77,75,51,72,74,77,74
+Andrea Bertolacci,,,,CM,77,75,74,76,78,67,75
+Sébastien Corchia,,,,RB,77,75,65,75,75,78,72
+Tom Cleverley,,,,CM,77,75,69,77,78,54,64
+Miguel Lopes,,,,RB,77,75,42,72,75,77,80
+Daryl Janmaat,,,,RB,77,75,63,70,74,77,81
+Wanderson,,,,ST,77,75,78,78,78,21,63
+Dennis Aogo,,,,LB,77,75,55,76,75,77,76
+Héctor Herrera,,,,CM,77,75,71,74,76,71,80
+Manuel Pasqual,,,,LB,77,75,56,75,70,77,71
+Lukas Podolski,,,,LM,77,75,84,75,77,39,69
+Paul Verhaegh,,,,RB,77,75,51,70,72,78,73
+Giampaolo Pazzini,,,,ST,77,75,73,56,73,27,72
+Arkadiusz Milik,,,,ST,77,74,81,62,71,37,73
+O?uzhan Özyakup,,,,CM,77,74,74,82,80,57,69
+Omar El Kaddouri,,,,CM,77,74,71,78,79,55,73
+Henri Saivet,,,,CM,77,74,71,78,81,62,67
+Marko Marin,,,,CAM,77,74,66,78,83,26,40
+Bueno,,,,CAM,77,74,79,72,79,40,52
+Taisir Al Jassim,,,,CM,77,74,71,76,79,62,72
+Cyril Théréau,,,,ST,77,74,76,69,75,27,76
+Morgan Sanson,,,,CM,77,73,69,76,76,74,69
+Hakim Ziyech,,,,CAM,77,73,75,79,76,46,60
+Kurt Zouma,,,,CB,77,73,50,58,55,77,80
+Charlie Austin,,,,ST,77,73,79,56,68,40,76
+Steven Caulker,,,,CB,77,73,32,56,61,79,78
+Daniel Ginczek,,,,ST,77,73,77,50,73,38,80
+Christian Noboa,,,,CDM,77,73,68,80,77,75,76
+Geoff Cameron,,,,CB,77,73,55,70,71,78,76
+Semih Kaya,,,,CB,77,73,38,57,61,79,78
+Leandro Romagnoli,,,,CAM,77,73,70,76,81,35,59
+Atiba Hutchinson,,,,CDM,77,73,65,74,73,76,78
+Jermaine Jones,,,,CDM,77,73,69,72,72,73,87
+Corentin Tolisso,,,,CM,77,72,72,74,74,77,78
+Pedro Tiba,,,,CM,77,72,66,74,77,68,79
+John Stones,,,,CB,77,72,36,64,68,78,75
+Aaron Hunt,,,,CAM,77,72,75,76,78,40,66
+Alejandro Domínguez,,,,CAM,77,72,77,75,80,33,63
+Jaime Valdés,,,,CM,77,72,71,80,77,44,62
+Pablo Pérez,,,,CM,77,71,69,77,77,66,76
+Haris Seferovi?,,,,ST,77,71,79,66,72,39,77
+Sebastian Rudy,,,,CM,77,71,68,77,78,68,66
+Niko Bungert,,,,CB,77,71,40,55,51,81,71
+Rafael Sóbis,,,,CF,77,71,79,74,78,36,72
+Ashley Cole,,,,LB,77,71,48,68,72,77,71
+Sven van Beek,,,,CB,77,70,34,52,52,80,78
+Kevin Wimmer,,,,CB,77,70,27,62,65,79,74
+Maximilian Arnold,,,,CM,77,70,79,74,78,63,64
+Souza,,,,CDM,77,70,67,75,76,75,80
+Maxi López,,,,ST,77,70,77,61,74,24,76
+Santiago Gentiletti,,,,CB,77,69,36,58,62,79,75
+Pedro Morales,,,,CAM,77,69,75,78,77,27,55
+Raúl Bobadilla,,,,ST,77,69,77,69,76,37,86
+Steven Pienaar,,,,LM,77,69,70,79,82,52,64
+Jeison Murillo,,,,CB,77,68,32,50,58,79,77
+Lorenzo Tonelli,,,,CB,77,68,31,46,53,81,73
+Mirko Valdifiori,,,,CDM,77,68,59,81,72,69,74
+Siem de Jong,,,,CAM,77,68,79,73,74,58,76
+Steven Defour,,,,CM,77,68,69,77,76,74,73
+Lee Cattermole,,,,CDM,77,68,58,69,68,77,80
+Curtis Davies,,,,CB,77,68,38,50,54,78,78
+Bafétimbi Gomis,,,,ST,77,68,80,64,70,40,71
+Emil Hallfreðsson,,,,CM,77,68,69,77,75,71,80
+Fernando Navarro,,,,LB,77,68,49,68,67,81,77
+Sylvain Distin,,,,CB,77,68,36,56,54,79,78
+Joël Veltman,,,,CB,77,67,50,59,66,80,72
+Taras Stepanenko,,,,CDM,77,67,60,68,68,77,80
+Virgil van Dijk,,,,CB,77,67,60,64,67,77,83
+Ermin Bi?ak?i?,,,,CB,77,67,37,50,47,79,77
+Casemiro,,,,CDM,77,67,68,70,73,75,81
+Carlos Zambrano,,,,CB,77,67,49,58,64,77,80
+Manucho,,,,ST,77,67,72,59,72,29,80
+Joe Allen,,,,CM,77,67,59,76,79,66,63
+Carlos Sánchez,,,,CDM,77,67,58,70,70,73,87
+Sergio Sánchez,,,,CB,77,67,52,62,56,80,78
+Leon Britton,,,,CM,77,67,53,77,78,69,67
+Hamit Alt?ntop,,,,CDM,77,67,73,77,74,74,77
+Lisandro López,,,,CB,77,66,52,48,63,79,78
+Ricardo Álvarez,,,,RM,77,66,73,78,82,54,75
+Jonjo Shelvey,,,,CM,77,66,75,78,74,62,77
+Victor Wanyama,,,,CDM,77,66,66,67,72,78,89
+Ki Sung Yueng,,,,CM,77,66,74,81,76,62,71
+Marco Andreolli,,,,CB,77,66,28,41,49,80,75
+Ragnar Klavan,,,,CB,77,66,48,63,62,79,77
+Benjamin Stambouli,,,,CDM,77,65,60,67,71,76,77
+Ciaran Clark,,,,CB,77,65,56,56,59,79,76
+Pirmin Schwegler,,,,CDM,77,65,69,78,76,74,70
+Lucho González,,,,CM,77,65,73,80,73,64,66
+Alessandro Gamberini,,,,CB,77,65,40,45,52,81,74
+Ali Ghazal,,,,CDM,77,64,35,62,65,78,84
+Salif Sané,,,,CDM,77,64,44,65,67,80,80
+David López,,,,CDM,77,64,64,69,70,76,82
+Marco Höger,,,,CM,77,64,72,76,76,76,80
+Alberto Costa,,,,CM,77,64,74,78,77,66,72
+Douglas,,,,CB,77,64,48,54,56,77,83
+Henrique,,,,CB,77,64,46,53,66,80,77
+Marko Vejinovi?,,,,CM,77,63,70,81,73,63,70
+Matthias Ginter,,,,CB,77,62,59,67,66,79,75
+Milan Badelj,,,,CDM,77,62,63,78,76,72,74
+Nicolas Pallois,,,,CB,77,62,48,62,59,77,82
+Jeffrey Bruma,,,,CB,77,62,54,63,59,77,82
+Jack Cork,,,,CDM,77,62,53,69,73,75,74
+Alessandro Gazzi,,,,CDM,77,62,58,71,70,77,80
+Arribas,,,,CB,77,61,36,56,57,78,79
+Etxeita,,,,CB,77,61,36,49,56,78,81
+Guram Kashia,,,,CB,77,60,28,61,61,77,80
+Etienne Capoue,,,,CDM,77,60,62,70,70,76,81
+Marcano,,,,CB,77,60,50,67,62,80,77
+John Obi Mikel,,,,CDM,77,59,54,68,67,78,88
+Cheick Diabaté,,,,ST,77,58,78,60,68,25,82
+Milan Bievac,,,,CB,77,58,51,61,55,79,76
+Ljubomir Fejsa,,,,CDM,77,57,62,68,69,78,80
+David Pizarro,,,,CM,77,57,61,83,78,62,55
+Graziano Pellè,,,,ST,77,55,77,60,67,33,83
+Verza,,,,CDM,77,55,71,80,69,67,79
+Xandão,,,,CB,77,53,42,53,57,79,79
+Paulo Vinícius,,,,CB,77,53,51,61,57,79,76
+Jérémy Clément,,,,CDM,77,53,61,70,65,78,80
+André Pinto,,,,CB,77,52,47,56,49,79,78
+Timm Klose,,,,CB,77,50,42,58,48,79,76
+Victor Vazquez,,,,CAM,77,50,70,80,76,34,52
+Botjan Cesar,,,,CB,77,46,27,40,48,79,79
+Jannik Vestergaard,,,,CB,77,40,46,55,45,79,81
+Eric Botteghin,,,,CB,77,34,38,47,59,79,85
+Luca Toni,,,,ST,77,34,79,55,61,26,66
+Sergey Ignashevich,,,,CB,77,33,60,61,51,82,77
+Michael Dawson,,,,CB,77,32,32,45,37,80,77
+Yusuf Erdo?an,,,,LW,76,90,69,68,81,22,66
+Balde Diao Keita,,,,LW,76,90,70,70,81,28,71
+Julio Buffarini,,,,RB,76,88,63,66,75,73,83
+Carlos Mané,,,,LM,76,87,73,69,81,40,52
+Breel Donald Embolo,,,,ST,76,86,71,67,78,33,79
+Enner Valencia,,,,ST,76,85,75,65,76,50,71
+Bernard Mensah,,,,CAM,76,84,69,70,81,52,66
+Anwar El Ghazi,,,,RW,76,83,74,68,79,29,72
+Ángel Correa,,,,ST,76,83,77,64,86,48,59
+Ozan Tufan,,,,CDM,76,80,64,73,78,74,74
+N'Golo Kanté,,,,CM,76,76,66,72,75,66,69
+Deyverson,,,,ST,76,76,75,54,71,32,76
+Duván Zapata,,,,ST,76,75,77,51,73,28,73
+Rúben Vezo,,,,CB,76,70,50,62,58,76,77
+Aleksandar Mitrovi?,,,,ST,76,64,78,54,67,24,75
+Youri Tielemans,,,,CM,76,62,72,76,78,67,65
+João Afonso,,,,CB,76,54,31,46,55,78,73

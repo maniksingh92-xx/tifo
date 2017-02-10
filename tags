@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Api	server/app.py	/^from flask_restful import Resource, Api$/;"	kind:namespace	line:2
+CORS	server/app.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:3
+Flask	server/app.py	/^from flask import Flask, jsonify$/;"	kind:namespace	line:1
+NearestNeighbors	server/app.py	/^from sklearn.neighbors import NearestNeighbors$/;"	kind:namespace	line:7
+Players	server/app.py	/^class Players(Resource):$/;"	kind:class	line:90
+Resource	server/app.py	/^from flask_restful import Resource, Api$/;"	kind:namespace	line:2
+Team	server/app.py	/^class Team(Resource):$/;"	kind:class	line:94
+TeamPlayer	server/app.py	/^class TeamPlayer(Resource):$/;"	kind:class	line:98
+api	server/app.py	/^api = Api(app)$/;"	kind:variable	line:13
+app	server/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:11
+app.py	server/app.py	1;"	kind:file	line:1
+columns	server/app.py	/^columns = ["Name", "Position", "Rating", "Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"]$/;"	kind:variable	line:65
+config.py	server/config.py	1;"	kind:file	line:1
+cross_origin	server/app.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:3
+delete	server/app.py	/^    def delete(self, player):$/;"	kind:member	line:103
+df	server/app.py	/^df = pd.read_csv(".\/data\/fifa16db.csv", usecols=usecols)$/;"	kind:variable	line:66
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:91
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:95
+getRecommendedPlayers	server/app.py	/^def getRecommendedPlayers(player, df):$/;"	kind:function	line:34
+jsonify	server/app.py	/^from flask import Flask, jsonify$/;"	kind:namespace	line:1
+np	server/app.py	/^import numpy as np$/;"	kind:namespace	line:6
+pd	server/app.py	/^import pandas as pd$/;"	kind:namespace	line:5
+put	server/app.py	/^    def put(self, player):$/;"	kind:member	line:99
+setPrice	server/app.py	/^def setPrice(rating):$/;"	kind:function	line:18
+team	server/app.py	/^team = {$/;"	kind:variable	line:71
+usecols	server/app.py	/^usecols = ["Name", "POS", "RAT", "PAC", "SHO", "PAS", "DRI", "DEF", "PHY"]$/;"	kind:variable	line:64
