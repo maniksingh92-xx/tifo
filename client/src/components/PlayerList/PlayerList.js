@@ -69,6 +69,7 @@ export default class PlayerList extends Component {
       <Table
         rowsCount={data.length}
         rowHeight={30}
+        scrollToRow={0}
         headerHeight={50}
         width={768}
         height={240}
