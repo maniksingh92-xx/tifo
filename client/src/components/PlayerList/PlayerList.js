@@ -53,9 +53,9 @@ export default class PlayerList extends Component {
     }));
   }
 
-  generateColumnName(columnKey, skip=false) {
+  generateColumnName(columnKey, format=true) {
     var sortDir = this.state.colSortDirs[columnKey];
-    return _.toUpper(columnKey.slice(0,3)) + (sortDir ? (sortDir === SortTypes.DESC ? '↓' : '↑') : '')
+    return _.toUpper(format ? columnKey.slice(0,3) : columnKey) + (sortDir ? (sortDir === SortTypes.DESC ? '↓' : '↑') : '')
   }
 
   render() {
@@ -173,7 +173,7 @@ export default class PlayerList extends Component {
             <SortHeaderCell
               onSortChange={this.handleSortPlayersChange}
               >
-            {this.generateColumnName(columns[10])}
+            {this.generateColumnName(columns[10], false)}
             </SortHeaderCell>
           }
           cell={<TextCell data={data} col={columns[10]} />}
