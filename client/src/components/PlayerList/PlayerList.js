@@ -48,7 +48,7 @@ export default class PlayerList extends Component {
   handleSortPlayersChange(columnKey) {
     var sortDir = reverseSortDirection(this.state.colSortDirs[columnKey]);
     this.setState((prevState, props) => ({
-      data: _.orderBy(prevState.data, [columnKey], [sortDir]),
+      data: _.orderBy(prevState.data, [columnKey, "Rating"], [sortDir, "desc"]),
       colSortDirs : { [columnKey] : sortDir }
     }));
   }
