@@ -6,6 +6,7 @@ import SortHeaderCell from './components/SortHeaderCell';
 
 import _ from 'lodash';
 import 'fixed-data-table/dist/fixed-data-table.min.css';
+import './PlayerList.css';
 
 const SortTypes = {
   ASC: 'asc',
@@ -43,6 +44,7 @@ export default class PlayerList extends Component {
 
     this.handleSortPlayersChange = this.handleSortPlayersChange.bind(this);
     this.generateColumnName = this.generateColumnName.bind(this);
+    this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
   }
 
   handleSortPlayersChange(columnKey) {
@@ -58,6 +60,10 @@ export default class PlayerList extends Component {
     return _.toUpper(format ? columnKey.slice(0,3) : columnKey) + (sortDir ? (sortDir === SortTypes.DESC ? '↓' : '↑') : '')
   }
 
+  handlePlayerSelect(d,i,o) {
+    console.log(d,i,o);
+  }
+
   render() {
     var columns = nonGkColumns;
     var {data} = this.state;
@@ -68,6 +74,7 @@ export default class PlayerList extends Component {
         headerHeight={50}
         width={768}
         height={240}
+        onRowClick={this.handlePlayerSelect}
         >
         <Column
           columnKey={columns[1]}
