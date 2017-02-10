@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Table, Column, Cell } from 'fixed-data-table';
 
-import TextCell from './TextCell';
-import SortHeaderCell from './SortHeaderCell';
+import TextCell from './components/TextCell';
+import SortHeaderCell from './components/SortHeaderCell';
 
 import _ from 'lodash';
 import 'fixed-data-table/dist/fixed-data-table.min.css';
