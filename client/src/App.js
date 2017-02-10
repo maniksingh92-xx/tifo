@@ -7,7 +7,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      players : []
+      players : [],
+      posAssoc : {}
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
@@ -18,7 +19,7 @@ export default class App extends Component {
     .then((data) => { this.setState({ players : data }) })
     
     getPositions()
-    .then((data) => { console.log(data) })
+    .then((data) => { this.setState({ posAssoc : data }) })
   }
 
   handlePlayerSelect(id) {
