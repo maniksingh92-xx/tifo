@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PlayerList from './components/PlayerList';
 import { get as getPlayers } from './data/players';
+import { get as getPositions } from './data/positions';
 
 export default class App extends Component {
   constructor(props) {
@@ -15,6 +16,9 @@ export default class App extends Component {
   componentDidMount() {
     getPlayers()
     .then((data) => { this.setState({ players : data }) })
+    
+    getPositions()
+    .then((data) => { console.log(data) })
   }
 
   handlePlayerSelect(id) {

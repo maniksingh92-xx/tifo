@@ -31,25 +31,25 @@ def setPrice(rating):
     
     return price
 
+posAssoc = {
+    "RW" : ["RW", "RM"],
+    "LW" : ["LW", "LM"],
+    "ST" : ["ST", "CF"],
+    "RM" : ["RM", "CM", "CAM", "CDM"],
+    "GK" : ["GK"],
+    "LM" : ["LM", "CM", "CAM", "CDM"],
+    "CM" : ["CM", "LM", "RM", "CAM", "CDM"],
+    "CAM" : ["CAM", "CF"],
+    "CB" : ["CB", "CDM", "LB", "RB"],
+    "CDM" : ["CDM", "RM", "LM", "CM"],
+    "CF" : ["CF", "CAM", "ST"],
+    "LB" : ["LB", "CB", "LWB"],
+    "RB" : ["RB", "CB", "RWB"],
+    "LWB" : ["LWB", "LB"],
+    "RWB" : ["RWB", "RB"]
+}
+
 def getRecommendedPlayers(player, df):
-  
-    posAssoc = {
-        "RW" : ["RW", "RM"],
-        "LW" : ["LW", "LM"],
-        "ST" : ["ST", "CF"],
-        "RM" : ["RM", "CM", "CAM", "CDM"],
-        "GK" : ["GK"],
-        "LM" : ["LM", "CM", "CAM", "CDM"],
-        "CM" : ["CM", "LM", "RM", "CAM", "CDM"],
-        "CAM" : ["CAM", "CF"],
-        "CB" : ["CB", "CDM", "LB", "RB"],
-        "CDM" : ["CDM", "RM", "LM", "CM"],
-        "CF" : ["CF", "CAM", "ST"],
-        "LB" : ["LB", "CB", "LWB"],
-        "RB" : ["RB", "CB", "RWB"],
-        "LWB" : ["LWB", "LB"],
-        "RWB" : ["RWB", "RB"]
-    }
 
     df = df[df["Position"].isin(posAssoc[player.Position])]
 
@@ -91,6 +91,10 @@ class Players(Resource):
     def get(self):
         return df.to_dict(orient="records")
 
+class Positions(Resource):
+    def get(self):
+        return posAssoc
+
 class Team(Resource):
     def get(self):
         return team
@@ -108,6 +112,7 @@ class TeamPlayer(Resource):
 
 ### ROUTING
 api.add_resource(Players, "/players")
+api.add_resource(Positions, "/positions")
 api.add_resource(Team, "/team")
 api.add_resource(TeamPlayer, "/team-player/<player>")
 ### END ROUTING
