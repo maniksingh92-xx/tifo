@@ -60,8 +60,8 @@ export default class PlayerList extends Component {
     return _.toUpper(format ? columnKey.slice(0,3) : columnKey) + (sortDir ? (sortDir === SortTypes.DESC ? '↓' : '↑') : '')
   }
 
-  handlePlayerSelect(d,i,o) {
-    console.log(d,i,o);
+  handlePlayerSelect(e,idx) {
+    this.props.onPlayerSelect(this.state.data[idx].id);
   }
 
   render() {

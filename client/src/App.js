@@ -9,6 +9,7 @@ export default class App extends Component {
       players : []
     };
 
+    this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
   }
 
   componentDidMount() {
@@ -16,10 +17,14 @@ export default class App extends Component {
     .then((data) => { this.setState({ players : data }) })
   }
 
+  handlePlayerSelect(id) {
+    console.log(id);
+  }
+
   render() {
     return (
       <div>
-        { this.state.players.length ? <PlayerList data={this.state.players} /> : null }
+        { this.state.players.length ? <PlayerList onPlayerSelect={this.handlePlayerSelect} data={this.state.players} /> : null }
       </div>
     )
   }
