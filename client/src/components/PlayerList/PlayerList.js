@@ -5,8 +5,6 @@ import TextCell from './components/TextCell';
 import SortHeaderCell from './components/SortHeaderCell';
 
 import _ from 'lodash';
-import 'fixed-data-table/dist/fixed-data-table.min.css';
-import './PlayerList.css';
 
 const SortTypes = {
   ASC: 'asc',

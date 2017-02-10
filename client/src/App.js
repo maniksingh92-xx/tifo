@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PlayerList from './components/PlayerList';
+import PlayerInfo from './components/PlayerInfo';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 
