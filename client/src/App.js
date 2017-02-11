@@ -113,8 +113,14 @@ export default class App extends Component {
           this.state.activePosition === null ? null :
             (
               <div>
-                <PlayerInfo data={displayPlayer} posAssoc={this.state.posAssoc[displayPlayer.Position]} />
-                <TeamLayout onPositionSelect={this.handlePositionSelect} data={this.state.team} activePosition={this.state.activePosition} />
+                <PlayerInfo
+                  data={displayPlayer}
+                  posAssoc={this.state.posAssoc[displayPlayer.Position]}
+                  activePosition={this.state.activePosition} />
+                <TeamLayout
+                  onPositionSelect={this.handlePositionSelect}
+                  data={this.state.team}
+                  activePosition={this.state.activePosition} />
                 <PlayerList
                   onSortPlayersChange={this.handleSortPlayersChange}
                   colSortDirs={this.state.colSortDirs}
