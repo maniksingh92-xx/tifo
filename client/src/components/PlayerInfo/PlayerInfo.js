@@ -18,8 +18,8 @@ function GaugeCharts(props) {
       units: ' %'
     },
     color: {
-      pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044'],
-      threshold: { values: [30, 60, 90, 100] },
+      pattern: ['#FF0000', '#F97600', '#FAAA00', '#F6C600', '#99CC00', '#00AA00'],
+      threshold: { values: [50, 60, 70, 80, 90, 100] },
     },
     size: {
       height: 60,
