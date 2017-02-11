@@ -9,6 +9,9 @@ import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
 import _filter from 'lodash/filter';
 import _indexOf from 'lodash/indexOf';
+import _orderBy from 'lodash/orderBy';
+
+const nonGkColumns = ["id", "Name", "Position", "Rating", "Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality", "Price"];
 
 export default class App extends Component {
   constructor(props) {
@@ -17,6 +20,7 @@ export default class App extends Component {
     this.state = {
       players: [],
       posAssoc: {},
+      colSortDirs: {},
       displayPlayerId: null,
       activePosition: null,
       team: {
@@ -35,10 +39,13 @@ export default class App extends Component {
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
+    this.handlePositionSelect = this.handlePositionSelect.bind(this);
+    this.handleSortPlayersChange = this.handleSortPlayersChange.bind(this);
     this.setActivePosition = this.setActivePosition.bind(this);
     this.getPlayers = getPlayers.bind(this);
     this.getPositions = getPositions.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
+    this.sortPlayerList = this.sortPlayerList.bind(this);
   }
 
   componentDidMount() {
@@ -57,13 +64,39 @@ export default class App extends Component {
     this.setState({ displayPlayerId: id })
   }
 
+  handlePositionSelect(pos) {
+    this.setActivePosition(pos);
+  }
+
+  handleSortPlayersChange(columnKey) {
+    this.sortPlayerList(columnKey);
+  }
+
   setActivePosition(pos) {
     var filteredPlayerList = this.filterPlayerList(this.players, this.state.posAssoc, pos);
     this.setState({
-      displayPlayerId : filteredPlayerList[0].id,
-      players : filteredPlayerList,
-      activePosition : pos
+      displayPlayerId: filteredPlayerList[0].id,
+      players: filteredPlayerList,
+      activePosition: pos
     });
+  }
+
+  sortPlayerList(columnKey) {
+    const SortTypes = {
+      ASC: 'asc',
+      DESC: 'desc',
+    };
+
+    var sortDir = reverseSortDirection(this.state.colSortDirs[columnKey]);
+    this.setState((prevState, props) => ({
+      players: _orderBy(prevState.players, [columnKey, "Rating"], [sortDir, "desc"]),
+      colSortDirs: { [columnKey]: sortDir }
+    }));
+
+
+    function reverseSortDirection(sortDir) {
+      return sortDir === SortTypes.DESC ? SortTypes.ASC : SortTypes.DESC;
+    }
   }
 
   filterPlayerList(players, posAssoc, pos) {
@@ -75,7 +108,7 @@ export default class App extends Component {
   }
 
   render() {
-    var displayPlayer = _find(this.state.players, { id : this.state.displayPlayerId});
+    var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
     return (
       <div>
         {
@@ -83,7 +116,8 @@ export default class App extends Component {
             (
               <div>
                 <PlayerInfo data={displayPlayer} posAssoc={this.state.posAssoc[displayPlayer.Position]} />
-                <PlayerList onPlayerSelect={this.handlePlayerSelect} data={this.state.players} />
+                <TeamLayout onPositionSelect={this.handlePositionSelect} data={this.state.team} activePosition={this.state.activePosition} />
+                <PlayerList onSortPlayersChange={this.handleSortPlayersChange} colSortDirs={this.state.colSortDirs} onPlayerSelect={this.handlePlayerSelect} data={this.state.players} />
               </div>
             )
         }
