@@ -47,7 +47,6 @@ function GaugeCharts(props) {
 
 
 export default function PlayerInfo(props) {
-  console.log(props);
 
   if (props.data.position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
 
