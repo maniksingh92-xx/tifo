@@ -45,6 +45,11 @@ export default class PlayerList extends Component {
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.data === this.state.data) return false;
+    else return true;
+  }
+
   handleSortPlayersChange(columnKey) {
     var sortDir = reverseSortDirection(this.state.colSortDirs[columnKey]);
     this.setState((prevState, props) => ({
