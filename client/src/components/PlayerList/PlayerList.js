@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Table, Column, Cell } from 'fixed-data-table';
 
 import TextCell from './components/TextCell';
@@ -12,6 +12,7 @@ const SortTypes = {
 };
 
 const nonGkColumns = ["id", "Name", "Position", "Rating", "Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality", "Price"];
+const gkColumns = ["id", "Name", "Position", "Rating", "Diving", "Handling", "Kicking", "Reflexes", "Speed", "Positioning", "Price"];
 
 // const columns = {
 //   id: "id",
@@ -28,8 +29,12 @@ const nonGkColumns = ["id", "Name", "Position", "Rating", "Pace", "Shooting", "P
 // }
 
 export default function PlayerList(props) {
+  var columns = nonGkColumns;
+  var data = props.data;
 
   function generateColumnName(columnKey, format = true) {
+    if (props.activePosition === "GK") columnKey = gkColumns[nonGkColumns.indexOf(columnKey)];
+    
     var sortDir = props.colSortDirs[columnKey];
     return _.toUpper(format ? columnKey.slice(0, 3) : columnKey) + (sortDir ? (sortDir === SortTypes.DESC ? '↓' : '↑') : '')
   }
@@ -37,9 +42,6 @@ export default function PlayerList(props) {
   function handlePlayerSelect(e, idx) { props.onPlayerSelect(props.data[idx].id); }
 
   function handleSortPlayersChange(columnKey) { props.onSortPlayersChange(columnKey); }
-
-  var columns = nonGkColumns;
-  var data = props.data;
 
   return (
     <Table

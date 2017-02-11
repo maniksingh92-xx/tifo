@@ -43,8 +43,8 @@ posAssoc = {
     "CB" : ["CB", "CDM", "LB", "RB"],
     "CDM" : ["CDM", "RM", "LM", "CM"],
     "CF" : ["CF", "CAM", "ST"],
-    "LB" : ["LB", "CB", "LWB"],
-    "RB" : ["RB", "CB", "RWB"],
+    "LB" : ["LB", "LWB"],
+    "RB" : ["RB", "RWB"],
     "LWB" : ["LWB", "LB"],
     "RWB" : ["RWB", "RB"]
 }

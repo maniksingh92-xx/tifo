@@ -11,8 +11,6 @@ import _filter from 'lodash/filter';
 import _indexOf from 'lodash/indexOf';
 import _orderBy from 'lodash/orderBy';
 
-const nonGkColumns = ["id", "Name", "Position", "Rating", "Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality", "Price"];
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -117,7 +115,12 @@ export default class App extends Component {
               <div>
                 <PlayerInfo data={displayPlayer} posAssoc={this.state.posAssoc[displayPlayer.Position]} />
                 <TeamLayout onPositionSelect={this.handlePositionSelect} data={this.state.team} activePosition={this.state.activePosition} />
-                <PlayerList onSortPlayersChange={this.handleSortPlayersChange} colSortDirs={this.state.colSortDirs} onPlayerSelect={this.handlePlayerSelect} data={this.state.players} />
+                <PlayerList
+                  onSortPlayersChange={this.handleSortPlayersChange}
+                  colSortDirs={this.state.colSortDirs}
+                  onPlayerSelect={this.handlePlayerSelect}
+                  data={this.state.players}
+                  activePosition={this.state.activePosition} />
               </div>
             )
         }
