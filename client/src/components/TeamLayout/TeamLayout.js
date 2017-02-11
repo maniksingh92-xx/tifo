@@ -20,8 +20,8 @@ export default function TeamLayout(props) {
       </div>
       <div className="d-flex justify-content-around">
         <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.LB} position="LB" />
-        <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.LCB} position="CB" />
-        <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.RCB} position="CB" />
+        <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.LCB} position="LCB" />
+        <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.RCB} position="RCB" />
         <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.RB} position="RB" />
       </div>
       <div className="d-flex justify-content-around">
