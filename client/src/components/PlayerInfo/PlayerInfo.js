@@ -48,12 +48,23 @@ function GaugeCharts(props) {
 
 export default function PlayerInfo(props) {
 
-  if (props.data.position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
+  if (props.data.Position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
+
+  function handleAssignPlayerToPosition() {
+    props.onAssignPlayerToPostion(props.data, props.activePosition);
+  }
 
   return (
     <div className="p-2 d-flex" style={{ width: 480}}>
       <div className="card card-outline-secondary mb-3">
-        <h4 className="card-header">{props.data.Name} <span className="badge badge-success">{props.data.Position}</span> <span className="badge badge-info">{props.data.Rating}</span></h4>
+        <div className="h4 card-header d-flex justify-content-between">
+          <span>{props.data.Name}</span>
+          <div>
+            <span className="badge badge-success">{props.data.Position}</span>
+            <span className="badge badge-info">{props.data.Rating}</span>
+          </div>
+          <span className="badge badge-warning align-self-end" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
+        </div>
         <div className="card-block bg-inverse text-white">
           <h6 className="card-subtitle mb-2">Positions: {props.posAssoc.join(", ")}</h6>
           <GaugeCharts stats={stats} />

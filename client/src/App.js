@@ -39,7 +39,9 @@ export default class App extends Component {
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
     this.handlePositionSelect = this.handlePositionSelect.bind(this);
     this.handleSortPlayersChange = this.handleSortPlayersChange.bind(this);
+    this.handleAssignPlayerToPosition = this.handleAssignPlayerToPosition.bind(this);
     this.setActivePosition = this.setActivePosition.bind(this);
+    this.setPlayerToPosition = this.setPlayerToPosition.bind(this);
     this.getPlayers = getPlayers.bind(this);
     this.getPositions = getPositions.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
@@ -70,6 +72,10 @@ export default class App extends Component {
     this.sortPlayerList(columnKey);
   }
 
+  handleAssignPlayerToPosition(player, pos) {
+    this.setPlayerToPosition(player, pos);
+  }
+
   setActivePosition(pos) {
     var filteredPlayerList = this.filterPlayerList(this.players, this.state.posAssoc, pos);
     this.setState({
@@ -77,6 +83,14 @@ export default class App extends Component {
       players: filteredPlayerList,
       activePosition: pos
     });
+  }
+
+  setPlayerToPosition(player, pos) {
+    var update = {};
+    update[pos] = player;
+    this.setState((prevState, props) => ({
+      team: Object.assign({}, prevState.team, update)
+    }));
   }
 
   sortPlayerList(columnKey) {
@@ -116,7 +130,8 @@ export default class App extends Component {
                 <PlayerInfo
                   data={displayPlayer}
                   posAssoc={this.state.posAssoc[displayPlayer.Position]}
-                  activePosition={this.state.activePosition} />
+                  activePosition={this.state.activePosition}
+                  onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
                 <TeamLayout
                   onPositionSelect={this.handlePositionSelect}
                   data={this.state.team}
