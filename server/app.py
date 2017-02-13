@@ -15,6 +15,24 @@ api = Api(app)
 
 
 ### BUSINESS LOGIC
+class User(object):
+    def __init__(self):
+        self.team = {
+            "LW" : None,
+            "ST" : None,
+            "RW" : None,
+            "RM" : None,
+            "CM" : None,
+            "LM" : None,
+            "LB" : None,
+            "LCB" : None,
+            "RCB" : None,
+            "RB" : None,
+            "GK" : None
+        }
+
+user = User()
+
 def setPrice(rating):
     price = rating ** 2
     
@@ -70,20 +88,6 @@ df.columns = columns
 df.insert(0, "id", df.index)
 df["Price"] = df["Rating"].apply(setPrice)
 
-team = {
-    "LW" : None,
-    "ST" : None,
-    "RW" : None,
-    "RM" : None,
-    "CM" : None,
-    "LM" : None,
-    "LB" : None,
-    "LCB" : None,
-    "RCB" : None,
-    "RB" : None,
-    "GK" : None
-}
-
 
 ### END BUSINESS LOGIC
 
@@ -102,21 +106,20 @@ class Positions(Resource):
 
 class Team(Resource):
     def get(self):
-        return team
+        return user.team
     def put(self):
         args = parser.parse_args()
-        print(type(args.team))
-        team = args.team
-        return team
+        user.team = args.team
+        return user.team
 
 class TeamPlayer(Resource):
     def put(self, player):
-        team[player.pos] = player.id
-        return team
+        user.team[player.pos] = player.id
+        return user.team
 
     def delete(self, player):
-        team[player.pos] = None
-        return team
+        user.team[player.pos] = None
+        return user.team
 ### END API 
 
 
