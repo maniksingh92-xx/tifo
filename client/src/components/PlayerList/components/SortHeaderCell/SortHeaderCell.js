@@ -7,5 +7,5 @@ export default function SortHeaderCell({columnKey, sortDir, onSortChange, childr
     if (onSortChange) onSortChange(columnKey);
   }
 
-  return (<Cell {...props}><a onClick={handleSortChange} href="">{children}</a></Cell>);
+  return (<Cell className="bg-faded" {...props}><a style={{textDecoration: 'none'}}  onClick={handleSortChange} href="#">{children}</a></Cell>);
 }

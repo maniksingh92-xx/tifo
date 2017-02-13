@@ -55,7 +55,7 @@ export default function PlayerInfo(props) {
   }
 
   return (
-    <div className="p-2 d-flex" style={{ width: 480}}>
+    <div className="p-2 d-flex cursor-default" style={{ width: 480}}>
       <div className="card card-outline-secondary mb-3">
         <div className="h4 card-header d-flex justify-content-between align-items-center">
           <span>{props.data.Name}</span>
@@ -63,7 +63,14 @@ export default function PlayerInfo(props) {
             <span className="m-1 badge badge-success">{props.data.Position}</span>
             <span className="m-1 badge badge-info">{props.data.Rating}</span>
           </div>
-          <span role="button" className="badge badge-warning" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
+          {
+            (props.team[props.activePosition] && props.team[props.activePosition].id === props.data.id) ? (
+              <span className="badge badge-success" style={{ fontSize : "0.5em"}}>Assigned to {props.activePosition}</span>
+            ) : (
+              <span role="button" className="badge badge-warning" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
+            ) 
+            
+          }
         </div>
         <div className="card-block bg-inverse text-white">
           <h6 className="card-subtitle mb-2">Positions: {props.posAssoc.join(", ")}</h6>

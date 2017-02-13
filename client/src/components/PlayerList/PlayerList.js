@@ -45,7 +45,7 @@ export default function PlayerList(props) {
 
   return (
     <div className="p-2">
-      <h2 className="mb-2">Current Position: <span className="badge badge-success">{props.activePosition}</span></h2>
+      <h2 className="mb-2">Current Position: <span className="cursor-default badge badge-success">{props.activePosition}</span></h2>
       <Table
         rowsCount={data.length}
         rowHeight={30}
@@ -57,7 +57,7 @@ export default function PlayerList(props) {
         >
         <Column
           columnKey={columns[1]}
-          header={<Cell>Name</Cell>}
+          header={<Cell className="bg-faded">Name</Cell>}
           cell={<TextCell data={data} col={columns[1]} />}
           width={100}
           flexGrow={1}
@@ -77,7 +77,7 @@ export default function PlayerList(props) {
           />
         <Column
           columnKey={columns[2]}
-          header={<Cell>POS</Cell>}
+          header={<Cell className="bg-faded">POS</Cell>}
           cell={<TextCell data={data} col={columns[2]} />}
           width={60}
           />
