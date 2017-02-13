@@ -14,7 +14,12 @@ export default function TeamPlayer(props) {
   function handlePositionSelect(e) { props.onPositionSelect(position); };
 
   return (
-    <div className="card card-outline-secondary mb-3" style={{width : 120}} onClick={handlePositionSelect}>
+    <div
+      className="card card-outline-secondary mb-3"
+      style={Object.assign({},
+        props.active ? {border: "2px solid red"} : {},
+        {width : 120})}
+      onClick={handlePositionSelect}>
       <h5 className="card-header text-center">
         {position} <span className="badge badge-info">{rating}</span>
       </h5>

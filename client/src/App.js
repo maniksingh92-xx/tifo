@@ -142,7 +142,8 @@ export default class App extends Component {
                 <TeamLayout
                   onPositionSelect={this.handlePositionSelect}
                   data={this.state.team}
-                  activePosition={this.state.activePosition} />
+                  activePosition={this.state.activePosition}
+                  formation={[4,3,3]} />
               </div>
             )
         }
