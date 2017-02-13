@@ -127,21 +127,21 @@ export default class App extends Component {
         {
           this.state.activePosition === null ? null :
             (
-              <div>
+              <div className="d-flex flex-wrap">
                 <PlayerInfo
                   data={displayPlayer}
                   posAssoc={this.state.posAssoc[displayPlayer.Position]}
                   activePosition={this.state.activePosition}
                   onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
-                <TeamLayout
-                  onPositionSelect={this.handlePositionSelect}
-                  data={this.state.team}
-                  activePosition={this.state.activePosition} />
                 <PlayerList
                   onSortPlayersChange={this.handleSortPlayersChange}
                   colSortDirs={this.state.colSortDirs}
                   onPlayerSelect={this.handlePlayerSelect}
                   data={this.state.players}
+                  activePosition={this.state.activePosition} />
+                <TeamLayout
+                  onPositionSelect={this.handlePositionSelect}
+                  data={this.state.team}
                   activePosition={this.state.activePosition} />
               </div>
             )

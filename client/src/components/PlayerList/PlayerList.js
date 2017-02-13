@@ -44,126 +44,128 @@ export default function PlayerList(props) {
   function handleSortPlayersChange(columnKey) { props.onSortPlayersChange(columnKey); }
 
   return (
-    <Table
-      rowsCount={data.length}
-      rowHeight={30}
-      scrollToRow={0}
-      headerHeight={50}
-      width={768}
-      height={240}
-      onRowClick={handlePlayerSelect}
-      >
-      <Column
-        columnKey={columns[1]}
-        header={<Cell>Name</Cell>}
-        cell={<TextCell data={data} col={columns[1]} />}
-        width={100}
-        flexGrow={1}
-        fixed
-        />
-      <Column
-        columnKey={columns[3]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[3])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[3]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[2]}
-        header={<Cell>POS</Cell>}
-        cell={<TextCell data={data} col={columns[2]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[4]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[4])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[4]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[5]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[5])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[5]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[6]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[6])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[6]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[7]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[7])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[7]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[8]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[8])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[8]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[9]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[9])}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[9]} />}
-        width={60}
-        />
-      <Column
-        columnKey={columns[10]}
-        header={
-          <SortHeaderCell
-            onSortChange={handleSortPlayersChange}
-            >
-            {generateColumnName(columns[10], false)}
-          </SortHeaderCell>
-        }
-        cell={<TextCell data={data} col={columns[10]} />}
-        width={80}
-        />
+    <div className="p-2">
+      <Table
+        rowsCount={data.length}
+        rowHeight={30}
+        scrollToRow={0}
+        headerHeight={50}
+        width={768}
+        height={240}
+        onRowClick={handlePlayerSelect}
+        >
+        <Column
+          columnKey={columns[1]}
+          header={<Cell>Name</Cell>}
+          cell={<TextCell data={data} col={columns[1]} />}
+          width={100}
+          flexGrow={1}
+          fixed
+          />
+        <Column
+          columnKey={columns[3]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[3])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[3]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[2]}
+          header={<Cell>POS</Cell>}
+          cell={<TextCell data={data} col={columns[2]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[4]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[4])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[4]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[5]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[5])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[5]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[6]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[6])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[6]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[7]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[7])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[7]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[8]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[8])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[8]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[9]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[9])}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[9]} />}
+          width={60}
+          />
+        <Column
+          columnKey={columns[10]}
+          header={
+            <SortHeaderCell
+              onSortChange={handleSortPlayersChange}
+              >
+              {generateColumnName(columns[10], false)}
+            </SortHeaderCell>
+          }
+          cell={<TextCell data={data} col={columns[10]} />}
+          width={80}
+          />
 
-    </Table>
+      </Table>
+    </div>
   );
 }
