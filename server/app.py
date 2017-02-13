@@ -31,6 +31,37 @@ class User(object):
             "GK" : None
         }
 
+        self.maxBalance = 22090000
+        self.balance = 22090000
+    
+    def getTeam(self):
+        return self.team
+    
+    def updateTeam(self, team):
+        balance = self.verifyBalanceAfterTeamCost(team)
+        if (balance > -1):
+            self.team = team
+            self.updateBalance(balance)
+            return self.getTeam()
+        else:
+            raise ValueError("Insufficient funds!")
+    
+    def getBalance(self):
+        return self.balance
+
+    def updateBalance(self, balance):
+        self.balance = balance
+        return self.getBalance()
+    
+    def verifyBalanceAfterTeamCost(self, team):
+        def reducer(remainingBalance, player):
+            if player is None or 'Price' not in player:
+                return remainingBalance
+            else:
+                return remainingBalance - player.Price
+                
+        return reduce(reducer, team, self.maxBalance)
+
 user = User()
 
 def setPrice(rating):
@@ -110,14 +141,15 @@ class Team(Resource):
     def put(self):
         args = parser.parse_args()
         user.team = args.team
-        return user.team
+        user.updateTeam(args.team)
+        return user.getTeam()
 
 class TeamPlayer(Resource):
-    def put(self, player):
+    def put(self):
         user.team[player.pos] = player.id
         return user.team
 
-    def delete(self, player):
+    def delete(self):
         user.team[player.pos] = None
         return user.team
 ### END API 
@@ -127,5 +159,5 @@ class TeamPlayer(Resource):
 api.add_resource(Players, "/players")
 api.add_resource(Positions, "/positions")
 api.add_resource(Team, "/team")
-api.add_resource(TeamPlayer, "/team-player/<player>")
+api.add_resource(TeamPlayer, "/team-player")
 ### END ROUTING
