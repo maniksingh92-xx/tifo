@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from flask_restful import reqparse, Resource, Api
+from flask_restful import reqparse, abort, Resource, Api
 from flask_cors import CORS, cross_origin
 
 import pandas as pd
@@ -31,8 +31,8 @@ class User(object):
             "GK" : None
         }
 
-        self.maxBalance = 22090000
-        self.balance = 22090000
+        self.maxBalance = 12130750
+        self.balance = 12130750
     
     def getTeam(self):
         return self.team
@@ -42,9 +42,9 @@ class User(object):
         if (balance > -1):
             self.team = team
             self.updateBalance(balance)
-            return self.getTeam()
+            return [self.getTeam(), balance]
         else:
-            raise ValueError("Insufficient funds!")
+            return False
     
     def getBalance(self):
         return self.balance
@@ -54,13 +54,7 @@ class User(object):
         return self.getBalance()
     
     def verifyBalanceAfterTeamCost(self, team):
-        def reducer(remainingBalance, player):
-            if player is None or 'Price' not in player:
-                return remainingBalance
-            else:
-                return remainingBalance - player.Price
-                
-        return reduce(reducer, team, self.maxBalance)
+        return self.maxBalance - sum(player['Price'] for player in team.values() if player is not None)
 
 user = User()
 
@@ -140,9 +134,10 @@ class Team(Resource):
         return user.team
     def put(self):
         args = parser.parse_args()
-        user.team = args.team
-        user.updateTeam(args.team)
-        return user.getTeam()
+        if user.updateTeam(args.team) == False:
+            abort(500, message="Insufficient funds!")
+        else:
+            return user.updateTeam(args.team)
 
 class TeamPlayer(Resource):
     def put(self):
