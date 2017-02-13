@@ -15,9 +15,10 @@ export default function TeamPlayer(props) {
 
   return (
     <div
+      role="button"
       className="card card-outline-secondary mb-3"
       style={Object.assign({},
-        props.active ? {border: "2px solid red"} : {},
+        props.active ? {border: "1px solid #5cb85c", boxShadow : "0 0 5px 2px #5cb85c"} : {},
         {width : 120})}
       onClick={handlePositionSelect}>
       <h5 className="card-header text-center">
