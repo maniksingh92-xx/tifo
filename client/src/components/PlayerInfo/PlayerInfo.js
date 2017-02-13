@@ -3,6 +3,7 @@ import React from 'react';
 import _map from 'lodash/map';
 import _pick from 'lodash/pick';
 import _cloneDeep from 'lodash/cloneDeep';
+import _forOwn from 'lodash/forOwn';
 
 import C3Chart from 'react-c3js';
 
@@ -48,6 +49,11 @@ function GaugeCharts(props) {
 
 export default function PlayerInfo(props) {
 
+  var assignedToPosition = null;
+  _forOwn(props.team, function(player, pos) {
+    if (player && player.id === props.data.id) assignedToPosition = pos;
+  });
+
   if (props.data.Position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
 
   function handleAssignPlayerToPosition() {
@@ -64,8 +70,8 @@ export default function PlayerInfo(props) {
             <span className="m-1 badge badge-info">{props.data.Rating}</span>
           </div>
           {
-            (props.team[props.activePosition] && props.team[props.activePosition].id === props.data.id) ? (
-              <span className="badge badge-success" style={{ fontSize : "0.5em"}}>Assigned to {props.activePosition}</span>
+            (assignedToPosition) ? (
+              <span className="badge badge-success" style={{ fontSize : "0.5em"}}>Assigned to {assignedToPosition}</span>
             ) : (
               <span role="button" className="badge badge-warning" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
             ) 
