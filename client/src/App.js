@@ -80,7 +80,7 @@ export default class App extends Component {
     var filteredPlayerList = this.filterPlayerList(this.players, this.state.posAssoc, pos);
     this.setState({
       colSortDirs : {},
-      displayPlayerId: filteredPlayerList[0].id,
+      displayPlayerId: this.state.team[pos] ? this.state.team[pos].id : filteredPlayerList[0].id,
       players: filteredPlayerList,
       activePosition: pos
     });
