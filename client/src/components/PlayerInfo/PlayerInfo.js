@@ -54,6 +54,9 @@ export default function PlayerInfo(props) {
     if (player && player.id === props.data.id) assignedToPosition = pos;
   });
 
+  var formattedPrice = props.data.Price;
+  if (Intl) formattedPrice = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(formattedPrice);
+
   if (props.data.Position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
 
   function handleAssignPlayerToPosition() {
@@ -62,7 +65,7 @@ export default function PlayerInfo(props) {
 
   return (
     <div className="p-2 d-flex cursor-default" style={{ width: 480}}>
-      <div className="card card-outline-secondary mb-3">
+      <div className="card card-outline-secondary">
         <div className="h4 card-header d-flex justify-content-between align-items-center">
           <span>{props.data.Name}</span>
           <div>
@@ -78,10 +81,10 @@ export default function PlayerInfo(props) {
             
           }
         </div>
-        <div className="card-block bg-inverse text-white">
-          <h6 className="card-subtitle mb-2">Positions: {props.posAssoc.join(", ")}</h6>
+        <div className="card-block bg-inverse text-white d-flex flex-column justify-content-between">
+          <h6 className="card-subtitle">Positions: {props.posAssoc.join(", ")}</h6>
           <GaugeCharts stats={stats} />
-          <footer>Price: ${props.data.Price}</footer>
+          <footer>Price: {formattedPrice}</footer>
         </div>
       </div>
     </div>
