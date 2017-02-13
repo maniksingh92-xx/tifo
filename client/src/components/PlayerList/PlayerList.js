@@ -45,7 +45,7 @@ export default function PlayerList(props) {
 
   return (
     <div className="p-2">
-      <h2 className="mb-2">Current Position: <span className="cursor-default badge badge-success">{props.activePosition}</span></h2>
+      <h3 className="mb-2">Current Position: <span className="cursor-default badge badge-success">{props.activePosition}</span></h3>
       <Table
         rowsCount={data.length}
         rowHeight={30}

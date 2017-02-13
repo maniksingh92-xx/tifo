@@ -1,3 +1,7 @@
 .cursor-default {
   cursor: default
 }
+
+.w-33 {
+  width: 33%;
+}

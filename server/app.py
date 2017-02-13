@@ -31,8 +31,8 @@ class User(object):
             "GK" : None
         }
 
-        self.maxBalance = 12130750
-        self.balance = 12130750
+        self.maxBalance = 1213075000
+        self.balance = 1213075000
     
     def getTeam(self):
         return self.team
@@ -59,7 +59,7 @@ class User(object):
 user = User()
 
 def setPrice(rating):
-    price = rating ** 2
+    price = rating ** 3
     
     if(rating >= 90):
         price *= 250

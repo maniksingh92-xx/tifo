@@ -31,7 +31,7 @@ function GaugeCharts(props) {
     var options = _cloneDeep(defaultOptions);
     options.data.columns = [[key, value]];
     return <C3Chart
-      className="w-50"
+      className="w-33"
       style={{ flex: 0 }}
       key={key}
       data={options.data}
@@ -71,7 +71,7 @@ export default function PlayerInfo(props) {
           </div>
           {
             (assignedToPosition) ? (
-              <span className="badge badge-success" style={{ fontSize : "0.5em"}}>Assigned to {assignedToPosition}</span>
+              <span className={"badge " + (assignedToPosition===props.activePosition?"badge-success":"badge-danger")} style={{ fontSize : "0.5em"}}>Assigned to {assignedToPosition}</span>
             ) : (
               <span role="button" className="badge badge-warning" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
             ) 
