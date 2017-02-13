@@ -7,7 +7,7 @@ export default function TeamLayout(props) {
   function handlePositionSelect(pos) { props.onPositionSelect(pos); }
 
   return (
-    <div style={{ width : 640}}>
+    <div style={{ width : 560}}>
       <div className="d-flex justify-content-around">
         <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.LW} position="LW" />
         <TeamPlayer onPositionSelect={handlePositionSelect} data={props.data.ST} position="ST" />
