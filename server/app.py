@@ -83,10 +83,10 @@ def getRecommendedPlayers(player, df):
 
 usecols = ["Name", "POS", "RAT", "PAC", "SHO", "PAS", "DRI", "DEF", "PHY"]
 columns = ["Name", "Position", "Rating", "Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"]
-df = pd.read_csv("./data/fifa16db.csv", usecols=usecols)
-df.columns = columns
-df.insert(0, "id", df.index)
-df["Price"] = df["Rating"].apply(setPrice)
+allPlayers = pd.read_csv("./data/fifa16db.csv", usecols=usecols)
+allPlayers.columns = columns
+allPlayers.insert(0, "id", allPlayers.index)
+allPlayers["Price"] = allPlayers["Rating"].apply(setPrice)
 
 
 ### END BUSINESS LOGIC
@@ -98,7 +98,7 @@ parser.add_argument('team', type=dict)
 
 class Players(Resource):
     def get(self):
-        return df.to_dict(orient="records")
+        return allPlayers.to_dict(orient="records")
 
 class Positions(Resource):
     def get(self):
