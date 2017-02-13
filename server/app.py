@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from flask_restful import Resource, Api
+from flask_restful import reqparse, Resource, Api
 from flask_cors import CORS, cross_origin
 
 import pandas as pd
@@ -89,6 +89,9 @@ team = {
 
 
 ### API
+parser = reqparse.RequestParser()
+parser.add_argument('team', type=dict)
+
 class Players(Resource):
     def get(self):
         return df.to_dict(orient="records")
@@ -99,6 +102,11 @@ class Positions(Resource):
 
 class Team(Resource):
     def get(self):
+        return team
+    def put(self):
+        args = parser.parse_args()
+        print(type(args.team))
+        team = args.team
         return team
 
 class TeamPlayer(Resource):

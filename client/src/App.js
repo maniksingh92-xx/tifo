@@ -4,6 +4,7 @@ import PlayerInfo from './components/PlayerInfo';
 import TeamLayout from './components/TeamLayout';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
+import { update as updateTeam } from './data/team';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -44,6 +45,7 @@ export default class App extends Component {
     this.setPlayerToPosition = this.setPlayerToPosition.bind(this);
     this.getPlayers = getPlayers.bind(this);
     this.getPositions = getPositions.bind(this);
+    this.updateTeam = updateTeam.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
     this.sortPlayerList = this.sortPlayerList.bind(this);
   }
@@ -58,6 +60,10 @@ export default class App extends Component {
             this.setActivePosition(_findKey(this.state.team, function (o) { return o == null }));
           })
       });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.team !== this.state.team) this.updateTeam({team: this.state.team})
   }
 
   handlePlayerSelect(id) {
