@@ -62,9 +62,7 @@ export default class App extends Component {
       });
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.team !== this.state.team) this.updateTeam({team: this.state.team})
-  }
+  componentDidUpdate(prevProps, prevState) {}
 
   handlePlayerSelect(id) {
     this.setState({ displayPlayerId: id })
@@ -95,9 +93,13 @@ export default class App extends Component {
   setPlayerToPosition(player, pos) {
     var update = {};
     update[pos] = player;
-    this.setState((prevState, props) => ({
-      team: Object.assign({}, prevState.team, update)
-    }));
+    var updatedTeam = Object.assign({}, this.state.team, update);
+    
+    this.updateTeam({team: updatedTeam}).then((updatedTeam) => {
+      this.setState((prevState, props) => ({
+        team: updatedTeam
+      }));
+    }).catch((e) => {alert("OMG")});
   }
 
   sortPlayerList(columnKey) {

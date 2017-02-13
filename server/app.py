@@ -42,7 +42,7 @@ class User(object):
         if (balance > -1):
             self.team = team
             self.updateBalance(balance)
-            return [self.getTeam(), balance]
+            return self.getTeam()
         else:
             return False
     
