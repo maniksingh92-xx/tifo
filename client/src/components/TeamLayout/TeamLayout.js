@@ -36,10 +36,18 @@ function BuildTeamLayout(props) {
 
 export default function TeamLayout(props) {
 
+  function handleClearTeam(e) { 
+    e.preventDefault();
+    props.onClearTeam();
+  };
+
   function handlePositionSelect(pos) { props.onPositionSelect(pos); }
 
   return (
     <div className="p-2" style={{ width: 560 }}>
+      <button type="button" className="close" onClick={handleClearTeam}>
+        <span aria-hidden="true">&times;</span>
+      </button>
       <BuildTeamLayout
         data={props.data}
         formation={props.formation}
