@@ -16,7 +16,12 @@ function GaugeCharts(props) {
       columns: null,
     },
     gauge: {
-      units: ' %'
+      label: {
+        show: false,
+        format: function (value, ratio, id) {
+          return value+"%";
+        },
+      }
     },
     color: {
       pattern: ['#FF0000', '#F97600', '#FAAA00', '#F6C600', '#99CC00', '#00AA00'],
@@ -25,19 +30,31 @@ function GaugeCharts(props) {
     size: {
       height: 60,
     },
+    axis: {
+      x: {
+        show: false
+      },
+      y: {
+        show: false
+      }
+    },
   };
 
   var charts = _map(props.stats, (value, key) => {
     var options = _cloneDeep(defaultOptions);
     options.data.columns = [[key, value]];
-    return <C3Chart
-      className="w-33"
-      style={{ flex: 0 }}
-      key={key}
-      data={options.data}
-      color={options.color}
-      gauge={options.gauge}
-      size={options.size} />
+    return (
+      <div className="d-flex flex-column align-items-center w-33" key={key}>
+        <C3Chart
+          data={options.data}
+          color={options.color}
+          gauge={options.gauge}
+          size={options.size}
+          axis={options.axis}
+          legend={options.legend} />
+        <span className="gauge-legend">{key}</span>
+      </div>
+    )
   });
 
   return (
