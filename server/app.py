@@ -31,8 +31,8 @@ class User(object):
             "GK" : None
         }
 
-        self.maxBalance = 1213075000
-        self.balance = 1213075000
+        self.maxBalance = 943448550
+        self.balance = 943448550
     
     def getTeam(self):
         return self.team
@@ -131,13 +131,14 @@ class Positions(Resource):
 
 class Team(Resource):
     def get(self):
-        return user.team
+        return { "team": user.getTeam(), "balance": user.getBalance() }
     def put(self):
         args = parser.parse_args()
-        if user.updateTeam(args.team) == False:
+        teamUpdate = user.updateTeam(args.team)
+        if teamUpdate == False:
             abort(500, message="Insufficient funds!")
         else:
-            return user.updateTeam(args.team)
+            return { "team": teamUpdate, "balance": user.getBalance() }
 
 class TeamPlayer(Resource):
     def put(self):

@@ -1,10 +1,9 @@
 import { fetchApi } from '../../services/api/index';
 
 const endPoints = {
+  get: '/team',
   put: '/team',
 };
 
-export const update = payload => {
-
-  return fetchApi(endPoints.put, payload, 'put');
-}
+export const get = payload => fetchApi(endPoints.put, payload, 'get');
+export const update = payload => fetchApi(endPoints.put, payload, 'put');

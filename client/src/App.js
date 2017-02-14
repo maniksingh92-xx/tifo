@@ -4,7 +4,7 @@ import PlayerInfo from './components/PlayerInfo';
 import TeamLayout from './components/TeamLayout';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
-import { update as updateTeam } from './data/team';
+import { get as getTeam, update as updateTeam } from './data/team';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -34,7 +34,8 @@ export default class App extends Component {
         "RCB": null,
         "RB": null,
         "GK": null
-      }
+      },
+      balance: null
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
@@ -45,19 +46,28 @@ export default class App extends Component {
     this.setPlayerToPosition = this.setPlayerToPosition.bind(this);
     this.getPlayers = getPlayers.bind(this);
     this.getPositions = getPositions.bind(this);
+    this.getTeam = getTeam.bind(this)
     this.updateTeam = updateTeam.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
     this.sortPlayerList = this.sortPlayerList.bind(this);
   }
 
   componentDidMount() {
+
     this.getPlayers()
       .then((data) => {
         this.players = data;
         this.getPositions()
           .then((data) => {
             this.setState({ posAssoc: data });
-            this.setActivePosition(_findKey(this.state.team, function (o) { return o == null }));
+            this.getTeam()
+              .then((data) => {
+                this.setState({
+                  team: data.team,
+                  balance: data.balance
+                });
+                this.setActivePosition(_findKey(this.state.team, function (o) { return o == null }));
+              });
           })
       });
   }
@@ -95,10 +105,11 @@ export default class App extends Component {
     update[pos] = player;
     var updatedTeam = Object.assign({}, this.state.team, update);
     
-    this.updateTeam({team: updatedTeam}).then((updatedTeam) => {
-      this.setState((prevState, props) => ({
-        team: updatedTeam
-      }));
+    this.updateTeam({team: updatedTeam}).then((data) => {
+      this.setState({
+        team: data.team,
+        balance: data.balance
+      });
     }).catch((e) => {alert("OMG")});
   }
 
