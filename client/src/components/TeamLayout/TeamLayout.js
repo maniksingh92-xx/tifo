@@ -1,6 +1,6 @@
 import React from 'react';
 import TeamPlayer from './components/TeamPlayer';
-
+import { formatCurrency } from '../../services/common';
 
 function BuildTeamLayout(props) {
   var formation = props.formation.slice().reverse();
@@ -48,11 +48,14 @@ export default function TeamLayout(props) {
       <button type="button" className="close" onClick={handleClearTeam}>
         <span aria-hidden="true">&times;</span>
       </button>
-      <BuildTeamLayout
-        data={props.data}
-        formation={props.formation}
-        onPositionSelect={handlePositionSelect}
-        activePosition={props.activePosition} />
+      <div className="d-flex flex-column align-items-center">
+        <div>Balance Left: {formatCurrency(props.balance)}</div>
+        <BuildTeamLayout
+          data={props.data}
+          formation={props.formation}
+          onPositionSelect={handlePositionSelect}
+          activePosition={props.activePosition} />
+      </div>
     </div>
   )
 }

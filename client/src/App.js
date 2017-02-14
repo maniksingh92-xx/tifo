@@ -177,7 +177,8 @@ export default class App extends Component {
                   onClearTeam={this.handleClearTeam}
                   data={this.state.team}
                   activePosition={this.state.activePosition}
-                  formation={[4, 3, 3]} />
+                  formation={[4, 3, 3]}
+                  balance={this.state.balance} />
               </div>
             )
         }

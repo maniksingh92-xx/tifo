@@ -4,6 +4,7 @@ import _map from 'lodash/map';
 import _pick from 'lodash/pick';
 import _cloneDeep from 'lodash/cloneDeep';
 import _forOwn from 'lodash/forOwn';
+import { formatCurrency } from '../../services/common';
 
 import C3Chart from 'react-c3js';
 
@@ -38,6 +39,9 @@ function GaugeCharts(props) {
         show: false
       }
     },
+    tooltip: {
+      show: false
+    }
   };
 
   var charts = _map(props.stats, (value, key) => {
@@ -51,7 +55,8 @@ function GaugeCharts(props) {
           gauge={options.gauge}
           size={options.size}
           axis={options.axis}
-          legend={options.legend} />
+          legend={options.legend}
+          tooltip={options.tooltip} />
         <span className="gauge-legend">{key}</span>
       </div>
     )
@@ -71,8 +76,7 @@ export default function PlayerInfo(props) {
     if (player && player.id === props.data.id) assignedToPosition = pos;
   });
 
-  var formattedPrice = props.data.Price;
-  if (Intl) formattedPrice = Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(formattedPrice);
+  var formattedPrice = formatCurrency(props.data.Price);
 
   if (props.data.Position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
 
