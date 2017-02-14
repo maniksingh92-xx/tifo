@@ -18,7 +18,7 @@ api = Api(app)
 class User(object):
     posTeamAttribAssoc = {
         "LW": {
-            "attack": 0.8,
+            "attack": 0.9,
             "mid": 0.6,
             "defence": 0.4
         },
@@ -28,42 +28,42 @@ class User(object):
             "defence": 0.2
         },
         "RW": {
-            "attack": 0.8,
+            "attack": 0.9,
             "mid": 0.6,
             "defence": 0.4
         },
         "RM": {
-            "attack": 0.6,
+            "attack": 0.4,
             "mid": 0.8,
             "defence": 0.6
         },
         "CM": {
-            "attack": 0.5,
+            "attack": 0,
             "mid": 1,
             "defence": 0.5
         },
         "LM": {
-            "attack": 0.6,
+            "attack": 0.4,
             "mid": 0.8,
             "defence": 0.6
         },
         "LB": {
-            "attack": 0.4,
+            "attack": 0,
             "mid": 0.4,
             "defence": 0.8
         },
         "LCB": {
-            "attack": 0.2,
+            "attack": 0,
             "mid": 0.4,
             "defence": 1
         },
         "RCB": {
-            "attack": 0.2,
+            "attack": 0,
             "mid": 0.4,
             "defence": 1
         },
         "RB": {
-            "attack": 0.4,
+            "attack": 0,
             "mid": 0.4,
             "defence": 0.8
         },
