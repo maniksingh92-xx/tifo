@@ -7,6 +7,7 @@ import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
 
 import Drawer from 'material-ui/Drawer';
+import Paper from 'material-ui/Paper';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -57,7 +58,7 @@ export default class App extends Component {
     this.deleteTeam = deleteTeam.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
 
     this.getPlayers()
       .then((data) => {
@@ -155,15 +156,55 @@ export default class App extends Component {
   }
 
   render() {
+    var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
+    console.log(displayPlayer);
     return (
       <div>
-        <Drawer>
-          <TeamList 
-            onPositionSelect={this.handlePositionSelect}
-            onClearTeam={this.handleClearTeam}
-            team={this.state.team}
-            activePosition={this.state.activePosition} />
-        </Drawer>
+        {
+          this.state.activePosition === null ? null :
+          (
+            <div className="d-flex">
+              <Paper
+                zDepth={2}
+                rounded={false}
+                style={{
+                  position: "fixed",
+                  left: 0,
+                  top: 0,
+                  bottom: 0,
+                  "overflowY": "auto",
+                  width: 320
+                }}
+              >
+                <TeamList 
+                  onPositionSelect={this.handlePositionSelect}
+                  onClearTeam={this.handleClearTeam}
+                  team={this.state.team}
+                  activePosition={this.state.activePosition} />
+              </Paper>
+
+              <div
+                style={{
+                  position: "fixed",
+                  left: 336,
+                  top: 0,
+                  bottom: 0,
+                  right: 0,
+                  "overflowY": "auto"
+                }}
+              >
+                <div className="d-flex">
+                  <PlayerInfo
+                    data={displayPlayer}
+                    team={this.state.team}
+                    posAssoc={this.state.posAssoc[displayPlayer.Position]}
+                    activePosition={this.state.activePosition}
+                    onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
+                </div>
+              </div>
+            </div>
+          )
+        }
       </div>
     )
   }
@@ -189,10 +230,10 @@ export default class App extends Component {
   //                 activePosition={this.state.activePosition}
   //                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
   //               <TeamLayout
-                  // onPositionSelect={this.handlePositionSelect}
-                  // onClearTeam={this.handleClearTeam}
-                  // data={this.state.team}
-                  // activePosition={this.state.activePosition}
+  //                 onPositionSelect={this.handlePositionSelect}
+  //                 onClearTeam={this.handleClearTeam}
+  //                 data={this.state.team}
+  //                 activePosition={this.state.activePosition}
   //                 formation={[4, 3, 3]}
   //                 balance={this.state.balance} />
   //             </div>
@@ -201,18 +242,5 @@ export default class App extends Component {
   //     </div>
   //   )
   // }
+
 }
-
-// export default function App() {
-
-//   var playerData = [];
-
-//   getPlayers()
-//   .then((data) => {playerData = data});
-
-//   return (
-//     <div>
-//       {playerData.length ? (<PlayerList players={playerData} />) : null}
-//     </div>
-//   );
-// }
