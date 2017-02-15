@@ -164,7 +164,6 @@ class User(object):
         for teamAttrib in attribSum:
             self.teamAttributes[teamAttrib] = attribSum[teamAttrib]/User.attribScale[teamAttrib]
 
-        print(self.teamAttributes)
         return self.getTeamAttributes() 
 
 
@@ -251,8 +250,11 @@ class Positions(Resource):
 
 class Team(Resource):
 
+    def getTeamDetails(self):
+        return {"team": user.getTeam(), "balance": user.getBalance(), "teamAttributes": user.getTeamAttributes()}
+
     def get(self):
-        return {"team": user.getTeam(), "balance": user.getBalance()}
+        return self.getTeamDetails()
 
     def put(self):
         args = parser.parse_args()
@@ -260,11 +262,11 @@ class Team(Resource):
         if teamUpdate == False:
             abort(500, message="Insufficient funds!")
         else:
-            return {"team": teamUpdate, "balance": user.getBalance()}
+            return self.getTeamDetails()
 
     def delete(self):
         user.deleteTeam()
-        return {"team": user.getTeam(), "balance": user.getBalance()}
+        return self.getTeamDetails()
 
 
 class TeamPlayer(Resource):
