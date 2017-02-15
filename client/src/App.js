@@ -14,6 +14,7 @@ import _find from 'lodash/find';
 import _filter from 'lodash/filter';
 import _indexOf from 'lodash/indexOf';
 import _orderBy from 'lodash/orderBy';
+import _forOwn from 'lodash/forOwn';
 
 export default class App extends Component {
   constructor(props) {
@@ -157,56 +158,59 @@ export default class App extends Component {
 
   render() {
     var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
-    console.log(displayPlayer);
-    return (
-      <div>
-        {
-          this.state.activePosition === null ? null :
-          (
-            <div className="d-flex">
-              <Paper
-                zDepth={2}
-                rounded={false}
-                style={{
-                  position: "fixed",
-                  left: 0,
-                  top: 0,
-                  bottom: 0,
-                  "overflowY": "auto",
-                  width: 320
-                }}
-              >
-                <TeamList 
-                  onPositionSelect={this.handlePositionSelect}
-                  onClearTeam={this.handleClearTeam}
-                  team={this.state.team}
-                  activePosition={this.state.activePosition} />
-              </Paper>
+    if (displayPlayer) {
+      var displayPlayerAssignedPosition = null;
+      _forOwn(this.state.team, function(player, pos) {
+        if (player && player.id === displayPlayer.id) displayPlayerAssignedPosition = pos;
+      });
 
-              <div
-                style={{
-                  position: "fixed",
-                  left: 336,
-                  top: 0,
-                  bottom: 0,
-                  right: 0,
-                  "overflowY": "auto"
-                }}
-              >
-                <div className="d-flex">
-                  <PlayerInfo
-                    data={displayPlayer}
-                    team={this.state.team}
-                    posAssoc={this.state.posAssoc[displayPlayer.Position]}
-                    activePosition={this.state.activePosition}
-                    onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
-                </div>
-              </div>
+      return (
+        <div>
+          <Paper
+            zDepth={2}
+            rounded={false}
+            style={{
+              position: "fixed",
+              left: 0,
+              top: 0,
+              bottom: 0,
+              "overflowY": "auto",
+              width: 320
+            }}
+          >
+            <TeamList 
+              onPositionSelect={this.handlePositionSelect}
+              onClearTeam={this.handleClearTeam}
+              team={this.state.team}
+              activePosition={this.state.activePosition} />
+          </Paper>
+
+          <div
+            style={{
+              position: "fixed",
+              left: 326,
+              top: 0,
+              bottom: 0,
+              right: 0,
+              padding: 16,
+              "overflowY": "auto"
+            }}
+          >
+            <div className="d-flex">
+              <PlayerInfo
+                player={displayPlayer}
+                assignedPosition={displayPlayerAssignedPosition}
+                team={this.state.team}
+                posAssoc={this.state.posAssoc[displayPlayer.Position]}
+                activePosition={this.state.activePosition}
+                onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
             </div>
-          )
-        }
-      </div>
-    )
+          </div>
+        </div>
+      )
+    } else {
+      return <div>loading ...</div>
+    }
   }
 
   // render() {

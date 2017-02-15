@@ -2,6 +2,10 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background: #17191a url("./images/background.png") repeat;
+}
+
 .cursor-default {
   cursor: default
 }

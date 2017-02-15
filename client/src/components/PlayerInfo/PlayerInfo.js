@@ -1,9 +1,14 @@
 import React from 'react';
 
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
+import Badge from 'material-ui/Badge';
+import FlatButton from 'material-ui/FlatButton';
+import Paper from 'material-ui/Paper';
+
 import _map from 'lodash/map';
 import _pick from 'lodash/pick';
 import _cloneDeep from 'lodash/cloneDeep';
-import _forOwn from 'lodash/forOwn';
+
 import { formatCurrency } from '../../services/common';
 
 import C3Chart from 'react-c3js';
@@ -69,45 +74,59 @@ function GaugeCharts(props) {
 }
 
 
-export default function PlayerInfo(props) {
+function PlayerActionButton({assignedPosition, activePosition, onAssignPlayerToPostion, ...props}) {
+  function handleAssignPlayerToPosition() { onAssignPlayerToPostion() };
 
-  var assignedToPosition = null;
-  _forOwn(props.team, function(player, pos) {
-    if (player && player.id === props.data.id) assignedToPosition = pos;
-  });
-
-  var formattedPrice = formatCurrency(props.data.Price);
-
-  if (props.data.Position !== "GK") var stats = _pick(props.data, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
-
-  function handleAssignPlayerToPosition() {
-    props.onAssignPlayerToPostion(props.data, props.activePosition);
+  if (!assignedPosition) {
+    return <FlatButton
+              onTouchTap={handleAssignPlayerToPosition}
+              label={"Assign to " + activePosition} />
+  } else if (assignedPosition === activePosition) {
+    return <FlatButton
+              label={"Assigned to " + assignedPosition}
+              primary={true}
+              hoverColor={"transparent"}
+              rippleColor={"transparent"}
+              style={{cursor: "default"}} />
+  } else {
+    return <FlatButton
+              label={"Assigned to " + assignedPosition}
+              secondary={true}
+              disabled={true} />
   }
+}
+
+export default function PlayerInfo({player,
+                                    assignedPosition,
+                                    posAssoc,
+                                    activePosition,
+                                    onAssignPlayerToPostion,
+                                    ...props}) {
+
+  var formattedPrice = formatCurrency(player.Price);
+  var stats = _pick(player, ["Pace", "Shooting", "Passing", "Dribbling", "Defence", "Physicality"])
+  function handleAssignPlayerToPosition() { onAssignPlayerToPostion(player, activePosition); }
+
 
   return (
-    <div className="p-2 d-flex cursor-default" style={{ width: 480}}>
-      <div className="card card-outline-secondary">
-        <div className="h4 card-header d-flex justify-content-between align-items-center">
-          <span>{props.data.Name}</span>
-          <div>
-            <span className="m-1 badge badge-success">{props.data.Position}</span>
-            <span className="m-1 badge badge-info">{props.data.Rating}</span>
-          </div>
-          {
-            (assignedToPosition) ? (
-              <span className={"badge " + (assignedToPosition===props.activePosition?"badge-success":"badge-danger")} style={{ fontSize : "0.5em"}}>Assigned to {assignedToPosition}</span>
-            ) : (
-              <span role="button" className="badge badge-warning" style={{ fontSize : "0.5em"}} onClick={handleAssignPlayerToPosition}>Assign to {props.activePosition}</span>
-            ) 
-            
-          }
-        </div>
-        <div className="card-block bg-inverse text-white d-flex flex-column justify-content-between">
-          <h6 className="card-subtitle">Positions: {props.posAssoc.join(", ")}</h6>
+    <Paper zDepth={4}>
+      <Card
+        style={{ width : 320 }}
+      >
+        <CardHeader
+          title={player.Name + " : " + formattedPrice}
+          subtitle={"Rating: " + player.Rating} />
+        <CardText>
+          <h6>Positions: {posAssoc.join(", ")}</h6>
           <GaugeCharts stats={stats} />
-          <footer>Price: {formattedPrice}</footer>
-        </div>
-      </div>
-    </div>
-  );
+        </CardText>
+        <CardActions>
+          <PlayerActionButton
+            onAssignPlayerToPostion={handleAssignPlayerToPosition}
+            assignedPosition={assignedPosition}
+            activePosition={activePosition} />
+        </CardActions>
+      </Card>
+    </Paper>
+  )
 }
