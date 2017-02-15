@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
-import Badge from 'material-ui/Badge';
+import Chip from 'material-ui/Chip';
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
 
@@ -114,17 +114,18 @@ export default function PlayerInfo({player,
         style={{ width : 320 }}
       >
         <CardHeader
-          title={player.Name + " : " + formattedPrice}
-          subtitle={"Rating: " + player.Rating} />
+          title={player.Name}
+          subtitle={formattedPrice} />
         <CardText>
           <h6>Positions: {posAssoc.join(", ")}</h6>
           <GaugeCharts stats={stats} />
         </CardText>
-        <CardActions>
+        <CardActions style={{ display: "flex", alignItems: "center", justifyContent: "space-between"}}>
           <PlayerActionButton
             onAssignPlayerToPostion={handleAssignPlayerToPosition}
             assignedPosition={assignedPosition}
             activePosition={activePosition} />
+          <Chip>{player.Rating}</Chip>
         </CardActions>
       </Card>
     </Paper>
