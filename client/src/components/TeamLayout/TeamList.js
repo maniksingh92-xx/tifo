@@ -6,6 +6,7 @@ import Subheader from 'material-ui/Subheader';
 import Chip from 'material-ui/Chip';
 import FlatButton from 'material-ui/FlatButton';
 import ActionDelete from 'material-ui/svg-icons/action/delete';
+import { blueGrey300, pink50, green100 } from 'material-ui/styles/colors';
 
 export default function TeamList({team, activePosition, onPositionSelect, onClearTeam, ...props}) {
 
@@ -102,14 +103,21 @@ function TeamListItem({active, onPositionSelect, player, position, ...props}) {
     lineHeight: "16px"
   }
 
+  const style = Object.assign({},
+                              player ? { backgroundColor: green100 } : { backgroundColor: pink50 },
+                              active && { backgroundColor: blueGrey300 });
+
   return (
     <ListItem
+      style={style}
       onTouchTap={handlePositionSelect}
       innerDivStyle={listItemStyle}
       leftAvatar={<Avatar style={avatarStyle}>{position}</Avatar>}
-    >
-      <span>{name}</span>
-      <Chip labelStyle={chipStyle}>{rating}</Chip>
+    > 
+      <div className="d-flex justify-content-between" style={{width:"100%"}}>
+        <span>{name}</span>
+        {rating ? <Chip labelStyle={chipStyle}>{rating}</Chip> : null }
+      </div>
     </ListItem>
   );
 }
