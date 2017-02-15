@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PlayerList from './components/PlayerList';
 import PlayerInfo from './components/PlayerInfo';
-import {TeamLayout, TeamList} from './components/TeamLayout';
+import { TeamLayout, TeamList } from './components/TeamLayout';
+import { TeamDetails } from './components/TeamDetails';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
@@ -39,7 +40,12 @@ export default class App extends Component {
         "RB": null,
         "GK": null
       },
-      balance: null
+      balance: null,
+      teamAttributes: {
+        "attack": 0,
+        "mid": 0,
+        "defence": 0
+      }
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
@@ -71,7 +77,8 @@ export default class App extends Component {
               .then((data) => {
                 this.setState({
                   team: data.team,
-                  balance: data.balance
+                  balance: data.balance,
+                  teamAttributes: data.teamAttributes
                 });
                 this.setActivePosition(_findKey(this.state.team, function (o) { return o == null }));
               });
@@ -102,7 +109,8 @@ export default class App extends Component {
       .then((data) => {
         this.setState({
           team: data.team,
-          balance: data.balance
+          balance: data.balance,
+          teamAttributes: data.teamAttributes
         });
       })
   }
@@ -125,7 +133,8 @@ export default class App extends Component {
     this.updateTeam({ team: updatedTeam }).then((data) => {
       this.setState({
         team: data.team,
-        balance: data.balance
+        balance: data.balance,
+        teamAttributes: data.teamAttributes
       });
     }).catch((e) => { alert("OMG") });
   }
@@ -160,7 +169,7 @@ export default class App extends Component {
     var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
     if (displayPlayer) {
       var displayPlayerAssignedPosition = null;
-      _forOwn(this.state.team, function(player, pos) {
+      _forOwn(this.state.team, function (player, pos) {
         if (player && player.id === displayPlayer.id) displayPlayerAssignedPosition = pos;
       });
 
@@ -177,8 +186,8 @@ export default class App extends Component {
               "overflowY": "auto",
               width: 320
             }}
-          >
-            <TeamList 
+            >
+            <TeamList
               onPositionSelect={this.handlePositionSelect}
               onClearTeam={this.handleClearTeam}
               team={this.state.team}
@@ -192,11 +201,11 @@ export default class App extends Component {
               top: 0,
               bottom: 0,
               right: 0,
-              padding: 16,
+              padding: "16px 16px 16px 10px",
               "overflowY": "auto"
             }}
-          >
-            <div className="d-flex flex-column">
+            >
+            <div className="d-flex flex-column" style={{ width : 320 }}>
               <PlayerInfo
                 player={displayPlayer}
                 assignedPosition={displayPlayerAssignedPosition}
@@ -204,6 +213,9 @@ export default class App extends Component {
                 posAssoc={this.state.posAssoc[displayPlayer.Position]}
                 activePosition={this.state.activePosition}
                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
+              <TeamDetails
+                balance={this.state.balance}
+                teamAttributes={this.state.teamAttributes} />
             </div>
           </div>
         </div>

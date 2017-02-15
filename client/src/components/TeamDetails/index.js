@@ -1,3 +1,1 @@
-import TeamDetails from './TeamDetails';
-
-export default TeamDetails;
+export { default as TeamDetails } from './TeamDetails';

@@ -127,6 +127,8 @@ class User(object):
         for position in self.team:
             self.team[position] = None
         self.balance = self.maxBalance
+        for attrib in self.teamAttributes:
+            attrib = 0
 
     def getBalance(self):
         return self.balance
