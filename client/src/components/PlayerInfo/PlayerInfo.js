@@ -135,7 +135,10 @@ export default function PlayerInfo({player,
             onAssignPlayerToPostion={handleAssignPlayerToPosition}
             assignedPosition={assignedPosition}
             activePosition={activePosition} />
-          <Chip>{player.Rating}</Chip>
+          <div className="d-flex align-items-center">
+            <span style={{ fontSize: 14 }}>Rating:&nbsp;</span>
+            <Chip>{player.Rating}</Chip>
+          </div>
         </CardActions>
       </Card>
     </Paper>
