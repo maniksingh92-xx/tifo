@@ -29,7 +29,7 @@ export default function TeamDetails({balance, teamAttributes, ...props}) {
       }
     },
     size: {
-      height: 160
+      height: 120
     },
     axis: {
       x: {
@@ -52,8 +52,10 @@ export default function TeamDetails({balance, teamAttributes, ...props}) {
       <Card>
         <CardHeader
           title="Team Overview"
-          subtitle={formatCurrency(balance)} />
-        <CardText>
+          subtitle={formatCurrency(balance)}
+          actAsExpander={true}
+          showExpandableButton={true} />
+        <CardText expandable={true} >
           <C3Chart
             data={barChartOptions.data}
             size={barChartOptions.size}

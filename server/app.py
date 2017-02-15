@@ -107,8 +107,8 @@ class User(object):
             "defence": 0
         }
 
-        self.maxBalance = 943448550
-        self.balance = 943448550
+        self.maxBalance = 9434485500
+        self.balance = 9434485500
 
     def getTeam(self):
         return self.team

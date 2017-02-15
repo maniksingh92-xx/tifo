@@ -195,6 +195,7 @@ export default class App extends Component {
           </Paper>
 
           <div
+            className="d-flex flex-column"
             style={{
               position: "fixed",
               left: 326,
@@ -202,10 +203,10 @@ export default class App extends Component {
               bottom: 0,
               right: 0,
               padding: "16px 16px 16px 10px",
-              "overflowY": "auto"
+              overflowY: "auto"
             }}
             >
-            <div className="d-flex flex-column" style={{ width : 320 }}>
+            <div className="d-flex align-items-start" style={{ marginBottom: 16, height: 334 }}>
               <PlayerInfo
                 player={displayPlayer}
                 assignedPosition={displayPlayerAssignedPosition}
@@ -216,6 +217,14 @@ export default class App extends Component {
               <TeamDetails
                 balance={this.state.balance}
                 teamAttributes={this.state.teamAttributes} />
+            </div>
+            <div className="d-flex">
+              <PlayerList
+                onSortPlayersChange={this.handleSortPlayersChange}
+                colSortDirs={this.state.colSortDirs}
+                onPlayerSelect={this.handlePlayerSelect}
+                players={this.state.players}
+                activePosition={this.state.activePosition} />
             </div>
           </div>
         </div>
@@ -233,12 +242,12 @@ export default class App extends Component {
   //         this.state.activePosition === null ? null :
   //           (
   //             <div className="d-flex flex-wrap">
-  //               <PlayerList
-  //                 onSortPlayersChange={this.handleSortPlayersChange}
-  //                 colSortDirs={this.state.colSortDirs}
-  //                 onPlayerSelect={this.handlePlayerSelect}
-  //                 data={this.state.players}
-  //                 activePosition={this.state.activePosition} />
+  // <PlayerList
+  //   onSortPlayersChange={this.handleSortPlayersChange}
+  //   colSortDirs={this.state.colSortDirs}
+  //   onPlayerSelect={this.handlePlayerSelect}
+  //   data={this.state.players}
+  //   activePosition={this.state.activePosition} />
   //               <PlayerInfo
   //                 data={displayPlayer}
   //                 team={this.state.team}

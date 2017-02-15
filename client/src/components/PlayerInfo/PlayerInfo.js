@@ -49,7 +49,17 @@ function GaugeCharts(props) {
     }
   };
 
+  var gkKeys = {
+    "Pace": "Diving",
+    "Shooting": "Handling",
+    "Passing": "Kicking",
+    "Dribbling": "Reflexes",
+    "Defence": "Speed",
+    "Physicality": "Positioning"
+  }
+
   var charts = _map(props.stats, (value, key) => {
+    if (props.pos == "GK") key = gkKeys[key];
     var options = _cloneDeep(defaultOptions);
     options.data.columns = [[key, value]];
     return (
@@ -109,14 +119,16 @@ export default function PlayerInfo({player,
 
 
   return (
-    <Paper zDepth={4} style={{ marginBottom: 16 }}>
+    <Paper zDepth={4} style={{ marginRight: 16, width: 320 }}>
       <Card>
         <CardHeader
           title={player.Name}
-          subtitle={formattedPrice} />
-        <CardText>
+          subtitle={formattedPrice}
+          actAsExpander={true}
+          showExpandableButton={true} />
+        <CardText expandable={true}>
           <h6>Positions: {posAssoc.join(", ")}</h6>
-          <GaugeCharts stats={stats} />
+          <GaugeCharts stats={stats} pos={player.Position} />
         </CardText>
         <CardActions style={{ display: "flex", alignItems: "center", justifyContent: "space-between"}}>
           <PlayerActionButton
