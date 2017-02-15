@@ -1,3 +1,2 @@
-import TeamLayout from './TeamLayout';
-
-export default TeamLayout;
+export { TeamLayout } from './TeamLayout';
+export { default as TeamList } from './TeamList';

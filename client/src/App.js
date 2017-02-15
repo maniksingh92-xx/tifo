@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import PlayerList from './components/PlayerList';
 import PlayerInfo from './components/PlayerInfo';
-import TeamLayout from './components/TeamLayout';
+import {TeamLayout, TeamList} from './components/TeamLayout';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
+
+import Drawer from 'material-ui/Drawer';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -153,38 +155,52 @@ export default class App extends Component {
   }
 
   render() {
-    var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
     return (
       <div>
-        {
-          this.state.activePosition === null ? null :
-            (
-              <div className="d-flex flex-wrap">
-                <PlayerList
-                  onSortPlayersChange={this.handleSortPlayersChange}
-                  colSortDirs={this.state.colSortDirs}
-                  onPlayerSelect={this.handlePlayerSelect}
-                  data={this.state.players}
-                  activePosition={this.state.activePosition} />
-                <PlayerInfo
-                  data={displayPlayer}
-                  team={this.state.team}
-                  posAssoc={this.state.posAssoc[displayPlayer.Position]}
-                  activePosition={this.state.activePosition}
-                  onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
-                <TeamLayout
-                  onPositionSelect={this.handlePositionSelect}
-                  onClearTeam={this.handleClearTeam}
-                  data={this.state.team}
-                  activePosition={this.state.activePosition}
-                  formation={[4, 3, 3]}
-                  balance={this.state.balance} />
-              </div>
-            )
-        }
+        <Drawer>
+          <TeamList 
+            onPositionSelect={this.handlePositionSelect}
+            onClearTeam={this.handleClearTeam}
+            team={this.state.team}
+            activePosition={this.state.activePosition} />
+        </Drawer>
       </div>
     )
   }
+
+  // render() {
+  //   var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
+  //   return (
+  //     <div>
+  //       {
+  //         this.state.activePosition === null ? null :
+  //           (
+  //             <div className="d-flex flex-wrap">
+  //               <PlayerList
+  //                 onSortPlayersChange={this.handleSortPlayersChange}
+  //                 colSortDirs={this.state.colSortDirs}
+  //                 onPlayerSelect={this.handlePlayerSelect}
+  //                 data={this.state.players}
+  //                 activePosition={this.state.activePosition} />
+  //               <PlayerInfo
+  //                 data={displayPlayer}
+  //                 team={this.state.team}
+  //                 posAssoc={this.state.posAssoc[displayPlayer.Position]}
+  //                 activePosition={this.state.activePosition}
+  //                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
+  //               <TeamLayout
+                  // onPositionSelect={this.handlePositionSelect}
+                  // onClearTeam={this.handleClearTeam}
+                  // data={this.state.team}
+                  // activePosition={this.state.activePosition}
+  //                 formation={[4, 3, 3]}
+  //                 balance={this.state.balance} />
+  //             </div>
+  //           )
+  //       }
+  //     </div>
+  //   )
+  // }
 }
 
 // export default function App() {
