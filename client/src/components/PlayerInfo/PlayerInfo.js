@@ -109,9 +109,9 @@ export default function PlayerInfo({player,
 
 
   return (
-    <Paper zDepth={4}>
+    <Paper zDepth={4} style={{ width : 320 }}>
       <Card
-        style={{ width : 320 }}
+        style={{ width : "100%" }}
       >
         <CardHeader
           title={player.Name}

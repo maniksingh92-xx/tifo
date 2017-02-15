@@ -196,7 +196,7 @@ export default class App extends Component {
               "overflowY": "auto"
             }}
           >
-            <div className="d-flex">
+            <div className="d-flex flex-column">
               <PlayerInfo
                 player={displayPlayer}
                 assignedPosition={displayPlayerAssignedPosition}
