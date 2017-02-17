@@ -59,7 +59,7 @@ export default class RecommendedPlayerList extends Component {
 
   render() {
     return (
-      <Card>
+      <Card style={{ width : 320 }}>
         <CardHeader
           title="Similar Players"
           subtitle={"Tap to assign to " + this.props.activePosition} />
@@ -75,7 +75,7 @@ export default class RecommendedPlayerList extends Component {
                     leftAvatar={<Avatar style={avatarStyle}>{player.Position}</Avatar>}
                     >
                     <div className="d-flex justify-content-between" style={{ width: "100%" }}>
-                      <span>{player.Name}</span>
+                      <span className="truncate">{player.Name}</span>
                       <Chip labelStyle={chipStyle}>{player.Rating}</Chip>
                     </div>
                   </ListItem>

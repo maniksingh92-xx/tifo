@@ -13,3 +13,9 @@ body {
 .w-33 {
   width: 33%;
 }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

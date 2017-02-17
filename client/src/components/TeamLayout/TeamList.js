@@ -115,7 +115,7 @@ function TeamListItem({active, onPositionSelect, player, position, ...props}) {
       leftAvatar={<Avatar style={avatarStyle}>{position}</Avatar>}
     > 
       <div className="d-flex justify-content-between" style={{width:"100%"}}>
-        <span>{name}</span>
+        <span className="truncate">{name}</span>
         {rating ? <Chip labelStyle={chipStyle}>{rating}</Chip> : null }
       </div>
     </ListItem>
