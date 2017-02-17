@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Card, CardActions, CardHeader, CardText } from 'material-ui/Card';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
@@ -49,7 +49,7 @@ export default class RecommendedPlayerList extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.displayPlayerId != this.props.displayPlayerId) {
+    if (nextProps.displayPlayerId !== this.props.displayPlayerId) {
       this.getRecommendedPlayers({ playerId: nextProps.displayPlayerId })
         .then((data) => { this.setState({ recommendedPlayers : data }) });
     }

@@ -59,7 +59,7 @@ function GaugeCharts(props) {
   }
 
   var charts = _map(props.stats, (value, key) => {
-    if (props.pos == "GK") key = gkKeys[key];
+    if (props.pos === "GK") key = gkKeys[key];
     var options = _cloneDeep(defaultOptions);
     options.data.columns = [[key, value]];
     return (

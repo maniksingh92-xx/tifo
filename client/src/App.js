@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PlayerList from './components/PlayerList';
 import PlayerInfo from './components/PlayerInfo';
-import { TeamLayout, TeamList } from './components/TeamLayout';
+import { TeamList } from './components/TeamLayout';
 import { TeamDetails } from './components/TeamDetails';
 import { RecommendedPlayerList } from './components/RecommendedPlayerList';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
 
-import Drawer from 'material-ui/Drawer';
 import Paper from 'material-ui/Paper';
 import Snackbar from 'material-ui/Snackbar';
 
@@ -50,7 +49,7 @@ export default class App extends Component {
       },
       recommendedPlayers: null,
       snackbarOpen: false,
-      snackbarMessage: null
+      snackbarMessage: ""
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
