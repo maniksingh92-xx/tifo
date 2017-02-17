@@ -4,6 +4,7 @@ import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
+import { blueGrey300, pink50, green100, orange900, grey900, white } from 'material-ui/styles/colors';
 
 import _map from 'lodash/map';
 import _pick from 'lodash/pick';
@@ -94,7 +95,7 @@ function PlayerActionButton({assignedPosition, activePosition, onAssignPlayerToP
   } else if (assignedPosition === activePosition) {
     return <FlatButton
               label={"Assigned to " + assignedPosition}
-              primary={true}
+              labelStyle={{color:orange900}}
               hoverColor={"transparent"}
               rippleColor={"transparent"}
               style={{cursor: "default"}} />

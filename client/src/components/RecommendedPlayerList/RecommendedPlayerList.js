@@ -59,7 +59,7 @@ export default class RecommendedPlayerList extends Component {
 
   render() {
     return (
-      <Card style={{ width : 320 }}>
+      <Card style={{ width : 400, height: 235 }}>
         <CardHeader
           title="Similar Players"
           subtitle={"Tap to assign to " + this.props.activePosition} />

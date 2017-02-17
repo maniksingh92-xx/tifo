@@ -4,9 +4,9 @@ import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 import Subheader from 'material-ui/Subheader';
 import Chip from 'material-ui/Chip';
-import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import ActionDelete from 'material-ui/svg-icons/action/delete';
-import { blueGrey300, pink50, green100 } from 'material-ui/styles/colors';
+import { blueGrey300, pink50, green100, orange900, grey900, white } from 'material-ui/styles/colors';
 
 export default function TeamList({team, activePosition, onPositionSelect, onClearTeam, ...props}) {
 
@@ -18,17 +18,19 @@ export default function TeamList({team, activePosition, onPositionSelect, onClea
   function handlePositionSelect(pos) { onPositionSelect(pos); }
 
   return (
-    <div>
+    <div style={{backgroundColor: orange900}}>
       <BuildTeamList
         team={team}
         formation={props.formation}
         onPositionSelect={handlePositionSelect}
         activePosition={activePosition} />
-      <FlatButton
+      <RaisedButton
+        backgroundColor={grey900}
+        labelColor={white}
+        style={{marginLeft: 16}}
         onTouchTap={handleClearTeam}
         label="Delete Team"
         labelPosition="before"
-        secondary={true}
         icon={<ActionDelete />} />
     </div>
   );
@@ -46,7 +48,7 @@ function BuildTeamList({team, activePosition, onPositionSelect, ...props}) {
     return currentRowPlayers;
   });
 
-  const subheaderStyle = { lineHeight: "24px"};
+  const subheaderStyle = { lineHeight: "24px", color: grey900};
 
   var layout = formationRows.map(function (rowPlayers, index) {
     return (
@@ -104,8 +106,8 @@ function TeamListItem({active, onPositionSelect, player, position, ...props}) {
   }
 
   const style = Object.assign({},
-                              player ? { backgroundColor: green100 } : { backgroundColor: pink50 },
-                              active && { backgroundColor: blueGrey300 });
+                              player ? { backgroundColor: orange900 } : { backgroundColor: orange900 },
+                              active && { backgroundColor: grey900 });
 
   return (
     <ListItem
@@ -114,7 +116,7 @@ function TeamListItem({active, onPositionSelect, player, position, ...props}) {
       innerDivStyle={listItemStyle}
       leftAvatar={<Avatar style={avatarStyle}>{position}</Avatar>}
     > 
-      <div className="d-flex justify-content-between" style={{width:"100%"}}>
+      <div className="d-flex justify-content-between" style={{width:"100%", color: white}}>
         <span className="truncate">{name}</span>
         {rating ? <Chip labelStyle={chipStyle}>{rating}</Chip> : null }
       </div>

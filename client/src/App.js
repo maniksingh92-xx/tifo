@@ -7,6 +7,7 @@ import { RecommendedPlayerList } from './components/RecommendedPlayerList';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
+import { blueGrey300, pink50, green100, orange900, grey900 } from 'material-ui/styles/colors';
 
 import Paper from 'material-ui/Paper';
 import Snackbar from 'material-ui/Snackbar';
@@ -226,7 +227,8 @@ export default class App extends Component {
               top: 0,
               bottom: 0,
               "overflowY": "auto",
-              width: 320
+              width: 320,
+              backgroundColor: orange900
             }}
             >
             <TeamList
@@ -240,12 +242,13 @@ export default class App extends Component {
             className="d-flex flex-column"
             style={{
               position: "fixed",
-              left: 326,
+              left: 320,
               top: 0,
               bottom: 0,
               right: 0,
               padding: "16px 16px 16px 10px",
-              overflowY: "auto"
+              overflowY: "auto",
+              backgroundColor: grey900
             }}
             >
             <div className="d-flex align-items-start" style={{ marginBottom: 16, height: 334 }}>
