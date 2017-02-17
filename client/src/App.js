@@ -3,9 +3,11 @@ import PlayerList from './components/PlayerList';
 import PlayerInfo from './components/PlayerInfo';
 import { TeamLayout, TeamList } from './components/TeamLayout';
 import { TeamDetails } from './components/TeamDetails';
+import { RecommendedPlayerList } from './components/RecommendedPlayerList';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
+import { get as getRecommendedPlayers } from './data/recommendedPlayers';
 
 import Drawer from 'material-ui/Drawer';
 import Paper from 'material-ui/Paper';
@@ -45,7 +47,8 @@ export default class App extends Component {
         "attack": 0,
         "mid": 0,
         "defence": 0
-      }
+      },
+      recommendedPlayers: null
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
@@ -53,6 +56,8 @@ export default class App extends Component {
     this.handleSortPlayersChange = this.handleSortPlayersChange.bind(this);
     this.handleAssignPlayerToPosition = this.handleAssignPlayerToPosition.bind(this);
     this.handleClearTeam = this.handleClearTeam.bind(this);
+
+    this.displayPlayer = this.displayPlayer.bind(this);
     this.setActivePosition = this.setActivePosition.bind(this);
     this.setPlayerToPosition = this.setPlayerToPosition.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
@@ -63,6 +68,7 @@ export default class App extends Component {
     this.getTeam = getTeam.bind(this)
     this.updateTeam = updateTeam.bind(this);
     this.deleteTeam = deleteTeam.bind(this);
+    this.getRecommendedPlayers = getRecommendedPlayers.bind(this);
   }
 
   componentWillMount() {
@@ -89,7 +95,7 @@ export default class App extends Component {
   componentDidUpdate(prevProps, prevState) { }
 
   handlePlayerSelect(id) {
-    this.setState({ displayPlayerId: id })
+    this.displayPlayer(id);
   }
 
   handlePositionSelect(pos) {
@@ -115,11 +121,21 @@ export default class App extends Component {
       })
   }
 
+  displayPlayer(id) {
+    this.setState({ displayPlayerId: id })
+    this.getRecommendedPlayers({playerId:id})
+      .then((data) => {
+        this.setState({
+          recommendedPlayers: data
+        })
+      });
+  }
+
   setActivePosition(pos) {
     var filteredPlayerList = this.filterPlayerList(this.players, this.state.posAssoc, pos);
+    this.displayPlayer(this.state.team[pos] ? this.state.team[pos].id : filteredPlayerList[0].id);
     this.setState({
       colSortDirs: {},
-      displayPlayerId: this.state.team[pos] ? this.state.team[pos].id : filteredPlayerList[0].id,
       players: filteredPlayerList,
       activePosition: pos
     });
@@ -217,6 +233,9 @@ export default class App extends Component {
               <TeamDetails
                 balance={this.state.balance}
                 teamAttributes={this.state.teamAttributes} />
+              <RecommendedPlayerList
+                onPlayerSelect={this.handlePlayerSelect}
+                recommendedPlayers={this.state.recommendedPlayers} />
             </div>
             <div className="d-flex">
               <PlayerList

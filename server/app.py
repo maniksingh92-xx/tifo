@@ -18,59 +18,59 @@ api = Api(app)
 class User(object):
     posTeamAttribAssoc = {
         "LW": {
-            "attack": 0.9,
-            "mid": 0.6,
-            "defence": 0.4
+            "attack": 100,
+            "mid": 30,
+            "defence": 20
         },
         "ST": {
-            "attack": 1,
-            "mid": 0.4,
-            "defence": 0.2
+            "attack": 100,
+            "mid": 20,
+            "defence": 10
         },
         "RW": {
-            "attack": 0.9,
-            "mid": 0.6,
-            "defence": 0.4
+            "attack": 100,
+            "mid": 30,
+            "defence": 20
         },
         "RM": {
-            "attack": 0.4,
-            "mid": 0.8,
-            "defence": 0.6
+            "attack": 30,
+            "mid": 100,
+            "defence": 20
         },
         "CM": {
-            "attack": 0,
-            "mid": 1,
-            "defence": 0.5
+            "attack": 40,
+            "mid": 100,
+            "defence": 30
         },
         "LM": {
-            "attack": 0.4,
-            "mid": 0.8,
-            "defence": 0.6
+            "attack": 30,
+            "mid": 100,
+            "defence": 20
         },
         "LB": {
-            "attack": 0,
-            "mid": 0.4,
-            "defence": 0.8
+            "attack": 20,
+            "mid": 20,
+            "defence": 100
         },
         "LCB": {
-            "attack": 0,
-            "mid": 0.4,
-            "defence": 1
+            "attack": 10,
+            "mid": 20,
+            "defence": 100
         },
         "RCB": {
-            "attack": 0,
-            "mid": 0.4,
-            "defence": 1
+            "attack": 10,
+            "mid": 20,
+            "defence": 100
         },
         "RB": {
-            "attack": 0,
-            "mid": 0.4,
-            "defence": 0.8
+            "attack": 10,
+            "mid": 20,
+            "defence": 100
         },
         "GK": {
             "attack": 0,
             "mid": 0,
-            "defence": 1
+            "defence": 100
         }
     }
 
@@ -107,8 +107,8 @@ class User(object):
             "defence": 0
         }
 
-        self.maxBalance = 9434485500
-        self.balance = 9434485500
+        self.maxBalance = 1000000000
+        self.balance = 1000000000
 
     def getTeam(self):
         return self.team
@@ -128,7 +128,7 @@ class User(object):
             self.team[position] = None
         self.balance = self.maxBalance
         for attrib in self.teamAttributes:
-            attrib = 0
+            self.teamAttributes[attrib] = 0
 
     def getBalance(self):
         return self.balance
@@ -157,16 +157,19 @@ class User(object):
         for position in team:
             if (team[position] != None):
                 if(position == "GK"):
-                    attribSum["defence"] += team[position]["Rating"]
+                    attribSum["defence"] += 100 * team[position]["Rating"]
                 else:
                     for teamAttrib in attribSum:
-                        attribSum[teamAttrib] += (User.posTeamAttribAssoc[position][teamAttrib] *
-                                                sum(team[position][attrib] for attrib in User.teamAttribAssoc[teamAttrib]))
+                        attribSum[teamAttrib] += (User.posTeamAttribAssoc[position][teamAttrib] * team[position]["Rating"])
+                        # attribSum[teamAttrib] += (User.posTeamAttribAssoc[position][teamAttrib] * sum(team[position][attrib] for attrib in User.teamAttribAssoc[teamAttrib]))
         
         for teamAttrib in attribSum:
             self.teamAttributes[teamAttrib] = attribSum[teamAttrib]/User.attribScale[teamAttrib]
 
-        return self.getTeamAttributes() 
+        return self.getTeamAttributes()
+    
+    def getRecommendedPlayers(self, playerId):
+        return (getRecommendedPlayers(allPlayers.loc[allPlayers['id'] == playerId].iloc[0], allPlayers))[1:].to_dict(orient="records")
 
 
 user = User()
@@ -197,7 +200,7 @@ posAssoc = {
     "LM": ["LM", "CM", "CAM"],
     "CM": ["CM", "LM", "RM", "CAM", "CDM"],
     "CAM": ["CAM", "CF"],
-    "CB": ["CB", "CDM", "LB", "RB"],
+    "CB": ["CB", "CDM"],
     "RCB": ["CB", "CDM", "RB"],
     "LCB": ["CB", "CDM", "LB"],
     "CDM": ["CDM", "RM", "LM", "CM"],
@@ -210,13 +213,11 @@ posAssoc = {
 
 
 def getRecommendedPlayers(player, df):
-
     df = df[df["Position"].isin(posAssoc[player.Position])]
 
-    dfi = df.ix[:, ["Name", "Position"]]
-    dfa = df.drop(["Name", "Position", "Rating"], axis=1)
+    dfa = df.drop(["id","Name", "Position", "Rating", "Price"], axis=1)
 
-    neigh = NearestNeighbors(n_neighbors=5)
+    neigh = NearestNeighbors(n_neighbors=6)
     neigh.fit(dfa)
 
     return df.iloc[neigh.kneighbors(dfa.ix[player.name].values.reshape(1, -1), return_distance=False)[0]]
@@ -236,6 +237,7 @@ allPlayers["Price"] = allPlayers["Rating"].apply(setPrice)
 # API
 parser = reqparse.RequestParser()
 parser.add_argument('team', type=dict)
+parser.add_argument('playerId', type=int, location='args')
 
 
 class Players(Resource):
@@ -280,6 +282,11 @@ class TeamPlayer(Resource):
     def delete(self):
         user.team[player.pos] = None
         return user.team
+
+class RecommendedPlayers(Resource):
+    def get(self):
+        args = parser.parse_args()
+        return user.getRecommendedPlayers(args.playerId)
 # END API
 
 
@@ -288,4 +295,5 @@ api.add_resource(Players, "/players")
 api.add_resource(Positions, "/positions")
 api.add_resource(Team, "/team")
 api.add_resource(TeamPlayer, "/team-player")
+api.add_resource(RecommendedPlayers, "/recommended-players")
 # END ROUTING
