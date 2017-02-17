@@ -139,6 +139,10 @@ export default class App extends Component {
   }
 
   setPlayerToPosition(player, pos) {
+    if (this.state.balance - player.Price < 0) {
+      this.showSnackbar(`Error: Insufficient funds for ${player.Name}, release expensive player(s)`);
+      return;
+    }
     var assignedPlayer = _find(this.state.team, { id: player.id });
     if (assignedPlayer) {
       this.showSnackbar(`Error: ${player.Name} is already assigned to ${pos}`);
