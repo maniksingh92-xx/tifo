@@ -139,7 +139,9 @@ export default class App extends Component {
   }
 
   setPlayerToPosition(player, pos) {
-    if (this.state.balance - player.Price < 0) {
+    if ((this.state.balance +
+        (this.state.team[pos] ? this.state.team[pos].Price : 0) -
+        player.Price) < 0) {
       this.showSnackbar(`Error: Insufficient funds for ${player.Name}, release expensive player(s)`);
       return;
     }
