@@ -139,6 +139,11 @@ export default class App extends Component {
   }
 
   setPlayerToPosition(player, pos) {
+    var assignedPlayer = _find(this.state.team, { id: player.id });
+    if (assignedPlayer) {
+      this.showSnackbar(`Error: ${player.Name} is already assigned to ${pos}`);
+      return;
+    }
     var update = {};
     update[pos] = player;
     var updatedTeam = Object.assign({}, this.state.team, update);
