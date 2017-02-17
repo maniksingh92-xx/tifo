@@ -49,10 +49,10 @@ export default function TeamDetails({balance, teamAttributes, ...props}) {
   }
 
   return (
-      <Card>
+      <Card initiallyExpanded={true} style={{ marginRight: 16, width: 248 }}>
         <CardHeader
           title="Team Overview"
-          subtitle={formatCurrency(balance)}
+          subtitle={formatCurrency(balance) + " left"}
           actAsExpander={true}
           showExpandableButton={true} />
         <CardText expandable={true} >
