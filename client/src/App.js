@@ -7,10 +7,10 @@ import { RecommendedPlayerList } from './components/RecommendedPlayerList';
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
-import { get as getRecommendedPlayers } from './data/recommendedPlayers';
 
 import Drawer from 'material-ui/Drawer';
 import Paper from 'material-ui/Paper';
+import Snackbar from 'material-ui/Snackbar';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -48,7 +48,9 @@ export default class App extends Component {
         "mid": 0,
         "defence": 0
       },
-      recommendedPlayers: null
+      recommendedPlayers: null,
+      snackbarOpen: false,
+      snackbarMessage: null
     };
 
     this.handlePlayerSelect = this.handlePlayerSelect.bind(this);
@@ -62,13 +64,14 @@ export default class App extends Component {
     this.setPlayerToPosition = this.setPlayerToPosition.bind(this);
     this.filterPlayerList = this.filterPlayerList.bind(this);
     this.sortPlayerList = this.sortPlayerList.bind(this);
+    this.showSnackbar = this.showSnackbar.bind(this);
+    this.handleSnackbarRequestClose = this.handleSnackbarRequestClose.bind(this);
 
     this.getPlayers = getPlayers.bind(this);
     this.getPositions = getPositions.bind(this);
     this.getTeam = getTeam.bind(this)
     this.updateTeam = updateTeam.bind(this);
     this.deleteTeam = deleteTeam.bind(this);
-    this.getRecommendedPlayers = getRecommendedPlayers.bind(this);
   }
 
   componentWillMount() {
@@ -118,17 +121,12 @@ export default class App extends Component {
           balance: data.balance,
           teamAttributes: data.teamAttributes
         });
+        this.showSnackbar(`Team cleared!`)
       })
   }
 
   displayPlayer(id) {
     this.setState({ displayPlayerId: id })
-    this.getRecommendedPlayers({playerId:id})
-      .then((data) => {
-        this.setState({
-          recommendedPlayers: data
-        })
-      });
   }
 
   setActivePosition(pos) {
@@ -152,7 +150,8 @@ export default class App extends Component {
         balance: data.balance,
         teamAttributes: data.teamAttributes
       });
-    }).catch((e) => { alert("OMG") });
+      this.showSnackbar(`${player.Name} assigned to ${pos}`);
+    }).catch((e) => { this.showSnackbar(`Error updating team!`) });
   }
 
   sortPlayerList(columnKey) {
@@ -181,8 +180,19 @@ export default class App extends Component {
     }
   }
 
+  showSnackbar(message) {
+    this.setState({
+      snackbarOpen: true,
+      snackbarMessage: message
+    });
+  }
+
+  handleSnackbarRequestClose() {
+    this.setState({ snackbarOpen: false });
+  }  
+
   render() {
-    var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
+    var displayPlayer = _find(this.players, { id: this.state.displayPlayerId });
     if (displayPlayer) {
       var displayPlayerAssignedPosition = null;
       _forOwn(this.state.team, function (player, pos) {
@@ -191,6 +201,12 @@ export default class App extends Component {
 
       return (
         <div>
+          <Snackbar
+            open={this.state.snackbarOpen}
+            message={this.state.snackbarMessage}
+            autoHideDuration={6000}
+            onRequestClose={this.handleSnackbarRequestClose}
+          />
           <Paper
             zDepth={2}
             rounded={false}
@@ -226,7 +242,6 @@ export default class App extends Component {
               <PlayerInfo
                 player={displayPlayer}
                 assignedPosition={displayPlayerAssignedPosition}
-                team={this.state.team}
                 posAssoc={this.state.posAssoc[displayPlayer.Position]}
                 activePosition={this.state.activePosition}
                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
@@ -234,8 +249,9 @@ export default class App extends Component {
                 balance={this.state.balance}
                 teamAttributes={this.state.teamAttributes} />
               <RecommendedPlayerList
-                onPlayerSelect={this.handlePlayerSelect}
-                recommendedPlayers={this.state.recommendedPlayers} />
+                activePosition={this.state.activePosition}
+                onAssignPlayerToPostion={this.handleAssignPlayerToPosition}
+                displayPlayerId={this.state.displayPlayerId} />
             </div>
             <div className="d-flex">
               <PlayerList
@@ -252,39 +268,5 @@ export default class App extends Component {
       return <div>loading ...</div>
     }
   }
-
-  // render() {
-  //   var displayPlayer = _find(this.state.players, { id: this.state.displayPlayerId });
-  //   return (
-  //     <div>
-  //       {
-  //         this.state.activePosition === null ? null :
-  //           (
-  //             <div className="d-flex flex-wrap">
-  // <PlayerList
-  //   onSortPlayersChange={this.handleSortPlayersChange}
-  //   colSortDirs={this.state.colSortDirs}
-  //   onPlayerSelect={this.handlePlayerSelect}
-  //   data={this.state.players}
-  //   activePosition={this.state.activePosition} />
-  //               <PlayerInfo
-  //                 data={displayPlayer}
-  //                 team={this.state.team}
-  //                 posAssoc={this.state.posAssoc[displayPlayer.Position]}
-  //                 activePosition={this.state.activePosition}
-  //                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
-  //               <TeamLayout
-  //                 onPositionSelect={this.handlePositionSelect}
-  //                 onClearTeam={this.handleClearTeam}
-  //                 data={this.state.team}
-  //                 activePosition={this.state.activePosition}
-  //                 formation={[4, 3, 3]}
-  //                 balance={this.state.balance} />
-  //             </div>
-  //           )
-  //       }
-  //     </div>
-  //   )
-  // }
 
 }

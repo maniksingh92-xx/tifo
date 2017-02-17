@@ -8,50 +8,50 @@ Api	server/app.py	/^from flask_restful import reqparse, abort, Resource, Api$/;"
 CORS	server/app.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:3
 Flask	server/app.py	/^from flask import Flask, jsonify$/;"	kind:namespace	line:1
 NearestNeighbors	server/app.py	/^from sklearn.neighbors import NearestNeighbors$/;"	kind:namespace	line:7
-Players	server/app.py	/^class Players(Resource):$/;"	kind:class	line:243
-Positions	server/app.py	/^class Positions(Resource):$/;"	kind:class	line:249
-RecommendedPlayers	server/app.py	/^class RecommendedPlayers(Resource):$/;"	kind:class	line:286
+Players	server/app.py	/^class Players(Resource):$/;"	kind:class	line:242
+Positions	server/app.py	/^class Positions(Resource):$/;"	kind:class	line:248
+RecommendedPlayers	server/app.py	/^class RecommendedPlayers(Resource):$/;"	kind:class	line:285
 Resource	server/app.py	/^from flask_restful import reqparse, abort, Resource, Api$/;"	kind:namespace	line:2
-Team	server/app.py	/^class Team(Resource):$/;"	kind:class	line:255
-TeamPlayer	server/app.py	/^class TeamPlayer(Resource):$/;"	kind:class	line:276
+Team	server/app.py	/^class Team(Resource):$/;"	kind:class	line:254
+TeamPlayer	server/app.py	/^class TeamPlayer(Resource):$/;"	kind:class	line:275
 User	server/app.py	/^class User(object):$/;"	kind:class	line:18
 __init__	server/app.py	/^    def __init__(self):$/;"	kind:member	line:89
 abort	server/app.py	/^from flask_restful import reqparse, abort, Resource, Api$/;"	kind:namespace	line:2
-allPlayers	server/app.py	/^allPlayers = pd.read_csv(".\/data\/fifa16db.csv", usecols=usecols)$/;"	kind:variable	line:228
+allPlayers	server/app.py	/^allPlayers = pd.read_csv(".\/data\/fifa16db.csv", usecols=usecols)$/;"	kind:variable	line:227
 api	server/app.py	/^api = Api(app)$/;"	kind:variable	line:13
 app	server/app.py	/^app = Flask(__name__)$/;"	kind:variable	line:11
 app.py	server/app.py	1;"	kind:file	line:1
 attribScale	server/app.py	/^    attribScale = {$/;"	kind:variable	line:77
-columns	server/app.py	/^columns = ["Name", "Position", "Rating", "Pace", "Shooting",$/;"	kind:variable	line:226
+columns	server/app.py	/^columns = ["Name", "Position", "Rating", "Pace", "Shooting",$/;"	kind:variable	line:225
 config.py	server/config.py	1;"	kind:file	line:1
 cross_origin	server/app.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:3
-delete	server/app.py	/^    def delete(self):$/;"	kind:member	line:271
-delete	server/app.py	/^    def delete(self):$/;"	kind:member	line:282
+delete	server/app.py	/^    def delete(self):$/;"	kind:member	line:270
+delete	server/app.py	/^    def delete(self):$/;"	kind:member	line:281
 deleteTeam	server/app.py	/^    def deleteTeam(self):$/;"	kind:member	line:126
-get	server/app.py	/^    def get(self):$/;"	kind:member	line:245
-get	server/app.py	/^    def get(self):$/;"	kind:member	line:251
-get	server/app.py	/^    def get(self):$/;"	kind:member	line:260
-get	server/app.py	/^    def get(self):$/;"	kind:member	line:287
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:244
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:250
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:259
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:286
 getBalance	server/app.py	/^    def getBalance(self):$/;"	kind:member	line:133
 getRecommendedPlayers	server/app.py	/^    def getRecommendedPlayers(self, playerId):$/;"	kind:member	line:171
-getRecommendedPlayers	server/app.py	/^def getRecommendedPlayers(player, df):$/;"	kind:function	line:215
+getRecommendedPlayers	server/app.py	/^def getRecommendedPlayers(player, df):$/;"	kind:function	line:214
 getTeam	server/app.py	/^    def getTeam(self):$/;"	kind:member	line:113
 getTeamAttributes	server/app.py	/^    def getTeamAttributes(self):$/;"	kind:member	line:143
-getTeamDetails	server/app.py	/^    def getTeamDetails(self):$/;"	kind:member	line:257
+getTeamDetails	server/app.py	/^    def getTeamDetails(self):$/;"	kind:member	line:256
 jsonify	server/app.py	/^from flask import Flask, jsonify$/;"	kind:namespace	line:1
 np	server/app.py	/^import numpy as np$/;"	kind:namespace	line:6
-parser	server/app.py	/^parser = reqparse.RequestParser()$/;"	kind:variable	line:238
+parser	server/app.py	/^parser = reqparse.RequestParser()$/;"	kind:variable	line:237
 pd	server/app.py	/^import pandas as pd$/;"	kind:namespace	line:5
-posAssoc	server/app.py	/^posAssoc = {$/;"	kind:variable	line:194
+posAssoc	server/app.py	/^posAssoc = {$/;"	kind:variable	line:193
 posTeamAttribAssoc	server/app.py	/^    posTeamAttribAssoc = {$/;"	kind:variable	line:19
-put	server/app.py	/^    def put(self):$/;"	kind:member	line:263
-put	server/app.py	/^    def put(self):$/;"	kind:member	line:278
+put	server/app.py	/^    def put(self):$/;"	kind:member	line:262
+put	server/app.py	/^    def put(self):$/;"	kind:member	line:277
 reqparse	server/app.py	/^from flask_restful import reqparse, abort, Resource, Api$/;"	kind:namespace	line:2
 setPrice	server/app.py	/^def setPrice(rating):$/;"	kind:function	line:178
 teamAttribAssoc	server/app.py	/^    teamAttribAssoc = {$/;"	kind:variable	line:83
 updateBalance	server/app.py	/^    def updateBalance(self, balance):$/;"	kind:member	line:136
 updateTeam	server/app.py	/^    def updateTeam(self, team):$/;"	kind:member	line:116
 updateTeamAttributes	server/app.py	/^    def updateTeamAttributes(self, team):$/;"	kind:member	line:146
-usecols	server/app.py	/^usecols = ["Name", "POS", "RAT", "PAC", "SHO", "PAS", "DRI", "DEF", "PHY"]$/;"	kind:variable	line:225
+usecols	server/app.py	/^usecols = ["Name", "POS", "RAT", "PAC", "SHO", "PAS", "DRI", "DEF", "PHY"]$/;"	kind:variable	line:224
 user	server/app.py	/^user = User()$/;"	kind:variable	line:175
 verifyBalanceAfterTeamCost	server/app.py	/^    def verifyBalanceAfterTeamCost(self, team):$/;"	kind:member	line:140
