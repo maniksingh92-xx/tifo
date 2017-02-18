@@ -59,14 +59,14 @@ export default class RecommendedPlayerList extends Component {
 
   render() {
     return (
-      <Card style={{ width : 400, height: 235 }}>
+      <Card style={{ width : 400, maxHeight: 230 }}>
         <CardHeader
           title="Similar Players"
           subtitle={"Tap to assign to " + this.props.activePosition} />
         <CardText>
           {
             this.state.recommendedPlayers ?
-              <List style={{ height: 100, overflowY: 'scroll' }}>
+              <List style={{ maxHeight: 100, overflowY: 'scroll' }}>
                 {this.state.recommendedPlayers.map((player) => (
                   <ListItem
                     key={player.id}

@@ -4,13 +4,15 @@ import PlayerInfo from './components/PlayerInfo';
 import { TeamList } from './components/TeamLayout';
 import { TeamDetails } from './components/TeamDetails';
 import { RecommendedPlayerList } from './components/RecommendedPlayerList';
+import { NLPteamBuilder } from './components/NLPteamBuilder';
+
 import { get as getPlayers } from './data/players';
 import { get as getPositions } from './data/positions';
 import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/team';
-import { blueGrey300, pink50, green100, orange900, grey900 } from 'material-ui/styles/colors';
 
 import Paper from 'material-ui/Paper';
 import Snackbar from 'material-ui/Snackbar';
+import { blueGrey300, pink50, green100, orange900, grey900 } from 'material-ui/styles/colors';
 
 import _findKey from 'lodash/findKey';
 import _find from 'lodash/find';
@@ -251,20 +253,25 @@ export default class App extends Component {
               backgroundColor: grey900
             }}
             >
-            <div className="d-flex align-items-start" style={{ marginBottom: 16, height: 334 }}>
+            <div className="d-flex" style={{ marginBottom: 16, height: 334 }}>
               <PlayerInfo
                 player={displayPlayer}
                 assignedPosition={displayPlayerAssignedPosition}
                 posAssoc={this.state.posAssoc[displayPlayer.Position]}
                 activePosition={this.state.activePosition}
                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
-              <TeamDetails
-                balance={this.state.balance}
-                teamAttributes={this.state.teamAttributes} />
-              <RecommendedPlayerList
-                activePosition={this.state.activePosition}
-                onAssignPlayerToPostion={this.handleAssignPlayerToPosition}
-                displayPlayerId={this.state.displayPlayerId} />
+              <div className="d-flex flex-column justify-content-between">
+                <div className="d-flex mb-3">
+                  <TeamDetails
+                    balance={this.state.balance}
+                    teamAttributes={this.state.teamAttributes} />
+                  <RecommendedPlayerList
+                    activePosition={this.state.activePosition}
+                    onAssignPlayerToPostion={this.handleAssignPlayerToPosition}
+                    displayPlayerId={this.state.displayPlayerId} />
+                </div>
+                <NLPteamBuilder />
+              </div>
             </div>
             <div className="d-flex">
               <PlayerList

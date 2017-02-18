@@ -120,7 +120,7 @@ export default function PlayerInfo({player,
 
 
   return (
-    <Paper zDepth={4} style={{ marginRight: 16, width: 320 }}>
+    <Paper zDepth={4} style={{ marginRight: 16, width: 320, backgroundColor: grey900 }}>
       <Card initiallyExpanded={true}>
         <CardHeader
           title={player.Name}
