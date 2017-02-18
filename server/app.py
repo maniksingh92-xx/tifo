@@ -5,7 +5,7 @@ from flask_cors import CORS, cross_origin
 import pandas as pd
 import numpy as np
 from sklearn.neighbors import NearestNeighbors
-
+import nltk
 
 # APP SETUP
 app = Flask(__name__)
