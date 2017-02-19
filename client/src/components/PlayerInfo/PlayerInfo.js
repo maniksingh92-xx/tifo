@@ -2,9 +2,10 @@ import React from 'react';
 
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
+import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
-import { blueGrey300, pink50, green100, orange900, grey900, white } from 'material-ui/styles/colors';
+import { blueGrey300, pink50, green100, orange900, grey900, grey300, white } from 'material-ui/styles/colors';
 
 import _map from 'lodash/map';
 import _pick from 'lodash/pick';
@@ -89,7 +90,9 @@ function PlayerActionButton({assignedPosition, activePosition, onAssignPlayerToP
   function handleAssignPlayerToPosition() { onAssignPlayerToPostion() };
 
   if (!assignedPosition) {
-    return <FlatButton
+    return <RaisedButton
+              backgroundColor={grey900}
+              labelColor={white}
               onTouchTap={handleAssignPlayerToPosition}
               label={"Assign to " + activePosition} />
   } else if (assignedPosition === activePosition) {
@@ -124,14 +127,20 @@ export default function PlayerInfo({player,
       <Card initiallyExpanded={true}>
         <CardHeader
           title={player.Name}
+          titleColor={white}
           subtitle={formattedPrice}
+          subtitleColor={grey300}
           actAsExpander={true}
-          showExpandableButton={true} />
+          showExpandableButton={false}
+          style={{ backgroundColor: orange900 }} />
         <CardText expandable={true}>
           <h6>Positions: {posAssoc.join(", ")}</h6>
           <GaugeCharts stats={stats} pos={player.Position} />
         </CardText>
-        <CardActions style={{ display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+        <CardActions style={{ 
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between"}}>
           <PlayerActionButton
             onAssignPlayerToPostion={handleAssignPlayerToPosition}
             assignedPosition={assignedPosition}

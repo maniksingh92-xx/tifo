@@ -5,6 +5,7 @@ import Avatar from 'material-ui/Avatar';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
 import Chip from 'material-ui/Chip';
+import { blueGrey300, pink50, green100, orange900, grey900, grey300, white } from 'material-ui/styles/colors';
 
 import { get as getRecommendedPlayers } from '../../data/recommendedPlayers';
 
@@ -62,7 +63,10 @@ export default class RecommendedPlayerList extends Component {
       <Card style={{ width : 400, maxHeight: 230 }}>
         <CardHeader
           title="Similar Players"
-          subtitle={"Tap to assign to " + this.props.activePosition} />
+          titleColor={white}
+          subtitle={"Tap to assign to " + this.props.activePosition}
+          subtitleColor={grey300}
+          style={{ backgroundColor: orange900 }} />
         <CardText>
           {
             this.state.recommendedPlayers ?

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Card, CardHeader, CardText} from 'material-ui/Card';
+import { blueGrey300, pink50, green100, orange900, grey900, grey300, white } from 'material-ui/styles/colors';
 
 import C3Chart from 'react-c3js';
 
@@ -52,9 +53,12 @@ export default function TeamDetails({balance, teamAttributes, ...props}) {
       <Card initiallyExpanded={true} style={{ marginRight: 16, width: 248 }}>
         <CardHeader
           title="Team Overview"
+          titleColor={white}
           subtitle={formatCurrency(balance) + " left"}
+          subtitleColor={grey300}
           actAsExpander={true}
-          showExpandableButton={true} />
+          showExpandableButton={false}
+          style={{ backgroundColor: orange900 }} />
         <CardText expandable={true} >
           <C3Chart
             data={barChartOptions.data}
