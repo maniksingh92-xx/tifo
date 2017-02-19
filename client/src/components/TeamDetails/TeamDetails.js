@@ -30,7 +30,7 @@ export default function TeamDetails({balance, teamAttributes, ...props}) {
       }
     },
     size: {
-      height: 120
+      height: 115
     },
     axis: {
       x: {

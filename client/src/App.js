@@ -261,7 +261,7 @@ export default class App extends Component {
                 activePosition={this.state.activePosition}
                 onAssignPlayerToPostion={this.handleAssignPlayerToPosition} />
               <div className="d-flex flex-column justify-content-between">
-                <div className="d-flex mb-3">
+                <div className="d-flex mb-3 align-items-start" style={{flex: 1}}>
                   <TeamDetails
                     balance={this.state.balance}
                     teamAttributes={this.state.teamAttributes} />

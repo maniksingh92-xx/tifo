@@ -60,7 +60,7 @@ export default class RecommendedPlayerList extends Component {
 
   render() {
     return (
-      <Card style={{ width : 400, maxHeight: 230 }}>
+      <Card className="align-self-stretch" style={{ width : 400, maxHeight: 230 }}>
         <CardHeader
           title="Similar Players"
           titleColor={white}
