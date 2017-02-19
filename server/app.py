@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
 from flask_restful import reqparse, abort, Resource, Api
 from flask_cors import CORS, cross_origin
+import os
 
 import pandas as pd
 import numpy as np
@@ -298,7 +299,7 @@ api.add_resource(TeamPlayer, "/team-player")
 api.add_resource(RecommendedPlayers, "/recommended-players")
 # END ROUTING
 
- if __name__ == '__main__':
-     app.debug = True
-     port = int(os.environ.get("PORT", 5000))
-     app.run(host='0.0.0.0', port=port)
+if __name__ == '__main__':
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)

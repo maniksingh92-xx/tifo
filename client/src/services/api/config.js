@@ -1,4 +1,4 @@
 export default {
 	clientId: '8puWuJWZYls1Ylawxm6CMiYREhsGGSyw',
-	url: 'http://localhost:5000',
+	url: 'http://0.0.0.0:5000',
 };

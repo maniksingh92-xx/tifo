@@ -19,7 +19,9 @@
     "react": "^15.4.2",
     "react-c3js": "^0.1.15",
     "react-dom": "^15.4.2",
-    "whatwg-fetch": "^2.0.2"
+    "react-scripts": "^0.8.5",
+    "whatwg-fetch": "^2.0.2",
+    "react-tap-event-plugin":"^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
