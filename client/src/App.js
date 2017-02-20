@@ -12,6 +12,7 @@ import { get as getTeam, update as updateTeam, del as deleteTeam } from './data/
 
 import Paper from 'material-ui/Paper';
 import Snackbar from 'material-ui/Snackbar';
+import CircularProgress from 'material-ui/CircularProgress';
 import { blueGrey300, pink50, green100, orange900, grey900 } from 'material-ui/styles/colors';
 
 import _findKey from 'lodash/findKey';
@@ -285,7 +286,20 @@ export default class App extends Component {
         </div>
       )
     } else {
-      return <div>loading ...</div>
+      return (
+        <div 
+          style={{
+            position: "fixed",
+            top: 0,
+            bottom: 0,
+            right: 0,
+            left: 0
+          }}
+          className="d-flex flex-column align-items-center justify-content-center" >
+          <span>Downloading the app. Please wait...</span>
+          <CircularProgress size={60} thickness={7} color={orange900} />
+        </div>
+      )
     }
   }
 
