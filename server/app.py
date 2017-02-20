@@ -176,6 +176,7 @@ class User(object):
 user = User()
 
 
+
 def setPrice(rating):
     price = rating ** 3
 
@@ -239,7 +240,7 @@ allPlayers["Price"] = allPlayers["Rating"].apply(setPrice)
 parser = reqparse.RequestParser()
 parser.add_argument('team', type=dict)
 parser.add_argument('playerId', type=int, location='args')
-
+parser.add_argument('buildTeamText', type=str, location='args')
 
 class Players(Resource):
 
@@ -288,6 +289,11 @@ class RecommendedPlayers(Resource):
     def get(self):
         args = parser.parse_args()
         return user.getRecommendedPlayers(args.playerId)
+
+class BuildTeamNaturalLanguage(Resource):
+    def get(self):
+        args = parser.parse_args()
+        return {buildTeamText: args.buildTeamText}      
 # END API
 
 
@@ -297,6 +303,7 @@ api.add_resource(Positions, "/positions")
 api.add_resource(Team, "/team")
 api.add_resource(TeamPlayer, "/team-player")
 api.add_resource(RecommendedPlayers, "/recommended-players")
+api.add_resource(BuildTeamNaturalLanguage, "/build-team")
 # END ROUTING
 
 if __name__ == '__main__':

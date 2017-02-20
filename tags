@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Api	server/app.py	/^from flask_restful import reqparse, abort, Resource, Api$/;"	kind:namespace	line:2
+BuildTeamNaturalLanguage	server/app.py	/^class BuildTeamNaturalLanguage(Resource):$/;"	kind:class	line:292
 CORS	server/app.py	/^from flask_cors import CORS, cross_origin$/;"	kind:namespace	line:3
 Flask	server/app.py	/^from flask import Flask, jsonify$/;"	kind:namespace	line:1
 NearestNeighbors	server/app.py	/^from sklearn.neighbors import NearestNeighbors$/;"	kind:namespace	line:8
@@ -32,6 +33,7 @@ get	server/app.py	/^    def get(self):$/;"	kind:member	line:246
 get	server/app.py	/^    def get(self):$/;"	kind:member	line:252
 get	server/app.py	/^    def get(self):$/;"	kind:member	line:261
 get	server/app.py	/^    def get(self):$/;"	kind:member	line:288
+get	server/app.py	/^    def get(self):$/;"	kind:member	line:293
 getBalance	server/app.py	/^    def getBalance(self):$/;"	kind:member	line:134
 getRecommendedPlayers	server/app.py	/^    def getRecommendedPlayers(self, playerId):$/;"	kind:member	line:172
 getRecommendedPlayers	server/app.py	/^def getRecommendedPlayers(player, df):$/;"	kind:function	line:216
@@ -44,7 +46,7 @@ np	server/app.py	/^import numpy as np$/;"	kind:namespace	line:7
 os	server/app.py	/^import os$/;"	kind:namespace	line:4
 parser	server/app.py	/^parser = reqparse.RequestParser()$/;"	kind:variable	line:239
 pd	server/app.py	/^import pandas as pd$/;"	kind:namespace	line:6
-port	server/app.py	/^    port = int(os.environ.get("PORT", 5000))$/;"	kind:variable	line:304
+port	server/app.py	/^    port = int(os.environ.get("PORT", 5000))$/;"	kind:variable	line:310
 posAssoc	server/app.py	/^posAssoc = {$/;"	kind:variable	line:195
 posTeamAttribAssoc	server/app.py	/^    posTeamAttribAssoc = {$/;"	kind:variable	line:20
 put	server/app.py	/^    def put(self):$/;"	kind:member	line:264
